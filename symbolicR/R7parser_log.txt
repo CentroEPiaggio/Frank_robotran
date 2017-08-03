@@ -1,0 +1,4 @@
+Robotran XML parser error : ##fct## : invalid field value (nbel == 0) 
+Robotran XML parser error : ##fct## : invalid field value (head == NULL) 
+Robotran XML parser error : ##fct## : invalid field value (tail == NULL) 
+Robotran XML parser error : ##fct## : invalid field value (cur == NULL) 

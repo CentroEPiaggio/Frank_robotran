@@ -1,0 +1,424 @@
+//
+//-------------------------------------------------------------
+//
+//	ROBOTRAN - Version 6.6 (build : february 22, 2008)
+//
+//	Copyright 
+//	Universite catholique de Louvain 
+//	Departement de Mecanique 
+//	Unite de Production Mecanique et Machines 
+//	2, Place du Levant 
+//	1348 Louvain-la-Neuve 
+//	http://www.robotran.be// 
+//
+//	==> Generation Date : Mon Jun 26 11:02:24 2017
+//
+//	==> Project name : Frank_segway
+//	==> using XML input file 
+//
+//	==> Number of joints : 23
+//
+//	==> Function : F 2 : Inverse Dynamics : RNEA
+//	==> Flops complexity : 1648
+//
+//	==> Generation Time :  0.020 seconds
+//	==> Post-Processing :  0.010 seconds
+//
+//-------------------------------------------------------------
+//
+ 
+#include <math.h> 
+
+#include "MBSdataStructR7.h"
+#include "MBSfunR7.h"
+ 
+void invdyna(double *Qq,
+MBSdataStruct *s, double tsim)
+
+// double Qq[23];
+{ 
+ 
+#include "mbs_invdyna_Frank_segway.h" 
+#define q s->q 
+#define qd s->qd 
+#define qdd s->qdd 
+ 
+ 
+
+// === begin imp_aux === 
+
+// === end imp_aux === 
+
+// ===== BEGIN task 0 ===== 
+
+// = = Block_0_0_0_0_0_1 = = 
+ 
+// Trigonometric Variables  
+
+  C4 = cos(q[4]);
+  S4 = sin(q[4]);
+  C5 = cos(q[5]);
+  S5 = sin(q[5]);
+  C6 = cos(q[6]);
+  S6 = sin(q[6]);
+
+// = = Block_0_0_0_0_0_2 = = 
+ 
+// Augmented Joint Position Vectors   
+
+  Dz73 = q[7]+s->dpt[3][1];
+
+// = = Block_0_0_0_0_0_3 = = 
+ 
+// Trigonometric Variables  
+
+  C8 = cos(q[8]);
+  S8 = sin(q[8]);
+  C10 = cos(q[10]);
+  S10 = sin(q[10]);
+  C11 = cos(q[11]);
+  S11 = sin(q[11]);
+  C13 = cos(q[13]);
+  S13 = sin(q[13]);
+
+// = = Block_0_0_0_0_0_4 = = 
+ 
+// Trigonometric Variables  
+
+  C14 = cos(q[14]);
+  S14 = sin(q[14]);
+  C16 = cos(q[16]);
+  S16 = sin(q[16]);
+  C17 = cos(q[17]);
+  S17 = sin(q[17]);
+  C19 = cos(q[19]);
+  S19 = sin(q[19]);
+
+// = = Block_0_0_0_0_0_5 = = 
+ 
+// Trigonometric Variables  
+
+  C20 = cos(q[20]);
+  S20 = sin(q[20]);
+  C21 = cos(q[21]);
+  S21 = sin(q[21]);
+
+// = = Block_0_0_0_0_0_6 = = 
+ 
+// Trigonometric Variables  
+
+  C22 = cos(q[22]);
+  S22 = sin(q[22]);
+
+// = = Block_0_0_0_0_0_7 = = 
+ 
+// Trigonometric Variables  
+
+  C23 = cos(q[23]);
+  S23 = sin(q[23]);
+
+// = = Block_0_1_0_0_0_0 = = 
+ 
+// Forward Kinematics 
+
+  ALPHA33 = qdd[3]-s->g[3];
+  ALPHA14 = qdd[1]*C4+qdd[2]*S4;
+  ALPHA24 = -(qdd[1]*S4-qdd[2]*C4);
+  OM35 = qd[4]*C5;
+  OMp35 = -(qd[4]*qd[5]*S5-qdd[4]*C5);
+  ALPHA15 = ALPHA14*C5-ALPHA33*S5;
+  ALPHA35 = ALPHA14*S5+ALPHA33*C5;
+  OM16 = qd[6]-qd[4]*S5;
+  OM26 = qd[5]*C6+OM35*S6;
+  OM36 = -(qd[5]*S6-OM35*C6);
+  OMp16 = qdd[6]-qd[4]*qd[5]*C5-qdd[4]*S5;
+  OMp26 = C6*(qdd[5]+qd[6]*OM35)+S6*(OMp35-qd[5]*qd[6]);
+  OMp36 = C6*(OMp35-qd[5]*qd[6])-S6*(qdd[5]+qd[6]*OM35);
+  BS26 = OM16*OM26;
+  BS36 = OM16*OM36;
+  BS56 = -(OM16*OM16+OM36*OM36);
+  BS66 = OM26*OM36;
+  BETA26 = BS26-OMp36;
+  BETA86 = BS66+OMp16;
+  ALPHA26 = ALPHA24*C6+ALPHA35*S6;
+  ALPHA36 = -(ALPHA24*S6-ALPHA35*C6);
+  BS57 = -(OM16*OM16+OM36*OM36);
+  BS67 = OM26*OM36;
+  BETA27 = OM16*OM26-OMp36;
+  BETA37 = OMp26+OM16*OM36;
+  BETA67 = BS67-OMp16;
+  BETA87 = BS67+OMp16;
+  ALPHA17 = ALPHA15+(2.0)*qd[7]*OM26+Dz73*(BS36+OMp26);
+  ALPHA27 = ALPHA26-(2.0)*qd[7]*OM16+Dz73*(BS66-OMp16);
+  ALPHA37 = qdd[7]+ALPHA36-Dz73*(OM16*OM16+OM26*OM26);
+  OM18 = OM16*C8+OM26*S8;
+  OM28 = -(OM16*S8-OM26*C8);
+  OM38 = qd[8]+OM36;
+  OMp18 = C8*(OMp16+qd[8]*OM26)+S8*(OMp26-qd[8]*OM16);
+  OMp28 = C8*(OMp26-qd[8]*OM16)-S8*(OMp16+qd[8]*OM26);
+  OMp38 = qdd[8]+OMp36;
+  BETA29 = OM18*OM28-OMp38;
+  BETA89 = OMp18+OM28*OM38;
+  ALPHA19 = C8*(ALPHA17+BETA27*s->dpt[2][4])+S8*(ALPHA27+BS57*s->dpt[2][4])-q[9]*(OMp38-OM18*OM28)-(2.0)*qd[9]*OM38;
+  ALPHA29 = qdd[9]-q[9]*(OM18*OM18+OM38*OM38)+C8*(ALPHA27+BS57*s->dpt[2][4])-S8*(ALPHA17+BETA27*s->dpt[2][4]);
+  ALPHA39 = ALPHA37+q[9]*(OMp18+OM28*OM38)+(2.0)*qd[9]*OM18+BETA87*s->dpt[2][4];
+  OM110 = OM18*C10-OM38*S10;
+  OM210 = qd[10]+OM28;
+  OM310 = OM18*S10+OM38*C10;
+  OMp110 = C10*(OMp18-qd[10]*OM38)-S10*(OMp38+qd[10]*OM18);
+  OMp210 = qdd[10]+OMp28;
+  OMp310 = C10*(OMp38+qd[10]*OM18)+S10*(OMp18-qd[10]*OM38);
+  BS210 = OM110*OM210;
+  ALPHA110 = C10*(ALPHA19+BETA29*s->dpt[2][7])-S10*(ALPHA39+BETA89*s->dpt[2][7]);
+  ALPHA210 = ALPHA29-s->dpt[2][7]*(OM18*OM18+OM38*OM38);
+  ALPHA310 = C10*(ALPHA39+BETA89*s->dpt[2][7])+S10*(ALPHA19+BETA29*s->dpt[2][7]);
+  OM111 = qd[11]+OM110;
+  OM211 = OM210*C11+OM310*S11;
+  OM311 = -(OM210*S11-OM310*C11);
+  OMp111 = qdd[11]+OMp110;
+  OMp211 = C11*(OMp210+qd[11]*OM310)+S11*(OMp310-qd[11]*OM210);
+  OMp311 = C11*(OMp310-qd[11]*OM210)-S11*(OMp210+qd[11]*OM310);
+  BS312 = OM111*OM311;
+  BS912 = -(OM111*OM111+OM211*OM211);
+  BETA312 = BS312+OMp211;
+  BETA612 = OM211*OM311-OMp111;
+  ALPHA112 = ALPHA110+q[12]*(OMp211+OM111*OM311)+(2.0)*qd[12]*OM211;
+  ALPHA212 = ALPHA210*C11+ALPHA310*S11-q[12]*(OMp111-OM211*OM311)-(2.0)*qd[12]*OM111;
+  ALPHA312 = qdd[12]-q[12]*(OM111*OM111+OM211*OM211)-ALPHA210*S11+ALPHA310*C11;
+  OM113 = OM111*C13+OM211*S13;
+  OM213 = -(OM111*S13-OM211*C13);
+  OM313 = qd[13]+OM311;
+  OMp113 = C13*(OMp111+qd[13]*OM211)+S13*(OMp211-qd[13]*OM111);
+  OMp213 = C13*(OMp211-qd[13]*OM111)-S13*(OMp111+qd[13]*OM211);
+  OMp313 = qdd[13]+OMp311;
+  BS613 = OM213*OM313;
+  OM114 = OM16*C14+OM26*S14;
+  OM214 = -(OM16*S14-OM26*C14);
+  OM314 = qd[14]+OM36;
+  OMp114 = C14*(OMp16+qd[14]*OM26)+S14*(OMp26-qd[14]*OM16);
+  OMp214 = C14*(OMp26-qd[14]*OM16)-S14*(OMp16+qd[14]*OM26);
+  OMp314 = qdd[14]+OMp36;
+  BETA215 = OM114*OM214-OMp314;
+  BETA815 = OMp114+OM214*OM314;
+  ALPHA115 = C14*(ALPHA17+BETA27*s->dpt[2][5])+S14*(ALPHA27+BS57*s->dpt[2][5])-q[15]*(OMp314-OM114*OM214)-(2.0)*qd[15]*OM314;
+  ALPHA215 = qdd[15]-q[15]*(OM114*OM114+OM314*OM314)+C14*(ALPHA27+BS57*s->dpt[2][5])-S14*(ALPHA17+BETA27*s->dpt[2][5]);
+  ALPHA315 = ALPHA37+q[15]*(OMp114+OM214*OM314)+(2.0)*qd[15]*OM114+BETA87*s->dpt[2][5];
+  OM116 = OM114*C16-OM314*S16;
+  OM216 = qd[16]+OM214;
+  OM316 = OM114*S16+OM314*C16;
+  OMp116 = C16*(OMp114-qd[16]*OM314)-S16*(OMp314+qd[16]*OM114);
+  OMp216 = qdd[16]+OMp214;
+  OMp316 = C16*(OMp314+qd[16]*OM114)+S16*(OMp114-qd[16]*OM314);
+  BS216 = OM116*OM216;
+  ALPHA116 = C16*(ALPHA115+BETA215*s->dpt[2][9])-S16*(ALPHA315+BETA815*s->dpt[2][9]);
+  ALPHA216 = ALPHA215-s->dpt[2][9]*(OM114*OM114+OM314*OM314);
+  ALPHA316 = C16*(ALPHA315+BETA815*s->dpt[2][9])+S16*(ALPHA115+BETA215*s->dpt[2][9]);
+  OM117 = qd[17]+OM116;
+  OM217 = OM216*C17+OM316*S17;
+  OM317 = -(OM216*S17-OM316*C17);
+  OMp117 = qdd[17]+OMp116;
+  OMp217 = C17*(OMp216+qd[17]*OM316)+S17*(OMp316-qd[17]*OM216);
+  OMp317 = C17*(OMp316-qd[17]*OM216)-S17*(OMp216+qd[17]*OM316);
+  BS318 = OM117*OM317;
+  BS918 = -(OM117*OM117+OM217*OM217);
+  BETA318 = BS318+OMp217;
+  BETA618 = OM217*OM317-OMp117;
+  ALPHA118 = ALPHA116+q[18]*(OMp217+OM117*OM317)+(2.0)*qd[18]*OM217;
+  ALPHA218 = ALPHA216*C17+ALPHA316*S17-q[18]*(OMp117-OM217*OM317)-(2.0)*qd[18]*OM117;
+  ALPHA318 = qdd[18]-q[18]*(OM117*OM117+OM217*OM217)-ALPHA216*S17+ALPHA316*C17;
+  OM119 = OM117*C19+OM217*S19;
+  OM219 = -(OM117*S19-OM217*C19);
+  OM319 = qd[19]+OM317;
+  OMp119 = C19*(OMp117+qd[19]*OM217)+S19*(OMp217-qd[19]*OM117);
+  OMp219 = C19*(OMp217-qd[19]*OM117)-S19*(OMp117+qd[19]*OM217);
+  OMp319 = qdd[19]+OMp317;
+  BS619 = OM219*OM319;
+  OM120 = OM16*C20+OM26*S20;
+  OM220 = -(OM16*S20-OM26*C20);
+  OM320 = qd[20]+OM36;
+  OMp120 = C20*(OMp16+qd[20]*OM26)+S20*(OMp26-qd[20]*OM16);
+  OMp220 = C20*(OMp26-qd[20]*OM16)-S20*(OMp16+qd[20]*OM26);
+  OMp320 = qdd[20]+OMp36;
+  ALPHA120 = C20*(ALPHA17+BETA37*s->dpt[3][6])+S20*(ALPHA27+BETA67*s->dpt[3][6]);
+  ALPHA220 = C20*(ALPHA27+BETA67*s->dpt[3][6])-S20*(ALPHA17+BETA37*s->dpt[3][6]);
+  ALPHA320 = ALPHA37-s->dpt[3][6]*(OM16*OM16+OM26*OM26);
+  OM121 = OM120*C21-OM320*S21;
+  OM221 = qd[21]+OM220;
+  OM321 = OM120*S21+OM320*C21;
+  OM122 = OM16*C22-OM36*S22;
+  OM222 = qd[22]+OM26;
+  OM322 = OM16*S22+OM36*C22;
+  OM123 = OM16*C23-OM36*S23;
+  OM223 = qd[23]+OM26;
+  OM323 = OM16*S23+OM36*C23;
+ 
+// Backward Dynamics 
+
+  Fs123 = -(s->frc[1][23]-s->m[23]*(C23*(ALPHA15+BETA26*s->dpt[2][3])-S23*(ALPHA36+BETA86*s->dpt[2][3])));
+  Fs323 = -(s->frc[3][23]-s->m[23]*(C23*(ALPHA36+BETA86*s->dpt[2][3])+S23*(ALPHA15+BETA26*s->dpt[2][3])));
+  Cq123 = -(s->trq[1][23]-s->In[1][23]*(C23*(OMp16-qd[23]*OM36)-S23*(OMp36+qd[23]*OM16))+OM223*OM323*(s->In[5][23]-
+ s->In[9][23]));
+  Cq223 = -(s->trq[2][23]-s->In[5][23]*(qdd[23]+OMp26)-OM123*OM323*(s->In[1][23]-s->In[9][23]));
+  Cq323 = -(s->trq[3][23]-s->In[9][23]*(C23*(OMp36+qd[23]*OM16)+S23*(OMp16-qd[23]*OM36))+OM123*OM223*(s->In[1][23]-
+ s->In[5][23]));
+  Fs122 = -(s->frc[1][22]-s->m[22]*(C22*(ALPHA15+BETA26*s->dpt[2][2])-S22*(ALPHA36+BETA86*s->dpt[2][2])));
+  Fs322 = -(s->frc[3][22]-s->m[22]*(C22*(ALPHA36+BETA86*s->dpt[2][2])+S22*(ALPHA15+BETA26*s->dpt[2][2])));
+  Cq122 = -(s->trq[1][22]-s->In[1][22]*(C22*(OMp16-qd[22]*OM36)-S22*(OMp36+qd[22]*OM16))+OM222*OM322*(s->In[5][22]-
+ s->In[9][22]));
+  Cq222 = -(s->trq[2][22]-s->In[5][22]*(qdd[22]+OMp26)-OM122*OM322*(s->In[1][22]-s->In[9][22]));
+  Cq322 = -(s->trq[3][22]-s->In[9][22]*(C22*(OMp36+qd[22]*OM16)+S22*(OMp16-qd[22]*OM36))+OM122*OM222*(s->In[1][22]-
+ s->In[5][22]));
+  Fs121 = -(s->frc[1][21]-s->m[21]*(ALPHA120*C21-ALPHA320*S21));
+  Fs321 = -(s->frc[3][21]-s->m[21]*(ALPHA120*S21+ALPHA320*C21));
+  Cq121 = -(s->trq[1][21]-s->In[1][21]*(C21*(OMp120-qd[21]*OM320)-S21*(OMp320+qd[21]*OM120))+OM221*OM321*(s->In[5][21]-
+ s->In[9][21]));
+  Cq221 = -(s->trq[2][21]-s->In[5][21]*(qdd[21]+OMp220)-OM121*OM321*(s->In[1][21]-s->In[9][21]));
+  Cq321 = -(s->trq[3][21]-s->In[9][21]*(C21*(OMp320+qd[21]*OM120)+S21*(OMp120-qd[21]*OM320))+OM121*OM221*(s->In[1][21]-
+ s->In[5][21]));
+  Fq120 = -(s->frc[1][20]-s->m[20]*ALPHA120-Fs121*C21-Fs321*S21);
+  Fq220 = -(s->frc[2][20]+s->frc[2][21]-s->m[20]*ALPHA220-s->m[21]*ALPHA220);
+  Cq120 = -(s->trq[1][20]-s->In[1][20]*OMp120-Cq121*C21-Cq321*S21+OM220*OM320*(s->In[5][20]-s->In[9][20]));
+  Cq220 = -(s->trq[2][20]-Cq221-s->In[5][20]*OMp220-OM120*OM320*(s->In[1][20]-s->In[9][20]));
+  Cq320 = -(s->trq[3][20]-s->In[9][20]*OMp320+Cq121*S21-Cq321*C21+OM120*OM220*(s->In[1][20]-s->In[5][20]));
+  Fs119 = -(s->frc[1][19]+s->m[19]*(s->l[2][19]*(OMp319-OM119*OM219)-s->l[3][19]*(OMp219+OM119*OM319)-C19*(ALPHA118+
+ BETA318*s->dpt[3][10])-S19*(ALPHA218+BETA618*s->dpt[3][10])));
+  Fs219 = -(s->frc[2][19]+s->m[19]*(s->l[2][19]*(OM119*OM119+OM319*OM319)-s->l[3][19]*(BS619-OMp119)-C19*(ALPHA218+
+ BETA618*s->dpt[3][10])+S19*(ALPHA118+BETA318*s->dpt[3][10])));
+  Fs319 = -(s->frc[3][19]-s->m[19]*(ALPHA318+BS918*s->dpt[3][10]+s->l[2][19]*(BS619+OMp119)-s->l[3][19]*(OM119*OM119+
+ OM219*OM219)));
+  Cq119 = -(s->trq[1][19]-s->In[1][19]*OMp119+Fs219*s->l[3][19]-Fs319*s->l[2][19]+OM219*OM319*(s->In[5][19]-s->In[9][19]
+ ));
+  Cq219 = -(s->trq[2][19]-s->In[5][19]*OMp219-Fs119*s->l[3][19]-OM119*OM319*(s->In[1][19]-s->In[9][19]));
+  Cq319 = -(s->trq[3][19]-s->In[9][19]*OMp319+Fs119*s->l[2][19]+OM119*OM219*(s->In[1][19]-s->In[5][19]));
+  Fs118 = -(s->frc[1][18]-s->m[18]*(ALPHA118+BETA318*s->l[3][18]-s->l[1][18]*(OM217*OM217+OM317*OM317)));
+  Fs218 = -(s->frc[2][18]-s->m[18]*(ALPHA218+BETA618*s->l[3][18]+s->l[1][18]*(OMp317+OM117*OM217)));
+  Fs318 = -(s->frc[3][18]-s->m[18]*(ALPHA318+BS918*s->l[3][18]+s->l[1][18]*(BS318-OMp217)));
+  Fq118 = Fs118+Fs119*C19-Fs219*S19;
+  Fq218 = Fs218+Fs119*S19+Fs219*C19;
+  Fq318 = Fs318+Fs319;
+  Cq318 = -(s->trq[3][18]-Cq319-s->In[9][18]*OMp317-Fs218*s->l[1][18]+OM117*OM217*(s->In[1][18]-s->In[5][18]));
+  Cq117 = -(s->trq[1][18]+q[18]*Fq218-s->In[1][18]*OMp117-Cq119*C19+Cq219*S19+Fs218*s->l[3][18]+OM217*OM317*(
+ s->In[5][18]-s->In[9][18])+s->dpt[3][10]*(Fs119*S19+Fs219*C19));
+  Cq217 = -(s->trq[2][18]-q[18]*Fq118-s->In[5][18]*OMp217-Cq119*S19-Cq219*C19-Fs118*s->l[3][18]+Fs318*s->l[1][18]-OM117*
+ OM317*(s->In[1][18]-s->In[9][18])-s->dpt[3][10]*(Fs119*C19-Fs219*S19));
+  Fs116 = -(s->frc[1][16]-s->m[16]*(ALPHA116-s->l[1][16]*(OM216*OM216+OM316*OM316)+s->l[2][16]*(BS216-OMp316)));
+  Fs216 = -(s->frc[2][16]-s->m[16]*(ALPHA216+s->l[1][16]*(BS216+OMp316)-s->l[2][16]*(OM116*OM116+OM316*OM316)));
+  Fs316 = -(s->frc[3][16]-s->m[16]*(ALPHA316-s->l[1][16]*(OMp216-OM116*OM316)+s->l[2][16]*(OMp116+OM216*OM316)));
+  Fq116 = Fq118+Fs116;
+  Fq316 = Fs316+Fq218*S17+Fq318*C17;
+  Cq116 = -(s->trq[1][16]-Cq117-s->In[1][16]*OMp116-Fs316*s->l[2][16]+OM216*OM316*(s->In[5][16]-s->In[9][16]));
+  Cq216 = -(s->trq[2][16]-s->In[5][16]*OMp216-Cq217*C17+Cq318*S17+Fs316*s->l[1][16]-OM116*OM316*(s->In[1][16]-
+ s->In[9][16]));
+  Cq316 = -(s->trq[3][16]-s->In[9][16]*OMp316-Cq217*S17-Cq318*C17+Fs116*s->l[2][16]-Fs216*s->l[1][16]+OM116*OM216*(
+ s->In[1][16]-s->In[5][16]));
+  Fq115 = -(s->frc[1][15]-s->m[15]*ALPHA115-Fq116*C16-Fq316*S16);
+  Fq215 = -(s->frc[2][15]-Fs216-s->m[15]*ALPHA215-Fq218*C17+Fq318*S17);
+  Fq315 = -(s->frc[3][15]-s->m[15]*ALPHA315+Fq116*S16-Fq316*C16);
+  Cq215 = -(s->trq[2][15]-Cq216-s->In[5][15]*OMp214-OM114*OM314*(s->In[1][15]-s->In[9][15]));
+  Cq114 = -(s->trq[1][15]-q[15]*Fq315-s->In[1][15]*OMp114-Cq116*C16-Cq316*S16+OM214*OM314*(s->In[5][15]-s->In[9][15])+
+ s->dpt[2][9]*(Fq116*S16-Fq316*C16));
+  Cq314 = -(s->trq[3][15]+q[15]*Fq115-s->In[9][15]*OMp314+Cq116*S16-Cq316*C16+OM114*OM214*(s->In[1][15]-s->In[5][15])+
+ s->dpt[2][9]*(Fq116*C16+Fq316*S16));
+  Fs113 = -(s->frc[1][13]+s->m[13]*(s->l[2][13]*(OMp313-OM113*OM213)-s->l[3][13]*(OMp213+OM113*OM313)-C13*(ALPHA112+
+ BETA312*s->dpt[3][8])-S13*(ALPHA212+BETA612*s->dpt[3][8])));
+  Fs213 = -(s->frc[2][13]+s->m[13]*(s->l[2][13]*(OM113*OM113+OM313*OM313)-s->l[3][13]*(BS613-OMp113)-C13*(ALPHA212+
+ BETA612*s->dpt[3][8])+S13*(ALPHA112+BETA312*s->dpt[3][8])));
+  Fs313 = -(s->frc[3][13]-s->m[13]*(ALPHA312+BS912*s->dpt[3][8]+s->l[2][13]*(BS613+OMp113)-s->l[3][13]*(OM113*OM113+
+ OM213*OM213)));
+  Cq113 = -(s->trq[1][13]-s->In[1][13]*OMp113+Fs213*s->l[3][13]-Fs313*s->l[2][13]+OM213*OM313*(s->In[5][13]-s->In[9][13]
+ ));
+  Cq213 = -(s->trq[2][13]-s->In[5][13]*OMp213-Fs113*s->l[3][13]-OM113*OM313*(s->In[1][13]-s->In[9][13]));
+  Cq313 = -(s->trq[3][13]-s->In[9][13]*OMp313+Fs113*s->l[2][13]+OM113*OM213*(s->In[1][13]-s->In[5][13]));
+  Fs112 = -(s->frc[1][12]-s->m[12]*(ALPHA112+BETA312*s->l[3][12]-s->l[1][12]*(OM211*OM211+OM311*OM311)));
+  Fs212 = -(s->frc[2][12]-s->m[12]*(ALPHA212+BETA612*s->l[3][12]+s->l[1][12]*(OMp311+OM111*OM211)));
+  Fs312 = -(s->frc[3][12]-s->m[12]*(ALPHA312+BS912*s->l[3][12]+s->l[1][12]*(BS312-OMp211)));
+  Fq112 = Fs112+Fs113*C13-Fs213*S13;
+  Fq212 = Fs212+Fs113*S13+Fs213*C13;
+  Fq312 = Fs312+Fs313;
+  Cq312 = -(s->trq[3][12]-Cq313-s->In[9][12]*OMp311-Fs212*s->l[1][12]+OM111*OM211*(s->In[1][12]-s->In[5][12]));
+  Cq111 = -(s->trq[1][12]+q[12]*Fq212-s->In[1][12]*OMp111-Cq113*C13+Cq213*S13+Fs212*s->l[3][12]+OM211*OM311*(
+ s->In[5][12]-s->In[9][12])+s->dpt[3][8]*(Fs113*S13+Fs213*C13));
+  Cq211 = -(s->trq[2][12]-q[12]*Fq112-s->In[5][12]*OMp211-Cq113*S13-Cq213*C13-Fs112*s->l[3][12]+Fs312*s->l[1][12]-OM111*
+ OM311*(s->In[1][12]-s->In[9][12])-s->dpt[3][8]*(Fs113*C13-Fs213*S13));
+  Fs110 = -(s->frc[1][10]-s->m[10]*(ALPHA110-s->l[1][10]*(OM210*OM210+OM310*OM310)+s->l[2][10]*(BS210-OMp310)));
+  Fs210 = -(s->frc[2][10]-s->m[10]*(ALPHA210+s->l[1][10]*(BS210+OMp310)-s->l[2][10]*(OM110*OM110+OM310*OM310)));
+  Fs310 = -(s->frc[3][10]-s->m[10]*(ALPHA310-s->l[1][10]*(OMp210-OM110*OM310)+s->l[2][10]*(OMp110+OM210*OM310)));
+  Fq110 = Fq112+Fs110;
+  Fq310 = Fs310+Fq212*S11+Fq312*C11;
+  Cq110 = -(s->trq[1][10]-Cq111-s->In[1][10]*OMp110-Fs310*s->l[2][10]+OM210*OM310*(s->In[5][10]-s->In[9][10]));
+  Cq210 = -(s->trq[2][10]-s->In[5][10]*OMp210-Cq211*C11+Cq312*S11+Fs310*s->l[1][10]-OM110*OM310*(s->In[1][10]-
+ s->In[9][10]));
+  Cq310 = -(s->trq[3][10]-s->In[9][10]*OMp310-Cq211*S11-Cq312*C11+Fs110*s->l[2][10]-Fs210*s->l[1][10]+OM110*OM210*(
+ s->In[1][10]-s->In[5][10]));
+  Fq19 = -(s->frc[1][9]-s->m[9]*ALPHA19-Fq110*C10-Fq310*S10);
+  Fq29 = -(s->frc[2][9]-Fs210-s->m[9]*ALPHA29-Fq212*C11+Fq312*S11);
+  Fq39 = -(s->frc[3][9]-s->m[9]*ALPHA39+Fq110*S10-Fq310*C10);
+  Cq29 = -(s->trq[2][9]-Cq210-s->In[5][9]*OMp28-OM18*OM38*(s->In[1][9]-s->In[9][9]));
+  Cq18 = -(s->trq[1][9]-q[9]*Fq39-s->In[1][9]*OMp18-Cq110*C10-Cq310*S10+OM28*OM38*(s->In[5][9]-s->In[9][9])+s->dpt[2][7]
+ *(Fq110*S10-Fq310*C10));
+  Cq38 = -(s->trq[3][9]+q[9]*Fq19-s->In[9][9]*OMp38+Cq110*S10-Cq310*C10+OM18*OM28*(s->In[1][9]-s->In[5][9])+s->dpt[2][7]
+ *(Fq110*C10+Fq310*S10));
+  Fq17 = -(s->frc[1][7]-s->m[7]*ALPHA17-Fq115*C14-Fq120*C20-Fq19*C8+Fq215*S14+Fq220*S20+Fq29*S8);
+  Fq27 = -(s->frc[2][7]-s->m[7]*ALPHA27-Fq115*S14-Fq120*S20-Fq19*S8-Fq215*C14-Fq220*C20-Fq29*C8);
+  Fq37 = -(s->frc[3][20]+s->frc[3][7]-Fq315-Fq39-s->m[20]*ALPHA320-s->m[7]*ALPHA37+Fs121*S21-Fs321*C21);
+  Fs16 = -(s->frc[1][6]-s->m[6]*(ALPHA15+BETA26*s->l[2][6]-s->l[1][6]*(OM26*OM26+OM36*OM36)));
+  Fs26 = -(s->frc[2][6]-s->m[6]*(ALPHA26+BS56*s->l[2][6]+s->l[1][6]*(BS26+OMp36)));
+  Fs36 = -(s->frc[3][6]-s->m[6]*(ALPHA36+BETA86*s->l[2][6]+s->l[1][6]*(BS36-OMp26)));
+  Fq16 = Fq17+Fs16+Fs122*C22+Fs123*C23+Fs322*S22+Fs323*S23;
+  Fq26 = -(s->frc[2][22]+s->frc[2][23]-Fq27-Fs26-s->m[22]*(ALPHA26+BS56*s->dpt[2][2])-s->m[23]*(ALPHA26+BS56*
+ s->dpt[2][3]));
+  Fq36 = Fq37+Fs36-Fs122*S22-Fs123*S23+Fs322*C22+Fs323*C23;
+  Cq16 = -(s->trq[1][6]+s->trq[1][7]-s->In[1][6]*OMp16-s->In[1][7]*OMp16-Cq114*C14-Cq120*C20-Cq122*C22-Cq123*C23-Cq18*C8
+ +Cq215*S14+Cq220*S20+Cq29*S8-Cq322*S22-Cq323*S23+Dz73*Fq27-Fq315*s->dpt[2][5]-Fq39*s->dpt[2][4]-Fs36*s->l[2][6]+OM26*OM36*(
+ s->In[5][6]-s->In[9][6])+OM26*OM36*(s->In[5][7]-s->In[9][7])+s->dpt[2][2]*(Fs122*S22-Fs322*C22)+s->dpt[2][3]*(Fs123*S23-
+ Fs323*C23)+s->dpt[3][6]*(Fq120*S20+Fq220*C20));
+  Cq26 = -(s->trq[2][6]+s->trq[2][7]-Cq222-Cq223-s->In[5][6]*OMp26-s->In[5][7]*OMp26-Cq114*S14-Cq120*S20-Cq18*S8-Cq215*
+ C14-Cq220*C20-Cq29*C8-Dz73*Fq17+Fs36*s->l[1][6]-OM16*OM36*(s->In[1][6]-s->In[9][6])-OM16*OM36*(s->In[1][7]-s->In[9][7])-
+ s->dpt[3][6]*(Fq120*C20-Fq220*S20));
+  Cq36 = -(s->trq[3][6]+s->trq[3][7]-Cq314-Cq320-Cq38-s->In[9][6]*OMp36-s->In[9][7]*OMp36+Cq122*S22+Cq123*S23-Cq322*C22-
+ Cq323*C23+Fs16*s->l[2][6]-Fs26*s->l[1][6]+OM16*OM26*(s->In[1][6]-s->In[5][6])+OM16*OM26*(s->In[1][7]-s->In[5][7])+
+ s->dpt[2][2]*(Fs122*C22+Fs322*S22)+s->dpt[2][3]*(Fs123*C23+Fs323*S23)+s->dpt[2][4]*(Fq19*C8-Fq29*S8)+s->dpt[2][5]*(Fq115*C14
+ -Fq215*S14));
+  Fq25 = Fq26*C6-Fq36*S6;
+  Fq35 = Fq26*S6+Fq36*C6;
+  Cq25 = Cq26*C6-Cq36*S6;
+  Fq14 = Fq16*C5+Fq35*S5;
+  Fq34 = -(Fq16*S5-Fq35*C5);
+  Cq34 = -(Cq16*S5-C5*(Cq26*S6+Cq36*C6));
+  Fq13 = Fq14*C4-Fq25*S4;
+  Fq23 = Fq14*S4+Fq25*C4;
+
+// = = Block_0_2_0_0_0_0 = = 
+ 
+// Symbolic Outputs  
+
+  Qq[1] = Fq13;
+  Qq[2] = Fq23;
+  Qq[3] = Fq34;
+  Qq[4] = Cq34;
+  Qq[5] = Cq25;
+  Qq[6] = Cq16;
+  Qq[7] = Fq37;
+  Qq[8] = Cq38;
+  Qq[9] = Fq29;
+  Qq[10] = Cq210;
+  Qq[11] = Cq111;
+  Qq[12] = Fq312;
+  Qq[13] = Cq313;
+  Qq[14] = Cq314;
+  Qq[15] = Fq215;
+  Qq[16] = Cq216;
+  Qq[17] = Cq117;
+  Qq[18] = Fq318;
+  Qq[19] = Cq319;
+  Qq[20] = Cq320;
+  Qq[21] = Cq221;
+  Qq[22] = Cq222;
+  Qq[23] = Cq223;
+
+// ====== END Task 0 ====== 
+
+
+}
+ 
+
