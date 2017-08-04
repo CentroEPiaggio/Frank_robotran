@@ -49,9 +49,7 @@ int main(int argc, char const *argv[])
     mbs_data = mbs_load(PROJECT_SOURCE_DIR"/../dataR/Frank_segway.mbs", BUILD_PATH);
     printf("*.mbs file loaded!\n");
     
-    // Set the number of user constraints
-    int N_usr_c = 5;
-    mbs_set_nb_userc(mbs_data, N_usr_c);
+
 
     /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
     /*              COORDINATE PARTITIONING                      *
