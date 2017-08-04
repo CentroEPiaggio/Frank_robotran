@@ -1,16 +1,26 @@
 Model {
-  Name			  "Frank_feedback"
-  Version		  8.3
-  MdlSubVersion		  0
-  SavedCharacterEncoding  "UTF-8"
+  Name			  "Copy_of_Frank_feedback"
+  Version		  8.8
+  SavedCharacterEncoding  "US-ASCII"
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.59"
+    ComputedModelVersion    "1.60"
     NumModelReferences	    0
     NumTestPointedSignals   0
+    NumProvidedFunctions    0
+    NumRequiredFunctions    0
+    NumResetEvents	    0
+    HasInitializeEvent	    0
+    HasTerminateEvent	    0
+    IsExportFunctionModel   0
   }
+  LogicAnalyzerGraphicalSettings ""
+  LogicAnalyzerPlugin	  "on"
+  LogicAnalyzerSignalOrdering ""
+  DiagnosticSuppressor	  "on"
+  SuppressorTable	  "22 serialization::archive 11 0 3 0 0 0 0 0"
   slprops.hdlmdlprops {
     $PropName		    "HDLParams"
     $ObjectID		    1
@@ -18,11 +28,10 @@ Model {
       Type		      "Cell"
       Dimension		      2
       Cell		      "HDLSubsystem"
-      Cell		      "Frank_feedback"
+      Cell		      "$bdroot"
       PropName		      "mdlProps"
     }
   }
-  SaveDefaultBlockParams  on
   ScopeRefreshTime	  0.035000
   OverrideScopeRefreshTime on
   DisableAllScopes	  off
@@ -32,6 +41,7 @@ Model {
   MinMaxOverflowArchiveMode "Overwrite"
   FPTRunName		  "Run 1"
   MaxMDLFileLineLength	  120
+  LastSavedArchitecture	  "maci64"
   Object {
     $PropName		    "BdWindowsInfo"
     $ObjectID		    2
@@ -41,7 +51,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [0.0, 24.0, 1440.0, 876.0]
+      Location		      [0.0, 22.0, 1440.0, 874.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -66,7 +76,7 @@ Model {
 	  IsActive		  [1]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
-	  Extents		  [1384.0, 680.0]
+	  Extents		  [1406.0, 701.0]
 	  ZoomFactor		  [1.0752688172043012]
 	  Offset		  [-101.3599999999999, 74.980000000000075]
 	}
@@ -75,7 +85,7 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "5"
-	  Extents		  [1384.0, 680.0]
+	  Extents		  [1406.0, 701.0]
 	  ZoomFactor		  [1.7721518987341773]
 	  Offset		  [-33.972321428571377, 204.09999999999997]
 	}
@@ -90,17 +100,40 @@ Model {
 	}
 	PropName		"EditorsInfo"
       }
+      Object {
+	$PropName		"DockComponentsInfo"
+	$ObjectID		9
+	$ClassName		"Simulink.DockComponentInfo"
+	Type			"GLUE2:PropertyInspector"
+	ID			"Property Inspector"
+	Visible			[0]
+	CreateCallback		""
+	UserData		""
+	Floating		[0]
+	DockPosition		"Right"
+	Width			[640]
+	Height			[480]
+      }
+      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
+      "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABuAP///wAAAAEAAAAAAAAAAPwCA"
+      "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
+      "QBjAHQAbwByAAAAAAD/////AAAAKgD///8AAAWgAAAC9AAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
+      "////wEAAACE/////wAAAAAAAAAA/////wEAAAD2/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAF6/////wAAAAAAAAAA/"
+      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAPx/////wAAAAAAAAAA/"
+      "////wEAAAQg/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
     }
   }
   Created		  "Tue Jul 11 09:51:43 2017"
   Creator		  "parallels"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "parallels"
+  LastModifiedBy	  "michele"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Jul 25 16:42:25 2017"
-  RTWModifiedTimeStamp	  422901553
-  ModelVersionFormat	  "1.%<AutoIncrement:59>"
+  LastModifiedDate	  "Fri Aug 04 15:45:34 2017"
+  RTWModifiedTimeStamp	  423762297
+  ModelVersionFormat	  "1.%<AutoIncrement:60>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -108,6 +141,10 @@ Model {
   WideLines		  off
   ShowLineDimensions	  off
   ShowPortDataTypes	  off
+  ShowEditTimeErrors	  on
+  ShowEditTimeWarnings	  on
+  ShowEditTimeAdvisorChecks off
+  ShowPortUnits		  off
   ShowDesignRanges	  off
   ShowLoopsOnError	  on
   IgnoreBidirectionalLines off
@@ -116,14 +153,18 @@ Model {
   ShowSignalResolutionIcons on
   ShowViewerIcons	  on
   SortedOrder		  off
+  VariantCondition	  off
   ExecutionContextIcon	  off
   ShowLinearizationAnnotations on
+  ShowVisualizeInsertedRTB on
+  ShowMarkup		  on
   BlockNameDataTip	  off
   BlockParametersDataTip  off
   BlockDescriptionStringDataTip	off
   ToolBar		  on
   StatusBar		  on
   BrowserShowLibraryLinks off
+  FunctionConnectors	  off
   BrowserLookUnderMasks	  off
   SimulationMode	  "normal"
   PauseTimes		  "5"
@@ -140,14 +181,14 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    9
+    $ObjectID		    10
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
-    model_		    "Frank_feedback"
+    model_		    "Copy_of_Frank_feedback"
     overrideMode_	    [0.0]
     Array {
       Type		      "Cell"
       Dimension		      1
-      Cell		      "Frank_feedback"
+      Cell		      "Copy_of_Frank_feedback"
       PropName		      "logAsSpecifiedByModels_"
     }
     Array {
@@ -157,24 +198,6 @@ Model {
       PropName		      "logAsSpecifiedByModelsSSIDs_"
     }
   }
-  RecordCoverage	  off
-  CovPath		  "/"
-  CovSaveName		  "covdata"
-  CovMetricSettings	  "dw"
-  CovNameIncrementing	  off
-  CovHtmlReporting	  on
-  CovForceBlockReductionOff on
-  CovEnableCumulative	  on
-  covSaveCumulativeToWorkspaceVar on
-  CovSaveSingleToWorkspaceVar on
-  CovCumulativeVarName	  "covCumulativeData"
-  CovCumulativeReport	  off
-  CovReportOnPause	  on
-  CovModelRefEnable	  "Off"
-  CovExternalEMLEnable	  off
-  CovSFcnEnable		  off
-  CovBoundaryAbsTol	  0.000010
-  CovBoundaryRelTol	  0.010000
   ExtModeBatchMode	  off
   ExtModeEnableFloating	  on
   ExtModeTrigType	  "manual"
@@ -196,21 +219,24 @@ Model {
   ExtModeSkipDownloadWhenConnect off
   ExtModeLogAll		  on
   ExtModeAutoUpdateStatusClock on
-  BufferReuse		  on
   ShowModelReferenceBlockVersion off
   ShowModelReferenceBlockIO off
   Array {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      10
-      Version		      "1.14.2"
+      $ObjectID		      11
+      Version		      "1.16.5"
+      DisabledProps	      []
+      Description	      ""
       Array {
 	Type			"Handle"
-	Dimension		9
+	Dimension		10
 	Simulink.SolverCC {
-	  $ObjectID		  11
-	  Version		  "1.14.2"
+	  $ObjectID		  12
+	  Version		  "1.16.5"
+	  DisabledProps		  []
+	  Description		  ""
 	  StartTime		  "0.0"
 	  StopTime		  "30"
 	  AbsTol		  "auto"
@@ -227,7 +253,7 @@ Model {
 	  MinStep		  "auto"
 	  MaxConsecutiveMinStep	  "1"
 	  RelTol		  "1e-3"
-	  SolverMode		  "Auto"
+	  EnableMultiTasking	  on
 	  EnableConcurrentExecution off
 	  ConcurrentTasks	  off
 	  Solver		  "ode4"
@@ -237,15 +263,20 @@ Model {
 	  ZeroCrossControl	  "UseLocalSettings"
 	  ZeroCrossAlgorithm	  "Nonadaptive"
 	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverInfoToggleStatus  off
+	  IsAutoAppliedInSIP	  off
 	  SolverResetMethod	  "Fast"
 	  PositivePriorityOrder	  off
 	  AutoInsertRateTranBlk	  off
 	  SampleTimeConstraint	  "Unconstrained"
 	  InsertRTBMode		  "Whenever possible"
+	  SampleTimeProperty	  []
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  12
-	  Version		  "1.14.2"
+	  $ObjectID		  13
+	  Version		  "1.16.5"
+	  DisabledProps		  []
+	  Description		  ""
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
 	  FinalStateName	  "xFinal"
@@ -264,6 +295,8 @@ Model {
 	  DSMLogging		  on
 	  InspectSignalLogs	  off
 	  VisualizeSimOutput	  on
+	  StreamToWorkspace	  off
+	  StreamVariableName	  "streamout"
 	  SaveTime		  on
 	  ReturnWorkspaceOutputs  off
 	  StateSaveName		  "xout"
@@ -275,10 +308,13 @@ Model {
 	  OutputTimes		  "[]"
 	  ReturnWorkspaceOutputsName "out"
 	  Refine		  "1"
+	  LoggingToFile		  off
+	  LoggingFileName	  "out.mat"
+	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  13
-	  Version		  "1.14.2"
+	  $ObjectID		  14
+	  Version		  "1.16.5"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    8
@@ -292,11 +328,12 @@ Model {
 	    Cell		    "UseSpecifiedMinMax"
 	    PropName		    "DisabledProps"
 	  }
+	  Description		  ""
 	  BlockReduction	  on
 	  BooleanDataType	  on
 	  ConditionallyExecuteInputs on
-	  InlineParams		  off
-	  UseIntDivNetSlope	  off
+	  DefaultParameterBehavior "Tunable"
+	  UseDivisionForNetSlopeComputation "off"
 	  UseFloatMulNetSlope	  off
 	  DefaultUnderspecifiedDataType	"double"
 	  UseSpecifiedMinMax	  off
@@ -307,38 +344,42 @@ Model {
 	  CachingGlobalReferences off
 	  GlobalBufferReuse	  on
 	  StrengthReduction	  off
+	  AdvancedOptControl	  ""
 	  ExpressionFolding	  on
 	  BooleansAsBitfields	  off
 	  BitfieldContainerType	  "uint_T"
 	  EnableMemcpy		  on
 	  MemcpyThreshold	  64
 	  PassReuseOutputArgsAs	  "Structure reference"
+	  PassReuseOutputArgsThreshold 12
 	  ExpressionDepthLimit	  128
-	  FoldNonRolledExpr	  on
 	  LocalBlockOutputs	  on
 	  RollThreshold		  5
-	  SystemCodeInlineAuto	  off
 	  StateBitsets		  off
 	  DataBitsets		  off
 	  ActiveStateOutputEnumStorageType "Native Integer"
-	  UseTempVars		  off
 	  ZeroExternalMemoryAtStartup on
 	  ZeroInternalMemoryAtStartup on
 	  InitFltsAndDblsToZero	  off
 	  NoFixptDivByZeroProtection off
 	  EfficientFloat2IntCast  off
 	  EfficientMapNaN2IntZero on
-	  OptimizeModelRefInitCode off
 	  LifeSpan		  "inf"
 	  MaxStackSize		  "Inherit from target"
 	  BufferReusableBoundary  on
-	  SimCompilerOptimization "Off"
+	  SimCompilerOptimization "off"
 	  AccelVerboseBuild	  off
-	  ParallelExecutionInRapidAccelerator on
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  14
-	  Version		  "1.14.2"
+	  $ObjectID		  15
+	  Version		  "1.16.5"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "UseOnlyExistingSharedCode"
+	    PropName		    "DisabledProps"
+	  }
+	  Description		  ""
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
 	  ArrayBoundsChecking	  "none"
@@ -353,7 +394,7 @@ Model {
 	  SaveWithParameterizedLinksMsg	"warning"
 	  CheckSSInitialOutputMsg on
 	  UnderspecifiedInitializationDetection	"Simplified"
-	  MergeDetectMultiDrivingBlocksExec "none"
+	  MergeDetectMultiDrivingBlocksExec "error"
 	  CheckExecutionContextPreStartOutputMsg off
 	  CheckExecutionContextRuntimeOutputMsg	off
 	  SignalResolutionControl "UseLocalSettings"
@@ -365,7 +406,6 @@ Model {
 	  IgnoredZcDiagnostic	  "warning"
 	  SolverPrmCheckMsg	  "warning"
 	  InheritedTsInSrcMsg	  "warning"
-	  DiscreteInheritContinuousMsg "warning"
 	  MultiTaskDSMMsg	  "error"
 	  MultiTaskCondExecSysMsg "error"
 	  MultiTaskRateTransMsg	  "error"
@@ -387,23 +427,24 @@ Model {
 	  UnnecessaryDatatypeConvMsg "none"
 	  VectorMatrixConversionMsg "none"
 	  InvalidFcnCallConnMsg	  "error"
-	  FcnCallInpInsideContextMsg "EnableAllAsError"
+	  FcnCallInpInsideContextMsg "error"
 	  SignalLabelMismatchMsg  "none"
 	  UnconnectedInputMsg	  "warning"
 	  UnconnectedOutputMsg	  "warning"
 	  UnconnectedLineMsg	  "warning"
+	  UseOnlyExistingSharedCode "error"
 	  SFcnCompatibilityMsg	  "none"
-	  FrameProcessingCompatibilityMsg "warning"
+	  FrameProcessingCompatibilityMsg "error"
 	  UniqueDataStoreMsg	  "none"
 	  BusObjectLabelMismatch  "warning"
 	  RootOutportRequireBusObject "warning"
 	  AssertControl		  "UseLocalSettings"
-	  EnableOverflowDetection off
+	  AllowSymbolicDim	  on
+	  RowMajorDimensionSupport off
 	  ModelReferenceIOMsg	  "none"
 	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
 	  ModelReferenceVersionMismatchMessage "none"
 	  ModelReferenceIOMismatchMessage "none"
-	  ModelReferenceCSMismatchMessage "none"
 	  UnknownTsInhSupMsg	  "warning"
 	  ModelReferenceDataLoggingMessage "warning"
 	  ModelReferenceSymbolNameMessage "warning"
@@ -415,20 +456,33 @@ Model {
 	  StrictBusMsg		  "ErrorLevel1"
 	  BusNameAdapt		  "WarnAndRepair"
 	  NonBusSignalsTreatedAsBus "none"
-	  LoggingUnavailableSignals "error"
+	  SymbolicDimMinMaxWarning "warning"
+	  LossOfSymbolicDimsSimulationWarning "warning"
+	  LossOfSymbolicDimsCodeGenerationWarning "error"
 	  BlockIODiagnostic	  "none"
 	  SFUnusedDataAndEventsDiag "warning"
 	  SFUnexpectedBacktrackingDiag "warning"
 	  SFInvalidInputDataAccessInChartInitDiag "warning"
 	  SFNoUnconditionalDefaultTransitionDiag "warning"
 	  SFTransitionOutsideNaturalParentDiag "warning"
-	  SFUnconditionalTransitionShadowingDiag "warning"
+	  SFUnreachableExecutionPathDiag "warning"
 	  SFUndirectedBroadcastEventsDiag "warning"
 	  SFTransitionActionBeforeConditionDiag	"warning"
+	  SFOutputUsedAsStateInMooreChartDiag "error"
+	  SFTemporalDelaySmallerThanSampleTimeDiag "warning"
+	  SFSelfTransitionDiag	  "warning"
+	  SFExecutionAtInitializationDiag "none"
+	  SFMachineParentedDataDiag "warning"
+	  IntegerSaturationMsg	  "warning"
+	  AllowedUnitSystems	  "all"
+	  UnitsInconsistencyMsg	  "warning"
+	  AllowAutomaticUnitConversions	on
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  15
-	  Version		  "1.14.2"
+	  $ObjectID		  16
+	  Version		  "1.16.5"
+	  DisabledProps		  []
+	  Description		  ""
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
 	  ProdBitPerInt		  32
@@ -437,6 +491,8 @@ Model {
 	  ProdBitPerFloat	  32
 	  ProdBitPerDouble	  64
 	  ProdBitPerPointer	  32
+	  ProdBitPerSizeT	  32
+	  ProdBitPerPtrDiffT	  32
 	  ProdLargestAtomicInteger "Char"
 	  ProdLargestAtomicFloat  "None"
 	  ProdIntDivRoundTo	  "Undefined"
@@ -453,6 +509,8 @@ Model {
 	  TargetBitPerFloat	  32
 	  TargetBitPerDouble	  64
 	  TargetBitPerPointer	  32
+	  TargetBitPerSizeT	  32
+	  TargetBitPerPtrDiffT	  32
 	  TargetLargestAtomicInteger "Char"
 	  TargetLargestAtomicFloat "None"
 	  TargetShiftRightIntArith on
@@ -460,50 +518,67 @@ Model {
 	  TargetIntDivRoundTo	  "Undefined"
 	  TargetEndianess	  "Unspecified"
 	  TargetWordSize	  32
-	  TargetTypeEmulationWarnSuppressLevel 0
 	  TargetPreprocMaxBitsSint 32
 	  TargetPreprocMaxBitsUint 32
 	  TargetHWDeviceType	  "Specified"
 	  TargetUnknown		  off
 	  ProdEqTarget		  on
+	  UseEmbeddedCoderFeatures on
+	  UseSimulinkCoderFeatures on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  16
-	  Version		  "1.14.2"
+	  $ObjectID		  17
+	  Version		  "1.16.5"
+	  DisabledProps		  []
+	  Description		  ""
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  EnableRefExpFcnMdlSchedulingChecks on
 	  CheckModelReferenceTargetMessage "error"
 	  EnableParallelModelReferenceBuilds off
 	  ParallelModelReferenceErrorOnInvalidPool on
 	  ParallelModelReferenceMATLABWorkerInit "None"
 	  ModelReferenceNumInstancesAllowed "Multi"
 	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelDependencies	  ""
 	  ModelReferencePassRootInputsByReference on
 	  ModelReferenceMinAlgLoopOccurrences off
 	  PropagateSignalLabelsOutOfModel off
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  17
-	  Version		  "1.14.2"
-	  SFSimEnableDebug	  on
-	  SFSimOverflowDetection  on
+	  $ObjectID		  18
+	  Version		  "1.16.5"
+	  DisabledProps		  []
+	  Description		  ""
+	  SimCustomSourceCode	  ""
+	  SimCustomHeaderCode	  ""
+	  SimCustomInitializer	  ""
+	  SimCustomTerminator	  ""
+	  SimReservedNameArray	  []
+	  SimUserSources	  ""
+	  SimUserIncludeDirs	  ""
+	  SimUserLibraries	  ""
+	  SimUserDefines	  ""
+	  SimCustomCompilerFlags  ""
+	  SimCustomLinkerFlags	  ""
 	  SFSimEcho		  on
-	  SimBlas		  on
 	  SimCtrlC		  on
-	  SimExtrinsic		  on
 	  SimIntegrity		  on
 	  SimUseLocalCustomCode	  off
 	  SimParseCustomCode	  on
 	  SimBuildMode		  "sf_incremental_build"
 	  SimGenImportedTypeDefs  off
+	  ModelFunctionsGlobalVisibility "on"
+	  CompileTimeRecursionLimit 50
+	  EnableRuntimeRecursion  on
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  18
-	  Version		  "1.14.2"
+	  $ObjectID		  19
+	  Version		  "1.16.5"
 	  Array {
 	    Type		    "Cell"
-	    Dimension		    15
+	    Dimension		    16
 	    Cell		    "IncludeHyperlinkInReport"
 	    Cell		    "GenerateTraceInfo"
 	    Cell		    "GenerateTraceReport"
@@ -519,9 +594,11 @@ Model {
 	    Cell		    "CodeExecutionProfiling"
 	    Cell		    "CodeProfilingSaveOptions"
 	    Cell		    "CodeProfilingInstrumentation"
+	    Cell		    "GenerateMissedCodeReplacementReport"
 	    PropName		    "DisabledProps"
 	  }
 	  SystemTargetFile	  "grt.tlc"
+	  HardwareBoard		  "None"
 	  TLCOptions		  ""
 	  GenCodeOnly		  off
 	  MakeCommand		  "make_rtw"
@@ -535,15 +612,11 @@ Model {
 	  SaveLog		  off
 	  RTWVerbose		  on
 	  RetainRTWFile		  off
+	  RTWBuildHooks		  []
 	  ProfileTLC		  off
 	  TLCDebug		  off
 	  TLCCoverage		  off
 	  TLCAssert		  off
-	  ProcessScriptMode	  "Default"
-	  ConfigurationMode	  "Optimized"
-	  ProcessScript		  ""
-	  ConfigurationScript	  ""
-	  ConfigAtBuild		  off
 	  RTWUseLocalCustomCode	  off
 	  RTWUseSimCustomCode	  off
 	  CustomSourceCode	  ""
@@ -551,10 +624,13 @@ Model {
 	  CustomInclude		  ""
 	  CustomSource		  ""
 	  CustomLibrary		  ""
+	  CustomDefine		  ""
+	  CustomLAPACKCallback	  ""
 	  CustomInitializer	  ""
 	  CustomTerminator	  ""
 	  Toolchain		  "Automatically locate an installed toolchain"
 	  BuildConfiguration	  "Faster Builds"
+	  CustomToolchainOptions  []
 	  IncludeHyperlinkInReport off
 	  LaunchReport		  off
 	  PortableWordSizes	  off
@@ -566,31 +642,29 @@ Model {
 	  SILDebugging		  off
 	  TargetLang		  "C"
 	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
-	  IncludeERTFirstTime	  off
 	  GenerateTraceInfo	  off
 	  GenerateTraceReport	  off
 	  GenerateTraceReportSl	  off
 	  GenerateTraceReportSf	  off
 	  GenerateTraceReportEml  off
-	  GenerateCodeInfo	  off
 	  GenerateWebview	  off
 	  GenerateCodeMetricsReport off
 	  GenerateCodeReplacementReport	off
-	  RTWCompilerOptimization "Off"
+	  GenerateMissedCodeReplacementReport off
+	  RTWCompilerOptimization "off"
+	  ObjectivePriorities	  []
 	  RTWCustomCompilerOptimizations ""
 	  CheckMdlBeforeBuild	  "Off"
-	  CustomRebuildMode	  "OnUpdate"
-	  DataInitializer	  ""
 	  SharedConstantsCachingThreshold 1024
 	  Array {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      19
-	      Version		      "1.14.2"
+	      $ObjectID		      20
+	      Version		      "1.16.5"
 	      Array {
 		Type			"Cell"
-		Dimension		23
+		Dimension		25
 		Cell			"IgnoreCustomStorageClasses"
 		Cell			"IgnoreTestpoints"
 		Cell			"InsertBlockDesc"
@@ -614,8 +688,12 @@ Model {
 		Cell			"CustomSymbolStrMacro"
 		Cell			"CustomSymbolStrUtil"
 		Cell			"ReqsInCode"
+		Cell			"CustomSymbolStrModelFcn"
+		Cell			"CustomUserTokenString"
 		PropName		"DisabledProps"
 	      }
+	      Description	      ""
+	      Comment		      ""
 	      ForceParamTrailComments off
 	      GenerateComments	      on
 	      CommentStyle	      "Auto"
@@ -637,34 +715,42 @@ Model {
 	      CustomSymbolStrType     "$N$R$M_T"
 	      CustomSymbolStrField    "$N$M"
 	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrModelFcn "$R$N"
 	      CustomSymbolStrFcnArg   "rt$I$N$M"
 	      CustomSymbolStrBlkIO    "rtb_$N$M"
 	      CustomSymbolStrTmpVar   "$N$M"
 	      CustomSymbolStrMacro    "$R$N$M"
 	      CustomSymbolStrUtil     "$N$C"
+	      CustomUserTokenString   ""
+	      CustomCommentsFcn	      ""
 	      DefineNamingRule	      "None"
+	      DefineNamingFcn	      ""
 	      ParamNamingRule	      "None"
+	      ParamNamingFcn	      ""
 	      SignalNamingRule	      "None"
+	      SignalNamingFcn	      ""
 	      InsertBlockDesc	      off
 	      InsertPolySpaceComments off
 	      SimulinkBlockComments   on
 	      MATLABSourceComments    off
 	      EnableCustomComments    off
+	      InternalIdentifierFile  ""
 	      InternalIdentifier      "Shortened"
 	      InlinedPrmAccess	      "Literals"
 	      ReqsInCode	      off
 	      UseSimReservedNames     off
+	      ReservedNameArray	      []
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      20
-	      Version		      "1.14.2"
+	      $ObjectID		      21
+	      Version		      "1.16.5"
 	      Array {
 		Type			"Cell"
-		Dimension		14
+		Dimension		16
 		Cell			"GeneratePreprocessorConditionals"
 		Cell			"IncludeMdlTerminateFcn"
-		Cell			"CombineOutputUpdateFcns"
+		Cell			"RemoveResetFunc"
 		Cell			"SuppressErrorStatus"
 		Cell			"ERTCustomFileBanners"
 		Cell			"GenerateSampleERTMain"
@@ -676,8 +762,11 @@ Model {
 		Cell			"SupportAbsoluteTime"
 		Cell			"SupportContinuousTime"
 		Cell			"SupportNonInlinedSFcns"
+		Cell			"ExistingSharedCode"
+		Cell			"RemoveDisableFunc"
 		PropName		"DisabledProps"
 	      }
+	      Description	      ""
 	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
 	      TargetLibSuffix	      ""
 	      TargetPreCompLibLocation ""
@@ -689,6 +778,8 @@ Model {
 	      ERTMultiwordLength      256
 	      MultiwordLength	      2048
 	      GenerateFullHeader      on
+	      InferredTypesCompatibility off
+	      ExistingSharedCode      ""
 	      GenerateSampleERTMain   off
 	      GenerateTestInterfaces  off
 	      ModelReferenceCompliant on
@@ -713,15 +804,21 @@ Model {
 	      PurelyIntegerCode	      off
 	      SupportContinuousTime   on
 	      SupportNonInlinedSFcns  on
+	      RemoveDisableFunc	      off
+	      RemoveResetFunc	      off
 	      SupportVariableSizeSignals off
-	      EnableShiftOperators    on
 	      ParenthesesLevel	      "Nominal"
+	      CastingMode	      "Nominal"
 	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
 	      ModelStepFunctionPrototypeControlCompliant off
 	      CPPClassGenCompliant    on
 	      AutosarCompliant	      off
+	      MDXCompliant	      off
 	      GRTInterface	      off
 	      GenerateAllocFcn	      off
+	      UseToolchainInfoCompliant	on
+	      GenerateSharedConstants on
+	      CoderGroups	      []
 	      UseMalloc		      off
 	      ExtMode		      off
 	      ExtModeStaticAlloc      off
@@ -729,6 +826,7 @@ Model {
 	      ExtModeStaticAllocSize  1000000
 	      ExtModeTransport	      0
 	      ExtModeMexFile	      "ext_comm"
+	      ExtModeMexArgs	      ""
 	      ExtModeIntrfLevel	      "Level1"
 	      RTWCAPISignals	      off
 	      RTWCAPIParams	      off
@@ -740,9 +838,49 @@ Model {
 	    PropName		    "Components"
 	  }
 	}
+	SlCovCC.ConfigComp {
+	  $ObjectID		  22
+	  Version		  "1.16.5"
+	  DisabledProps		  []
+	  Description		  "Simulink Coverage Configuration Component"
+	  Name			  "Simulink Coverage"
+	  CovEnable		  off
+	  CovScope		  "EntireSystem"
+	  CovIncludeTopModel	  on
+	  RecordCoverage	  off
+	  CovPath		  "/"
+	  CovSaveName		  "covdata"
+	  CovCompData		  ""
+	  CovMetricSettings	  "dw"
+	  CovFilter		  ""
+	  CovHTMLOptions	  ""
+	  CovNameIncrementing	  off
+	  CovHtmlReporting	  on
+	  CovForceBlockReductionOff on
+	  CovEnableCumulative	  on
+	  CovSaveCumulativeToWorkspaceVar on
+	  CovSaveSingleToWorkspaceVar on
+	  CovCumulativeVarName	  "covCumulativeData"
+	  CovCumulativeReport	  off
+	  CovSaveOutputData	  on
+	  CovOutputDir		  "slcov_output/$ModelName$"
+	  CovDataFileName	  "$ModelName$_cvdata"
+	  CovShowResultsExplorer  on
+	  CovReportOnPause	  on
+	  CovModelRefEnable	  "off"
+	  CovModelRefExcluded	  ""
+	  CovExternalEMLEnable	  off
+	  CovSFcnEnable		  off
+	  CovBoundaryAbsTol	  1e-05
+	  CovBoundaryRelTol	  0.01
+	  CovUseTimeInterval	  off
+	  CovStartTime		  0
+	  CovStopTime		  0
+	}
 	hdlcoderui.hdlcc {
-	  $ObjectID		  21
-	  Version		  "1.14.2"
+	  $ObjectID		  23
+	  Version		  "1.16.5"
+	  DisabledProps		  []
 	  Description		  "HDL Coder custom configuration component"
 	  Name			  "HDL Coder"
 	  Array {
@@ -756,6 +894,7 @@ Model {
 	PropName		"Components"
       }
       Name		      "Configuration"
+      ExtraOptions	      ""
       CurrentDlgPage	      "Solver"
       ConfigPrmDlgPosition     [ 230, 140, 1210, 788 ] 
     }
@@ -763,11 +902,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    10
+    $ObjectID		    11
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    22
+    $ObjectID		    24
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -810,7 +949,7 @@ Model {
   MaskDefaults {
     SelfModifiable	    "off"
     IconFrame		    "on"
-    IconOpaque		    "on"
+    IconOpaque		    "opaque"
     RunInitForIconRedraw    "off"
     IconRotate		    "none"
     PortRotate		    "default"
@@ -833,40 +972,6 @@ Model {
       Decimation	      "10"
     }
     Block {
-      BlockType		      Constant
-      Value		      "1"
-      VectorParams1D	      on
-      SamplingMode	      "Sample based"
-      OutMin		      "[]"
-      OutMax		      "[]"
-      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
-      LockScale		      off
-      SampleTime	      "inf"
-      FramePeriod	      "inf"
-      PreserveConstantTs      off
-    }
-    Block {
-      BlockType		      Demux
-      Outputs		      "4"
-      DisplayOption	      "none"
-      BusSelectionMode	      off
-    }
-    Block {
-      BlockType		      Gain
-      Gain		      "1"
-      Multiplication	      "Element-wise(K.*u)"
-      ParamMin		      "[]"
-      ParamMax		      "[]"
-      ParamDataTypeStr	      "Inherit: Same as input"
-      OutMin		      "[]"
-      OutMax		      "[]"
-      OutDataTypeStr	      "Inherit: Same as input"
-      LockScale		      off
-      RndMeth		      "Floor"
-      SaturateOnIntegerOverflow	on
-      SampleTime	      "-1"
-    }
-    Block {
       BlockType		      Inport
       Port		      "1"
       OutputFunctionCall      off
@@ -875,6 +980,7 @@ Model {
       OutDataTypeStr	      "Inherit: auto"
       LockScale		      off
       BusOutputAsStruct	      off
+      Unit		      "inherit"
       PortDimensions	      "-1"
       VarSizeSig	      "Inherit"
       SampleTime	      "-1"
@@ -885,23 +991,6 @@ Model {
       Interpolate	      on
     }
     Block {
-      BlockType		      Memory
-      X0		      "0"
-      InheritSampleTime	      off
-      LinearizeMemory	      off
-      LinearizeAsDelay	      off
-      StateMustResolveToSignalObject off
-      RTWStateStorageClass    "Auto"
-    }
-    Block {
-      BlockType		      Mux
-      Inputs		      "4"
-      DisplayOption	      "none"
-      UseBusObject	      off
-      BusObject		      "BusObject"
-      NonVirtualBus	      off
-    }
-    Block {
       BlockType		      Outport
       Port		      "1"
       OutMin		      "[]"
@@ -909,11 +998,13 @@ Model {
       OutDataTypeStr	      "Inherit: auto"
       LockScale		      off
       BusOutputAsStruct	      off
+      Unit		      "inherit"
       PortDimensions	      "-1"
       VarSizeSig	      "Inherit"
       SampleTime	      "-1"
       SignalType	      "auto"
       SamplingMode	      "auto"
+      EnsureOutportIsVirtual  off
       SourceOfInitialOutputValue "Dialog"
       OutputWhenDisabled      "held"
       InitialOutput	      "[]"
@@ -923,7 +1014,6 @@ Model {
       FunctionName	      "system"
       SFunctionModules	      "''"
       PortCounts	      "[]"
-      SFunctionDeploymentMode off
     }
     Block {
       BlockType		      SubSystem
@@ -933,7 +1023,6 @@ Model {
       TreatAsAtomicUnit	      off
       MinAlgLoopOccurrences   off
       PropExecContextOutsideSubsystem off
-      CheckFcnCallInpInsideContextMsg off
       SystemSampleTime	      "-1"
       RTWSystemCode	      "Auto"
       RTWFcnNameOpts	      "Auto"
@@ -952,28 +1041,11 @@ Model {
       Opaque		      off
       MaskHideContents	      off
       SFBlockType	      "NONE"
-      Variant		      off
       GeneratePreprocessorConditionals off
+      PropagateVariantConditions off
+      TreatAsGroupedWhenPropagatingVariantConditions on
       ContentPreviewEnabled   off
-    }
-    Block {
-      BlockType		      Sum
-      IconShape		      "rectangular"
-      Inputs		      "++"
-      CollapseMode	      "All dimensions"
-      CollapseDim	      "1"
-      InputSameDT	      on
-      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutMin		      "[]"
-      OutMax		      "[]"
-      OutDataTypeStr	      "Inherit: Same as first input"
-      LockScale		      off
-      RndMeth		      "Floor"
-      SaturateOnIntegerOverflow	on
-      SampleTime	      "-1"
-    }
-    Block {
-      BlockType		      Terminator
+      IsWebBlock	      off
     }
     Block {
       BlockType		      ToWorkspace
@@ -988,8 +1060,8 @@ Model {
     }
   }
   System {
-    Name		    "Frank_feedback"
-    Location		    [0, 24, 1440, 900]
+    Name		    "Copy_of_Frank_feedback"
+    Location		    [0, 22, 1440, 896]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -1008,7 +1080,7 @@ Model {
       BlockType		      Clock
       Name		      "Clock"
       SID		      "104"
-      Position		      [35, 180, 55, 200]
+      Position		      [250, 240, 270, 260]
       ZOrder		      34
     }
     Block {
@@ -1016,12 +1088,13 @@ Model {
       Name		      "Frank dirdyna"
       SID		      "5"
       Ports		      [4, 3]
-      Position		      [735, 88, 970, 522]
+      Position		      [485, 118, 720, 552]
       ZOrder		      14
       RequestExecContextInheritance off
+      Variant		      off
       System {
 	Name			"Frank dirdyna"
-	Location		[0, 24, 1440, 900]
+	Location		[0, 22, 1440, 896]
 	Open			on
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -1078,7 +1151,9 @@ Model {
 	  ZOrder		  2
 	  FunctionName		  "MBsysC_SF_dirdyn"
 	  Parameters		  "'/home/parallels/Documents/MBProjects/Frank_segway/dataR/Frank_segway.mbs'"
+	  SFunctionDeploymentMode off
 	  EnableBusSupport	  off
+	  SFcnIsStateOwnerBlock	  off
 	}
 	Block {
 	  BlockType		  SubSystem
@@ -1103,16 +1178,17 @@ Model {
 	  " \nmbs_gen_simdir(prjname,tt,qq,filename,overwrite,samplingRate);"
 	  OpenFcn		  "MBStoAnimFile_v2;"
 	  RequestExecContextInheritance	off
+	  Variant		  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    23
+	    $ObjectID		    25
 	    $ClassName		    "Simulink.Mask"
 	    Display		    "image(imread('Logo_anim.jpg'))"
 	    Array {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      5
 	      Object {
-		$ObjectID		24
+		$ObjectID		26
 		Type			"edit"
 		Name			"varname"
 		Prompt			"variable name"
@@ -1123,7 +1199,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		25
+		$ObjectID		27
 		Type			"edit"
 		Name			"filename"
 		Prompt			"anim file name"
@@ -1134,7 +1210,7 @@ Model {
 		Visible			"off"
 	      }
 	      Object {
-		$ObjectID		26
+		$ObjectID		28
 		Type			"edit"
 		Name			"overwrite"
 		Prompt			"overwrite flag"
@@ -1143,7 +1219,7 @@ Model {
 		Tunable			"off"
 	      }
 	      Object {
-		$ObjectID		27
+		$ObjectID		29
 		Type			"edit"
 		Name			"samplingRate"
 		Prompt			"sampling rate"
@@ -1151,7 +1227,7 @@ Model {
 		Tunable			"off"
 	      }
 	      Object {
-		$ObjectID		28
+		$ObjectID		30
 		Type			"edit"
 		Name			"prjname"
 		Prompt			"prjname"
@@ -1162,7 +1238,7 @@ Model {
 	  }
 	  System {
 	    Name		    "To MBS anim file1"
-	    Location		    [10, 62, 1430, 890]
+	    Location		    [0, 24, 1440, 900]
 	    Open		    on
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
@@ -1361,1758 +1437,17 @@ Model {
       }
     }
     Block {
-      BlockType		      SubSystem
-      Name		      "LQR Segway"
-      SID		      "13"
-      Ports		      [6, 2]
-      Position		      [345, 302, 555, 523]
-      ZOrder		      32
-      RequestExecContextInheritance off
-      System {
-	Name			"LQR Segway"
-	Location		[0, 24, 1440, 900]
-	Open			off
-	ModelBrowserVisibility	off
-	ModelBrowserWidth	200
-	ScreenColor		"white"
-	PaperOrientation	"landscape"
-	PaperPositionMode	"auto"
-	PaperType		"usletter"
-	PaperUnits		"inches"
-	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
-	TiledPageScale		1
-	ShowPageBoundaries	off
-	ZoomFactor		"136"
-	Block {
-	  BlockType		  Inport
-	  Name			  "q\nleft wheel "
-	  SID			  "14"
-	  Position		  [20, 243, 50, 257]
-	  ZOrder		  -1
-	  IconDisplay		  "Port number"
-	}
-	Block {
-	  BlockType		  Inport
-	  Name			  "q\nright wheel"
-	  SID			  "15"
-	  Position		  [70, 268, 100, 282]
-	  ZOrder		  1
-	  Port			  "2"
-	  IconDisplay		  "Port number"
-	}
-	Block {
-	  BlockType		  Inport
-	  Name			  "q_dot\nleft wheel"
-	  SID			  "16"
-	  Position		  [130, 293, 160, 307]
-	  ZOrder		  13
-	  Port			  "3"
-	  IconDisplay		  "Port number"
-	}
-	Block {
-	  BlockType		  Inport
-	  Name			  "q_dot\nright wheel"
-	  SID			  "17"
-	  Position		  [180, 318, 210, 332]
-	  ZOrder		  14
-	  Port			  "4"
-	  IconDisplay		  "Port number"
-	}
-	Block {
-	  BlockType		  Inport
-	  Name			  "q\n(psi)"
-	  SID			  "18"
-	  Position		  [230, 343, 260, 357]
-	  ZOrder		  27
-	  Port			  "5"
-	  IconDisplay		  "Port number"
-	}
-	Block {
-	  BlockType		  Inport
-	  Name			  "q_dot\n(psi_dot)\n"
-	  SID			  "19"
-	  Position		  [275, 368, 305, 382]
-	  ZOrder		  28
-	  Port			  "6"
-	  IconDisplay		  "Port number"
-	}
-	Block {
-	  BlockType		  SubSystem
-	  Name			  "Actuator"
-	  SID			  "20"
-	  Ports			  [2, 2]
-	  Position		  [750, 274, 875, 356]
-	  ZOrder		  29
-	  RequestExecContextInheritance	off
-	  System {
-	    Name		    "Actuator"
-	    Location		    [0, 24, 1440, 900]
-	    Open		    off
-	    ModelBrowserVisibility  off
-	    ModelBrowserWidth	    200
-	    ScreenColor		    "white"
-	    PaperOrientation	    "landscape"
-	    PaperPositionMode	    "auto"
-	    PaperType		    "usletter"
-	    PaperUnits		    "inches"
-	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
-	    TiledPageScale	    1
-	    ShowPageBoundaries	    off
-	    ZoomFactor		    "261"
-	    Block {
-	      BlockType		      Inport
-	      Name		      "I_l"
-	      SID		      "21"
-	      Position		      [165, 113, 195, 127]
-	      ZOrder		      2
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Inport
-	      Name		      "I_r"
-	      SID		      "22"
-	      Position		      [165, 208, 195, 222]
-	      ZOrder		      3
-	      Port		      "2"
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Gain
-	      Name		      "from current\nto torque\nleft"
-	      SID		      "23"
-	      Position		      [385, 105, 415, 135]
-	      ZOrder		      5
-	      Gain		      "Kt"
-	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
-	    }
-	    Block {
-	      BlockType		      Gain
-	      Name		      "from current\nto torque\nright"
-	      SID		      "24"
-	      Position		      [385, 200, 415, 230]
-	      ZOrder		      6
-	      Gain		      "Kt"
-	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
-	    }
-	    Block {
-	      BlockType		      Outport
-	      Name		      "torque\nleft wheel"
-	      SID		      "25"
-	      Position		      [645, 113, 675, 127]
-	      ZOrder		      -2
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Outport
-	      Name		      "torque\nright wheel"
-	      SID		      "26"
-	      Position		      [645, 208, 675, 222]
-	      ZOrder		      4
-	      Port		      "2"
-	      IconDisplay	      "Port number"
-	    }
-	    Line {
-	      ZOrder		      1
-	      SrcBlock		      "I_l"
-	      SrcPort		      1
-	      DstBlock		      "from current\nto torque\nleft"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      2
-	      SrcBlock		      "I_r"
-	      SrcPort		      1
-	      DstBlock		      "from current\nto torque\nright"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      3
-	      SrcBlock		      "from current\nto torque\nleft"
-	      SrcPort		      1
-	      DstBlock		      "torque\nleft wheel"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      4
-	      SrcBlock		      "from current\nto torque\nright"
-	      SrcPort		      1
-	      DstBlock		      "torque\nright wheel"
-	      DstPort		      1
-	    }
-	  }
-	}
-	Block {
-	  BlockType		  SubSystem
-	  Name			  "De-couple"
-	  SID			  "27"
-	  Ports			  [6, 1]
-	  Position		  [345, 236, 540, 389]
-	  ZOrder		  -20
-	  RequestExecContextInheritance	off
-	  System {
-	    Name		    "De-couple"
-	    Location		    [0, 24, 1440, 900]
-	    Open		    off
-	    ModelBrowserVisibility  off
-	    ModelBrowserWidth	    200
-	    ScreenColor		    "white"
-	    PaperOrientation	    "landscape"
-	    PaperPositionMode	    "auto"
-	    PaperType		    "usletter"
-	    PaperUnits		    "inches"
-	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
-	    TiledPageScale	    1
-	    ShowPageBoundaries	    off
-	    ZoomFactor		    "126"
-	    Block {
-	      BlockType		      Inport
-	      Name		      "q\nleft wheel "
-	      SID		      "28"
-	      Position		      [125, 128, 155, 142]
-	      ZOrder		      20
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Inport
-	      Name		      "q\nright wheel"
-	      SID		      "29"
-	      Position		      [20, 128, 50, 142]
-	      ZOrder		      21
-	      Port		      "2"
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Inport
-	      Name		      "q_dot\nleft wheel"
-	      SID		      "30"
-	      Position		      [125, 423, 155, 437]
-	      ZOrder		      22
-	      Port		      "3"
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Inport
-	      Name		      "q_dot\nright wheel"
-	      SID		      "31"
-	      Position		      [20, 423, 50, 437]
-	      ZOrder		      23
-	      Port		      "4"
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Inport
-	      Name		      "q\n(psi)"
-	      SID		      "32"
-	      Position		      [470, 83, 500, 97]
-	      ZOrder		      25
-	      Port		      "5"
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Inport
-	      Name		      "q_dot\n(psi_dot)\n"
-	      SID		      "33"
-	      Position		      [470, 183, 500, 197]
-	      ZOrder		      26
-	      Port		      "6"
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Constant
-	      Name		      "Constant"
-	      SID		      "123"
-	      Position		      [405, 380, 435, 410]
-	      ZOrder		      30
-	      Value		      "0"
-	    }
-	    Block {
-	      BlockType		      Gain
-	      Name		      "Gain"
-	      SID		      "34"
-	      Position		      [325, 22, 365, 58]
-	      ZOrder		      6
-	      Gain		      "0.5"
-	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
-	    }
-	    Block {
-	      BlockType		      Gain
-	      Name		      "Gain1"
-	      SID		      "35"
-	      Position		      [320, 222, 365, 258]
-	      ZOrder		      8
-	      Gain		      "R/W"
-	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
-	    }
-	    Block {
-	      BlockType		      Gain
-	      Name		      "Gain2"
-	      SID		      "36"
-	      Position		      [325, 317, 365, 353]
-	      ZOrder		      16
-	      Gain		      "0.5"
-	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
-	    }
-	    Block {
-	      BlockType		      Gain
-	      Name		      "Gain3"
-	      SID		      "37"
-	      Position		      [320, 517, 365, 553]
-	      ZOrder		      18
-	      Gain		      "R/W"
-	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
-	    }
-	    Block {
-	      BlockType		      Mux
-	      Name		      "Mux"
-	      SID		      "38"
-	      Ports		      [6, 1]
-	      Position		      [560, 14, 565, 316]
-	      ZOrder		      27
-	      ShowName		      off
-	      Inputs		      "6"
-	      DisplayOption	      "bar"
-	    }
-	    Block {
-	      BlockType		      Sum
-	      Name		      "Sum"
-	      SID		      "39"
-	      Ports		      [2, 1]
-	      Position		      [280, 30, 300, 50]
-	      ZOrder		      5
-	      ShowName		      off
-	      IconShape		      "round"
-	      Inputs		      "|++"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
-	    }
-	    Block {
-	      BlockType		      Sum
-	      Name		      "Sum1"
-	      SID		      "40"
-	      Ports		      [2, 1]
-	      Position		      [280, 230, 300, 250]
-	      ZOrder		      7
-	      ShowName		      off
-	      IconShape		      "round"
-	      Inputs		      "-+|"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
-	    }
-	    Block {
-	      BlockType		      Sum
-	      Name		      "Sum2"
-	      SID		      "41"
-	      Ports		      [2, 1]
-	      Position		      [280, 325, 300, 345]
-	      ZOrder		      15
-	      ShowName		      off
-	      IconShape		      "round"
-	      Inputs		      "|++"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
-	    }
-	    Block {
-	      BlockType		      Sum
-	      Name		      "Sum3"
-	      SID		      "42"
-	      Ports		      [2, 1]
-	      Position		      [280, 525, 300, 545]
-	      ZOrder		      17
-	      ShowName		      off
-	      IconShape		      "round"
-	      Inputs		      "-+|"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
-	    }
-	    Block {
-	      BlockType		      ToWorkspace
-	      Name		      "To Workspace"
-	      SID		      "121"
-	      Ports		      [1]
-	      Position		      [605, 395, 665, 425]
-	      ZOrder		      28
-	      VariableName	      "phi"
-	      MaxDataPoints	      "inf"
-	      Save2DSignal	      "3-D array (concatenate along third dimension)"
-	      FixptAsFi		      on
-	      SampleTime	      "-1"
-	    }
-	    Block {
-	      BlockType		      ToWorkspace
-	      Name		      "To Workspace1"
-	      SID		      "122"
-	      Ports		      [1]
-	      Position		      [605, 470, 665, 500]
-	      ZOrder		      29
-	      VariableName	      "phi1"
-	      MaxDataPoints	      "inf"
-	      Save2DSignal	      "3-D array (concatenate along third dimension)"
-	      FixptAsFi		      on
-	      SampleTime	      "-1"
-	    }
-	    Block {
-	      BlockType		      Outport
-	      Name		      "State for controller"
-	      SID		      "43"
-	      Position		      [630, 158, 660, 172]
-	      ZOrder		      24
-	      IconDisplay	      "Port number"
-	    }
-	    Line {
-	      ZOrder		      1
-	      SrcBlock		      "Sum1"
-	      SrcPort		      1
-	      DstBlock		      "Gain1"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      2
-	      SrcBlock		      "q\nright wheel"
-	      SrcPort		      1
-	      Points		      [23, 0]
-	      Branch {
-		ZOrder			3
-		Points			[0, 105]
-		DstBlock		"Sum1"
-		DstPort			2
-	      }
-	      Branch {
-		ZOrder			4
-		Points			[0, -95]
-		DstBlock		"Sum"
-		DstPort			1
-	      }
-	    }
-	    Line {
-	      ZOrder		      5
-	      SrcBlock		      "Sum"
-	      SrcPort		      1
-	      DstBlock		      "Gain"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      6
-	      SrcBlock		      "Sum3"
-	      SrcPort		      1
-	      DstBlock		      "Gain3"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      7
-	      SrcBlock		      "Sum2"
-	      SrcPort		      1
-	      DstBlock		      "Gain2"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      8
-	      SrcBlock		      "q_dot\nleft wheel"
-	      SrcPort		      1
-	      Points		      [92, 0]
-	      Branch {
-		ZOrder			9
-		Points			[0, -19; 38, 0]
-		DstBlock		"Sum2"
-		DstPort			2
-	      }
-	      Branch {
-		ZOrder			10
-		Points			[0, 21; 38, 0]
-		DstBlock		"Sum3"
-		DstPort			1
-	      }
-	    }
-	    Line {
-	      ZOrder		      11
-	      SrcBlock		      "q_dot\nright wheel"
-	      SrcPort		      1
-	      Points		      [23, 0]
-	      Branch {
-		ZOrder			12
-		Points			[0, 105]
-		DstBlock		"Sum3"
-		DstPort			2
-	      }
-	      Branch {
-		ZOrder			13
-		Points			[0, -95]
-		DstBlock		"Sum2"
-		DstPort			1
-	      }
-	    }
-	    Line {
-	      ZOrder		      14
-	      SrcBlock		      "q\nleft wheel "
-	      SrcPort		      1
-	      Points		      [92, 0]
-	      Branch {
-		ZOrder			15
-		Points			[0, -19; 38, 0]
-		DstBlock		"Sum"
-		DstPort			2
-	      }
-	      Branch {
-		ZOrder			16
-		Points			[0, 21; 38, 0]
-		DstBlock		"Sum1"
-		DstPort			1
-	      }
-	    }
-	    Line {
-	      ZOrder		      17
-	      SrcBlock		      "Gain"
-	      SrcPort		      1
-	      DstBlock		      "Mux"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      18
-	      SrcBlock		      "q\n(psi)"
-	      SrcPort		      1
-	      DstBlock		      "Mux"
-	      DstPort		      2
-	    }
-	    Line {
-	      ZOrder		      19
-	      SrcBlock		      "Gain2"
-	      SrcPort		      1
-	      Points		      [66, 0; 0, -195]
-	      DstBlock		      "Mux"
-	      DstPort		      3
-	    }
-	    Line {
-	      ZOrder		      20
-	      SrcBlock		      "q_dot\n(psi_dot)\n"
-	      SrcPort		      1
-	      DstBlock		      "Mux"
-	      DstPort		      4
-	    }
-	    Line {
-	      ZOrder		      22
-	      SrcBlock		      "Gain3"
-	      SrcPort		      1
-	      Points		      [130, 0; 0, -50]
-	      DstBlock		      "To Workspace1"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      23
-	      SrcBlock		      "Mux"
-	      SrcPort		      1
-	      DstBlock		      "State for controller"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      21
-	      SrcBlock		      "Gain1"
-	      SrcPort		      1
-	      Points		      [158, 0; 0, 170]
-	      DstBlock		      "To Workspace"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      34
-	      SrcBlock		      "Constant"
-	      SrcPort		      1
-	      Points		      [104, 0; 0, -105]
-	      Branch {
-		ZOrder			36
-		DstBlock		"Mux"
-		DstPort			6
-	      }
-	      Branch {
-		ZOrder			35
-		Points			[0, -50]
-		DstBlock		"Mux"
-		DstPort			5
-	      }
-	    }
-	    Annotation {
-	      SID		      "47"
-	      Name		      "phi"
-	      Position		      [384, 222, 400, 237]
-	      InternalMargins	      [0, 0, 0, 0]
-	      FixedHeight	      off
-	      FixedWidth	      off
-	      HorizontalAlignment     "left"
-	      VerticalAlignment	      "top"
-	      ZOrder		      -1
-	    }
-	    Annotation {
-	      SID		      "46"
-	      Name		      "theta"
-	      Position		      [378, 28, 402, 43]
-	      InternalMargins	      [0, 0, 0, 0]
-	      FixedHeight	      off
-	      FixedWidth	      off
-	      HorizontalAlignment     "left"
-	      VerticalAlignment	      "top"
-	      ZOrder		      -2
-	    }
-	    Annotation {
-	      SID		      "45"
-	      Name		      "phi_dot"
-	      Position		      [383, 521, 418, 536]
-	      InternalMargins	      [0, 0, 0, 0]
-	      FixedHeight	      off
-	      FixedWidth	      off
-	      HorizontalAlignment     "left"
-	      VerticalAlignment	      "top"
-	      ZOrder		      -3
-	    }
-	    Annotation {
-	      SID		      "44"
-	      Name		      "theta_dot"
-	      Position		      [379, 317, 423, 332]
-	      InternalMargins	      [0, 0, 0, 0]
-	      FixedHeight	      off
-	      FixedWidth	      off
-	      HorizontalAlignment     "left"
-	      VerticalAlignment	      "top"
-	      ZOrder		      -4
-	    }
-	  }
-	}
-	Block {
-	  BlockType		  Demux
-	  Name			  "Demux"
-	  SID			  "48"
-	  Ports			  [1, 2]
-	  Position		  [700, 275, 705, 355]
-	  ZOrder		  33
-	  ShowName		  off
-	  Outputs		  "2"
-	  DisplayOption		  "bar"
-	}
-	Block {
-	  BlockType		  Gain
-	  Name			  "Gain"
-	  SID			  "49"
-	  Position		  [595, 297, 645, 333]
-	  ZOrder		  22
-	  Gain			  "-K_lqr"
-	  Multiplication	  "Matrix(K*u) (u vector)"
-	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
-	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
-	  SaturateOnIntegerOverflow off
-	}
-	Block {
-	  BlockType		  ToWorkspace
-	  Name			  "To Workspace"
-	  SID			  "107"
-	  Ports			  [1]
-	  Position		  [925, 170, 985, 200]
-	  ZOrder		  35
-	  VariableName		  "tau_left"
-	  MaxDataPoints		  "inf"
-	  Save2DSignal		  "3-D array (concatenate along third dimension)"
-	  FixptAsFi		  on
-	  SampleTime		  "-1"
-	}
-	Block {
-	  BlockType		  ToWorkspace
-	  Name			  "To Workspace1"
-	  SID			  "108"
-	  Ports			  [1]
-	  Position		  [925, 420, 985, 450]
-	  ZOrder		  36
-	  VariableName		  "tau_right"
-	  MaxDataPoints		  "inf"
-	  Save2DSignal		  "3-D array (concatenate along third dimension)"
-	  FixptAsFi		  on
-	  SampleTime		  "-1"
-	}
-	Block {
-	  BlockType		  Outport
-	  Name			  "torque\nleft"
-	  SID			  "50"
-	  Position		  [925, 288, 955, 302]
-	  ZOrder		  -2
-	  IconDisplay		  "Port number"
-	}
-	Block {
-	  BlockType		  Outport
-	  Name			  "torque\nright"
-	  SID			  "51"
-	  Position		  [975, 328, 1005, 342]
-	  ZOrder		  34
-	  Port			  "2"
-	  IconDisplay		  "Port number"
-	}
-	Line {
-	  ZOrder		  1
-	  SrcBlock		  "q\nleft wheel "
-	  SrcPort		  1
-	  DstBlock		  "De-couple"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  2
-	  SrcBlock		  "q\nright wheel"
-	  SrcPort		  1
-	  DstBlock		  "De-couple"
-	  DstPort		  2
-	}
-	Line {
-	  ZOrder		  3
-	  SrcBlock		  "q_dot\nleft wheel"
-	  SrcPort		  1
-	  DstBlock		  "De-couple"
-	  DstPort		  3
-	}
-	Line {
-	  ZOrder		  4
-	  SrcBlock		  "q_dot\nright wheel"
-	  SrcPort		  1
-	  DstBlock		  "De-couple"
-	  DstPort		  4
-	}
-	Line {
-	  ZOrder		  5
-	  SrcBlock		  "De-couple"
-	  SrcPort		  1
-	  DstBlock		  "Gain"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  6
-	  SrcBlock		  "q\n(psi)"
-	  SrcPort		  1
-	  DstBlock		  "De-couple"
-	  DstPort		  5
-	}
-	Line {
-	  ZOrder		  7
-	  SrcBlock		  "q_dot\n(psi_dot)\n"
-	  SrcPort		  1
-	  DstBlock		  "De-couple"
-	  DstPort		  6
-	}
-	Line {
-	  ZOrder		  8
-	  SrcBlock		  "Gain"
-	  SrcPort		  1
-	  DstBlock		  "Demux"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  9
-	  SrcBlock		  "Actuator"
-	  SrcPort		  1
-	  Points		  [17, 0]
-	  Branch {
-	    ZOrder		    14
-	    Points		    [0, -110]
-	    DstBlock		    "To Workspace"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    13
-	    DstBlock		    "torque\nleft"
-	    DstPort		    1
-	  }
-	}
-	Line {
-	  ZOrder		  10
-	  SrcBlock		  "Demux"
-	  SrcPort		  1
-	  DstBlock		  "Actuator"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  11
-	  SrcBlock		  "Demux"
-	  SrcPort		  2
-	  DstBlock		  "Actuator"
-	  DstPort		  2
-	}
-	Line {
-	  ZOrder		  12
-	  SrcBlock		  "Actuator"
-	  SrcPort		  2
-	  Points		  [20, 0]
-	  Branch {
-	    ZOrder		    16
-	    Points		    [0, 100]
-	    DstBlock		    "To Workspace1"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    15
-	    DstBlock		    "torque\nright"
-	    DstPort		    1
-	  }
-	}
-	Annotation {
-	  SID			  "52"
-	  Name			  "u"
-	  Position		  [663, 303, 670, 318]
-	  InternalMargins	  [0, 0, 0, 0]
-	  FixedHeight		  off
-	  FixedWidth		  off
-	  HorizontalAlignment	  "left"
-	  VerticalAlignment	  "top"
-	  ZOrder		  -1
-	}
-      }
-    }
-    Block {
-      BlockType		      SubSystem
-      Name		      "Subsystem"
-      SID		      "53"
-      Ports		      [3, 6]
-      Position		      [55, 302, 215, 523]
-      ZOrder		      33
-      RequestExecContextInheritance off
-      System {
-	Name			"Subsystem"
-	Location		[0, 24, 1440, 900]
-	Open			off
-	ModelBrowserVisibility	off
-	ModelBrowserWidth	200
-	ScreenColor		"white"
-	PaperOrientation	"landscape"
-	PaperPositionMode	"auto"
-	PaperType		"usletter"
-	PaperUnits		"inches"
-	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
-	TiledPageScale		1
-	ShowPageBoundaries	off
-	ZoomFactor		"149"
-	Block {
-	  BlockType		  Inport
-	  Name			  "q"
-	  SID			  "73"
-	  Position		  [225, 308, 255, 322]
-	  ZOrder		  20
-	  IconDisplay		  "Port number"
-	}
-	Block {
-	  BlockType		  Inport
-	  Name			  "q_dot"
-	  SID			  "74"
-	  Position		  [225, 663, 255, 677]
-	  ZOrder		  22
-	  Port			  "2"
-	  IconDisplay		  "Port number"
-	}
-	Block {
-	  BlockType		  Inport
-	  Name			  "q_dot_dot"
-	  SID			  "75"
-	  Position		  [635, 568, 665, 582]
-	  ZOrder		  23
-	  Port			  "3"
-	  IconDisplay		  "Port number"
-	}
-	Block {
-	  BlockType		  SubSystem
-	  Name			  "Subsystem"
-	  SID			  "76"
-	  Ports			  [1, 3]
-	  Position		  [330, 275, 480, 355]
-	  ZOrder		  24
-	  RequestExecContextInheritance	off
-	  System {
-	    Name		    "Subsystem"
-	    Location		    [0, 24, 1440, 900]
-	    Open		    off
-	    ModelBrowserVisibility  off
-	    ModelBrowserWidth	    200
-	    ScreenColor		    "white"
-	    PaperOrientation	    "landscape"
-	    PaperPositionMode	    "auto"
-	    PaperType		    "usletter"
-	    PaperUnits		    "inches"
-	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
-	    TiledPageScale	    1
-	    ShowPageBoundaries	    off
-	    ZoomFactor		    "158"
-	    Block {
-	      BlockType		      Inport
-	      Name		      "q"
-	      SID		      "77"
-	      Position		      [20, 343, 50, 357]
-	      ZOrder		      -1
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Demux
-	      Name		      "Demux"
-	      SID		      "78"
-	      Ports		      [1, 17]
-	      Position		      [100, 145, 105, 555]
-	      ZOrder		      6
-	      ShowName		      off
-	      Outputs		      "17"
-	      DisplayOption	      "bar"
-	    }
-	    Block {
-	      BlockType		      Outport
-	      Name		      "q\nleft"
-	      SID		      "79"
-	      Position		      [625, 518, 655, 532]
-	      ZOrder		      -2
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Outport
-	      Name		      "q\nright"
-	      SID		      "80"
-	      Position		      [570, 543, 600, 557]
-	      ZOrder		      7
-	      Port		      "2"
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Outport
-	      Name		      "q\n(psi)"
-	      SID		      "112"
-	      Position		      [315, 243, 345, 257]
-	      ZOrder		      32
-	      Port		      "3"
-	      IconDisplay	      "Port number"
-	    }
-	    Line {
-	      ZOrder		      1
-	      SrcBlock		      "q"
-	      SrcPort		      1
-	      DstBlock		      "Demux"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      2
-	      SrcBlock		      "Demux"
-	      SrcPort		      17
-	      DstBlock		      "q\nright"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      3
-	      SrcBlock		      "Demux"
-	      SrcPort		      16
-	      DstBlock		      "q\nleft"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      4
-	      SrcBlock		      "Demux"
-	      SrcPort		      5
-	      DstBlock		      "q\n(psi)"
-	      DstPort		      1
-	    }
-	  }
-	}
-	Block {
-	  BlockType		  SubSystem
-	  Name			  "Subsystem1"
-	  SID			  "81"
-	  Ports			  [1, 3]
-	  Position		  [320, 611, 470, 729]
-	  ZOrder		  25
-	  RequestExecContextInheritance	off
-	  System {
-	    Name		    "Subsystem1"
-	    Location		    [0, 24, 1440, 900]
-	    Open		    off
-	    ModelBrowserVisibility  off
-	    ModelBrowserWidth	    200
-	    ScreenColor		    "white"
-	    PaperOrientation	    "landscape"
-	    PaperPositionMode	    "auto"
-	    PaperType		    "usletter"
-	    PaperUnits		    "inches"
-	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
-	    TiledPageScale	    1
-	    ShowPageBoundaries	    off
-	    ZoomFactor		    "158"
-	    Block {
-	      BlockType		      Inport
-	      Name		      "q_dot"
-	      SID		      "82"
-	      Position		      [20, 343, 50, 357]
-	      ZOrder		      -1
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Demux
-	      Name		      "Demux"
-	      SID		      "83"
-	      Ports		      [1, 17]
-	      Position		      [100, 145, 105, 555]
-	      ZOrder		      6
-	      ShowName		      off
-	      Outputs		      "17"
-	      DisplayOption	      "bar"
-	    }
-	    Block {
-	      BlockType		      Outport
-	      Name		      "q_dot \nleft"
-	      SID		      "84"
-	      Position		      [625, 518, 655, 532]
-	      ZOrder		      -2
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Outport
-	      Name		      "q_dot\nright"
-	      SID		      "85"
-	      Position		      [570, 543, 600, 557]
-	      ZOrder		      7
-	      Port		      "2"
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Outport
-	      Name		      "q_dot\n(psi)"
-	      SID		      "113"
-	      Position		      [240, 243, 270, 257]
-	      ZOrder		      33
-	      Port		      "3"
-	      IconDisplay	      "Port number"
-	    }
-	    Line {
-	      ZOrder		      1
-	      SrcBlock		      "q_dot"
-	      SrcPort		      1
-	      DstBlock		      "Demux"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      2
-	      SrcBlock		      "Demux"
-	      SrcPort		      17
-	      DstBlock		      "q_dot\nright"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      3
-	      SrcBlock		      "Demux"
-	      SrcPort		      16
-	      DstBlock		      "q_dot \nleft"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      4
-	      SrcBlock		      "Demux"
-	      SrcPort		      5
-	      DstBlock		      "q_dot\n(psi)"
-	      DstPort		      1
-	    }
-	  }
-	}
-	Block {
-	  BlockType		  SubSystem
-	  Name			  "Subsystem2"
-	  SID			  "86"
-	  Ports			  [3, 2]
-	  Position		  [760, 435, 895, 605]
-	  ZOrder		  30
-	  RequestExecContextInheritance	off
-	  System {
-	    Name		    "Subsystem2"
-	    Location		    [0, 24, 1440, 900]
-	    Open		    off
-	    ModelBrowserVisibility  off
-	    ModelBrowserWidth	    200
-	    ScreenColor		    "white"
-	    PaperOrientation	    "landscape"
-	    PaperPositionMode	    "auto"
-	    PaperType		    "usletter"
-	    PaperUnits		    "inches"
-	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
-	    TiledPageScale	    1
-	    ShowPageBoundaries	    off
-	    ZoomFactor		    "219"
-	    Block {
-	      BlockType		      Inport
-	      Name		      "q"
-	      SID		      "87"
-	      Position		      [245, 208, 275, 222]
-	      ZOrder		      5
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Inport
-	      Name		      "q_dot"
-	      SID		      "88"
-	      Position		      [245, 258, 275, 272]
-	      ZOrder		      6
-	      Port		      "2"
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Inport
-	      Name		      "q_dot_dot"
-	      SID		      "89"
-	      Position		      [245, 308, 275, 322]
-	      ZOrder		      7
-	      Port		      "3"
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      SubSystem
-	      Name		      "MATLAB Function"
-	      SID		      "101"
-	      Ports		      [4, 3]
-	      Position		      [340, 139, 485, 341]
-	      ZOrder		      34
-	      LibraryVersion	      "1.32"
-	      ErrorFcn		      "Stateflow.Translate.translate"
-	      PermitHierarchicalResolution "ExplicitOnly"
-	      TreatAsAtomicUnit	      on
-	      RequestExecContextInheritance off
-	      SFBlockType	      "MATLAB Function"
-	      System {
-		Name			"MATLAB Function"
-		Location		[219, 337, 814, 775]
-		Open			off
-		ModelBrowserVisibility	off
-		ModelBrowserWidth	200
-		ScreenColor		"white"
-		PaperOrientation	"landscape"
-		PaperPositionMode	"auto"
-		PaperType		"usletter"
-		PaperUnits		"inches"
-		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
-		TiledPageScale		1
-		ShowPageBoundaries	off
-		ZoomFactor		"100"
-		SIDHighWatermark	"27"
-		Block {
-		  BlockType		  Inport
-		  Name			  "psi_1"
-		  SID			  "101::1"
-		  Position		  [20, 101, 40, 119]
-		  ZOrder		  -1
-		  IconDisplay		  "Port number"
-		}
-		Block {
-		  BlockType		  Inport
-		  Name			  "q"
-		  SID			  "101::21"
-		  Position		  [20, 136, 40, 154]
-		  ZOrder		  7
-		  Port			  "2"
-		  IconDisplay		  "Port number"
-		}
-		Block {
-		  BlockType		  Inport
-		  Name			  "qd"
-		  SID			  "101::22"
-		  Position		  [20, 171, 40, 189]
-		  ZOrder		  8
-		  Port			  "3"
-		  IconDisplay		  "Port number"
-		}
-		Block {
-		  BlockType		  Inport
-		  Name			  "qdd"
-		  SID			  "101::23"
-		  Position		  [20, 206, 40, 224]
-		  ZOrder		  9
-		  Port			  "4"
-		  IconDisplay		  "Port number"
-		}
-		Block {
-		  BlockType		  Demux
-		  Name			  " Demux "
-		  SID			  "101::19"
-		  Ports			  [1, 1]
-		  Position		  [270, 245, 320, 285]
-		  ZOrder		  5
-		  Outputs		  "1"
-		}
-		Block {
-		  BlockType		  S-Function
-		  Name			  " SFunction "
-		  SID			  "101::18"
-		  Tag			  "Stateflow S-Function Frank_feedback 2"
-		  Ports			  [4, 4]
-		  Position		  [180, 112, 230, 213]
-		  ZOrder		  4
-		  FunctionName		  "sf_sfun"
-		  Parameters		  "Ts,rob_str"
-		  PortCounts		  "[4 4]"
-		  EnableBusSupport	  on
-		  Port {
-		    PortNumber		    2
-		    Name		    "psi"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
-		  }
-		  Port {
-		    PortNumber		    3
-		    Name		    "psi_dot"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
-		  }
-		  Port {
-		    PortNumber		    4
-		    Name		    "CoM"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
-		  }
-		}
-		Block {
-		  BlockType		  Terminator
-		  Name			  " Terminator "
-		  SID			  "101::20"
-		  Position		  [460, 256, 480, 274]
-		  ZOrder		  6
-		}
-		Block {
-		  BlockType		  Outport
-		  Name			  "psi"
-		  SID			  "101::5"
-		  Position		  [460, 101, 480, 119]
-		  ZOrder		  -5
-		  IconDisplay		  "Port number"
-		}
-		Block {
-		  BlockType		  Outport
-		  Name			  "psi_dot"
-		  SID			  "101::26"
-		  Position		  [460, 136, 480, 154]
-		  ZOrder		  12
-		  Port			  "2"
-		  IconDisplay		  "Port number"
-		}
-		Block {
-		  BlockType		  Outport
-		  Name			  "CoM"
-		  SID			  "101::27"
-		  Position		  [460, 171, 480, 189]
-		  ZOrder		  13
-		  Port			  "3"
-		  IconDisplay		  "Port number"
-		}
-		Line {
-		  ZOrder		  75
-		  SrcBlock		  "psi_1"
-		  SrcPort		  1
-		  DstBlock		  " SFunction "
-		  DstPort		  1
-		}
-		Line {
-		  ZOrder		  76
-		  SrcBlock		  "q"
-		  SrcPort		  1
-		  DstBlock		  " SFunction "
-		  DstPort		  2
-		}
-		Line {
-		  ZOrder		  77
-		  SrcBlock		  "qd"
-		  SrcPort		  1
-		  DstBlock		  " SFunction "
-		  DstPort		  3
-		}
-		Line {
-		  ZOrder		  78
-		  SrcBlock		  "qdd"
-		  SrcPort		  1
-		  Points		  [120, 0]
-		  DstBlock		  " SFunction "
-		  DstPort		  4
-		}
-		Line {
-		  Name			  "psi"
-		  ZOrder		  79
-		  Labels		  [0, 0]
-		  SrcBlock		  " SFunction "
-		  SrcPort		  2
-		  DstBlock		  "psi"
-		  DstPort		  1
-		}
-		Line {
-		  Name			  "psi_dot"
-		  ZOrder		  80
-		  Labels		  [0, 0]
-		  SrcBlock		  " SFunction "
-		  SrcPort		  3
-		  DstBlock		  "psi_dot"
-		  DstPort		  1
-		}
-		Line {
-		  Name			  "CoM"
-		  ZOrder		  81
-		  Labels		  [0, 0]
-		  SrcBlock		  " SFunction "
-		  SrcPort		  4
-		  DstBlock		  "CoM"
-		  DstPort		  1
-		}
-		Line {
-		  ZOrder		  82
-		  SrcBlock		  " Demux "
-		  SrcPort		  1
-		  DstBlock		  " Terminator "
-		  DstPort		  1
-		}
-		Line {
-		  ZOrder		  83
-		  SrcBlock		  " SFunction "
-		  SrcPort		  1
-		  DstBlock		  " Demux "
-		  DstPort		  1
-		}
-	      }
-	    }
-	    Block {
-	      BlockType		      Memory
-	      Name		      "Memory"
-	      SID		      "102"
-	      Position		      [400, 70, 430, 100]
-	      ZOrder		      35
-	      BlockMirror	      on
-	      NamePlacement	      "alternate"
-	      InheritSampleTime	      on
-	    }
-	    Block {
-	      BlockType		      ToWorkspace
-	      Name		      "To Workspace1"
-	      SID		      "106"
-	      Ports		      [1]
-	      Position		      [615, 190, 675, 220]
-	      ZOrder		      36
-	      Commented		      "on"
-	      VariableName	      "Psi"
-	      MaxDataPoints	      "inf"
-	      Save2DSignal	      "3-D array (concatenate along third dimension)"
-	      FixptAsFi		      on
-	      SampleTime	      "-1"
-	    }
-	    Block {
-	      BlockType		      ToWorkspace
-	      Name		      "To Workspace2"
-	      SID		      "111"
-	      Ports		      [1]
-	      Position		      [615, 255, 675, 285]
-	      ZOrder		      37
-	      Commented		      "on"
-	      VariableName	      "Psi_dot"
-	      MaxDataPoints	      "inf"
-	      Save2DSignal	      "3-D array (concatenate along third dimension)"
-	      FixptAsFi		      on
-	      SampleTime	      "-1"
-	    }
-	    Block {
-	      BlockType		      ToWorkspace
-	      Name		      "To Workspace5"
-	      SID		      "92"
-	      Ports		      [1]
-	      Position		      [615, 325, 675, 355]
-	      ZOrder		      29
-	      VariableName	      "CoM"
-	      MaxDataPoints	      "inf"
-	      Save2DSignal	      "3-D array (concatenate along third dimension)"
-	      FixptAsFi		      on
-	      SampleTime	      "-1"
-	    }
-	    Block {
-	      BlockType		      Outport
-	      Name		      "Psi"
-	      SID		      "93"
-	      Position		      [555, 168, 585, 182]
-	      ZOrder		      30
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Outport
-	      Name		      "Psi_dot"
-	      SID		      "94"
-	      Position		      [555, 233, 585, 247]
-	      ZOrder		      32
-	      Port		      "2"
-	      IconDisplay	      "Port number"
-	    }
-	    Line {
-	      ZOrder		      10
-	      SrcBlock		      "q"
-	      SrcPort		      1
-	      DstBlock		      "MATLAB Function"
-	      DstPort		      2
-	    }
-	    Line {
-	      ZOrder		      11
-	      SrcBlock		      "q_dot"
-	      SrcPort		      1
-	      DstBlock		      "MATLAB Function"
-	      DstPort		      3
-	    }
-	    Line {
-	      ZOrder		      12
-	      SrcBlock		      "q_dot_dot"
-	      SrcPort		      1
-	      DstBlock		      "MATLAB Function"
-	      DstPort		      4
-	    }
-	    Line {
-	      ZOrder		      13
-	      SrcBlock		      "MATLAB Function"
-	      SrcPort		      3
-	      Points		      [60, 0; 0, 35]
-	      DstBlock		      "To Workspace5"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      14
-	      SrcBlock		      "MATLAB Function"
-	      SrcPort		      2
-	      DstBlock		      "Psi_dot"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      15
-	      SrcBlock		      "MATLAB Function"
-	      SrcPort		      1
-	      Points		      [30, 0]
-	      Branch {
-		ZOrder			17
-		Points			[0, -90]
-		DstBlock		"Memory"
-		DstPort			1
-	      }
-	      Branch {
-		ZOrder			16
-		DstBlock		"Psi"
-		DstPort			1
-	      }
-	    }
-	    Line {
-	      ZOrder		      18
-	      SrcBlock		      "Memory"
-	      SrcPort		      1
-	      Points		      [-86, 0; 0, 80]
-	      DstBlock		      "MATLAB Function"
-	      DstPort		      1
-	    }
-	  }
-	}
-	Block {
-	  BlockType		  Sum
-	  Name			  "Sum"
-	  SID			  "115"
-	  Ports			  [2, 1]
-	  Position		  [910, 330, 930, 350]
-	  ZOrder		  33
-	  ShowName		  off
-	  IconShape		  "round"
-	  Inputs		  "|++"
-	  InputSameDT		  off
-	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
-	  SaturateOnIntegerOverflow off
-	}
-	Block {
-	  BlockType		  Sum
-	  Name			  "Sum1"
-	  SID			  "116"
-	  Ports			  [2, 1]
-	  Position		  [910, 700, 930, 720]
-	  ZOrder		  34
-	  ShowName		  off
-	  IconShape		  "round"
-	  Inputs		  "++|"
-	  InputSameDT		  off
-	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
-	  SaturateOnIntegerOverflow off
-	}
-	Block {
-	  BlockType		  ToWorkspace
-	  Name			  "To Workspace1"
-	  SID			  "117"
-	  Ports			  [1]
-	  Position		  [1020, 325, 1080, 355]
-	  ZOrder		  38
-	  VariableName		  "Psi"
-	  MaxDataPoints		  "inf"
-	  Save2DSignal		  "3-D array (concatenate along third dimension)"
-	  FixptAsFi		  on
-	  SampleTime		  "-1"
-	}
-	Block {
-	  BlockType		  ToWorkspace
-	  Name			  "To Workspace2"
-	  SID			  "118"
-	  Ports			  [1]
-	  Position		  [1035, 695, 1095, 725]
-	  ZOrder		  39
-	  VariableName		  "Psi_dot"
-	  MaxDataPoints		  "inf"
-	  Save2DSignal		  "3-D array (concatenate along third dimension)"
-	  FixptAsFi		  on
-	  SampleTime		  "-1"
-	}
-	Block {
-	  BlockType		  Outport
-	  Name			  "q_left"
-	  SID			  "95"
-	  Position		  [710, 283, 740, 297]
-	  ZOrder		  19
-	  IconDisplay		  "Port number"
-	}
-	Block {
-	  BlockType		  Outport
-	  Name			  "q_right"
-	  SID			  "96"
-	  Position		  [635, 308, 665, 322]
-	  ZOrder		  21
-	  Port			  "2"
-	  IconDisplay		  "Port number"
-	}
-	Block {
-	  BlockType		  Outport
-	  Name			  "q_dot\nleft"
-	  SID			  "97"
-	  Position		  [710, 623, 740, 637]
-	  ZOrder		  26
-	  Port			  "3"
-	  IconDisplay		  "Port number"
-	}
-	Block {
-	  BlockType		  Outport
-	  Name			  "q_dot\nright"
-	  SID			  "98"
-	  Position		  [635, 663, 665, 677]
-	  ZOrder		  27
-	  Port			  "4"
-	  IconDisplay		  "Port number"
-	}
-	Block {
-	  BlockType		  Outport
-	  Name			  "q\n(psi)"
-	  SID			  "99"
-	  Position		  [1035, 473, 1065, 487]
-	  ZOrder		  31
-	  Port			  "5"
-	  IconDisplay		  "Port number"
-	}
-	Block {
-	  BlockType		  Outport
-	  Name			  "q_dot\n(psi)"
-	  SID			  "100"
-	  Position		  [1035, 558, 1065, 572]
-	  ZOrder		  32
-	  Port			  "6"
-	  IconDisplay		  "Port number"
-	}
-	Line {
-	  ZOrder		  15
-	  SrcBlock		  "q"
-	  SrcPort		  1
-	  Points		  [32, 0]
-	  Branch {
-	    ZOrder		    14
-	    Points		    [0, 150]
-	    DstBlock		    "Subsystem2"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    13
-	    DstBlock		    "Subsystem"
-	    DstPort		    1
-	  }
-	}
-	Line {
-	  ZOrder		  16
-	  SrcBlock		  "Subsystem"
-	  SrcPort		  2
-	  DstBlock		  "q_right"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  17
-	  SrcBlock		  "Subsystem"
-	  SrcPort		  1
-	  DstBlock		  "q_left"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  20
-	  SrcBlock		  "q_dot"
-	  SrcPort		  1
-	  Points		  [28, 0]
-	  Branch {
-	    ZOrder		    19
-	    Points		    [0, -150]
-	    DstBlock		    "Subsystem2"
-	    DstPort		    2
-	  }
-	  Branch {
-	    ZOrder		    18
-	    DstBlock		    "Subsystem1"
-	    DstPort		    1
-	  }
-	}
-	Line {
-	  ZOrder		  21
-	  SrcBlock		  "Subsystem1"
-	  SrcPort		  2
-	  DstBlock		  "q_dot\nright"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  22
-	  SrcBlock		  "Subsystem1"
-	  SrcPort		  1
-	  DstBlock		  "q_dot\nleft"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  25
-	  SrcBlock		  "q_dot_dot"
-	  SrcPort		  1
-	  DstBlock		  "Subsystem2"
-	  DstPort		  3
-	}
-	Line {
-	  ZOrder		  40
-	  SrcBlock		  "Sum1"
-	  SrcPort		  1
-	  Points		  [30, 0]
-	  Branch {
-	    ZOrder		    50
-	    Points		    [0, -145]
-	    DstBlock		    "q_dot\n(psi)"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    48
-	    DstBlock		    "To Workspace2"
-	    DstPort		    1
-	  }
-	}
-	Line {
-	  ZOrder		  42
-	  SrcBlock		  "Sum"
-	  SrcPort		  1
-	  Points		  [48, 0]
-	  Branch {
-	    ZOrder		    46
-	    Points		    [0, 140]
-	    DstBlock		    "q\n(psi)"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    44
-	    DstBlock		    "To Workspace1"
-	    DstPort		    1
-	  }
-	}
-	Line {
-	  ZOrder		  53
-	  SrcBlock		  "Subsystem2"
-	  SrcPort		  1
-	  Points		  [20, 0]
-	  DstBlock		  "Sum"
-	  DstPort		  2
-	}
-	Line {
-	  ZOrder		  54
-	  SrcBlock		  "Subsystem2"
-	  SrcPort		  2
-	  Points		  [20, 0]
-	  DstBlock		  "Sum1"
-	  DstPort		  1
-	}
-      }
-    }
-    Block {
       BlockType		      ToWorkspace
       Name		      "To Workspace"
       SID		      "105"
       Ports		      [1]
-      Position		      [105, 175, 165, 205]
+      Position		      [320, 235, 380, 265]
       ZOrder		      35
-      Commented		      "on"
       VariableName	      "time"
       MaxDataPoints	      "inf"
       Save2DSignal	      "3-D array (concatenate along third dimension)"
       FixptAsFi		      on
       SampleTime	      "-1"
-    }
-    Line {
-      ZOrder		      22
-      SrcBlock		      "Subsystem"
-      SrcPort		      1
-      DstBlock		      "LQR Segway"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      23
-      SrcBlock		      "Subsystem"
-      SrcPort		      2
-      DstBlock		      "LQR Segway"
-      DstPort		      2
-    }
-    Line {
-      ZOrder		      24
-      SrcBlock		      "Subsystem"
-      SrcPort		      3
-      DstBlock		      "LQR Segway"
-      DstPort		      3
-    }
-    Line {
-      ZOrder		      25
-      SrcBlock		      "Subsystem"
-      SrcPort		      4
-      DstBlock		      "LQR Segway"
-      DstPort		      4
-    }
-    Line {
-      ZOrder		      32
-      SrcBlock		      "Subsystem"
-      SrcPort		      5
-      DstBlock		      "LQR Segway"
-      DstPort		      5
-    }
-    Line {
-      ZOrder		      33
-      SrcBlock		      "Subsystem"
-      SrcPort		      6
-      DstBlock		      "LQR Segway"
-      DstPort		      6
-    }
-    Line {
-      ZOrder		      28
-      SrcBlock		      "Frank dirdyna"
-      SrcPort		      3
-      Points		      [49, 0; 0, 211; -983, 0; 0, -171]
-      DstBlock		      "Subsystem"
-      DstPort		      3
-    }
-    Line {
-      ZOrder		      29
-      SrcBlock		      "Frank dirdyna"
-      SrcPort		      2
-      Points		      [101, 0; 0, 420; -1049, 0; 0, -310]
-      DstBlock		      "Subsystem"
-      DstPort		      2
-    }
-    Line {
-      ZOrder		      30
-      SrcBlock		      "Frank dirdyna"
-      SrcPort		      1
-      Points		      [115, 0; 0, 579; -1077, 0; 0, -399]
-      DstBlock		      "Subsystem"
-      DstPort		      1
     }
     Line {
       ZOrder		      31
@@ -3162,864 +1497,23 @@ MatData {
 }
 #Finite State Machines
 #
-#   Stateflow Version 8.1 (R2014a) dated Feb  7 2014, 22:23:55
+#   Stateflow 80000010
 #
 #
 Stateflow {
   machine {
     id			    1
-    name		    "Frank_feedback"
+    name		    "Copy_of_Frank_feedback"
     created		    "11-Jul-2017 09:57:40"
     isLibrary		    0
-    firstTarget		    16
-    sfVersion		    76014001.002
-  }
-  chart {
-    id			    2
-    name		    "Subsystem/Subsystem2/MATLAB Function"
-    windowPosition	    [352.761 488.141 161 328]
-    viewLimits		    [0 156.75 0 153.75]
-    screen		    [1 1 1280 1024 1.000677131425054]
-    treeNode		    [0 3 0 0]
-    firstTransition	    14
-    firstJunction	    13
-    viewObj		    2
-    machine		    1
-    ssIdHighWaterMark	    12
-    decomposition	    CLUSTER_CHART
-    type		    EML_CHART
-    firstData		    4
-    chartFileNumber	    2
-    disableImplicitCasting  1
-    eml {
-      name		      "CoM_estimated"
-    }
-  }
-  state {
-    id			    3
-    labelString		    "eML_blk_kernel()"
-    position		    [18 64.5 118 66]
-    fontSize		    12
-    chart		    2
-    treeNode		    [2 0 0 0]
-    superState		    SUBCHART
-    subviewer		    2
-    ssIdNumber		    1
-    type		    FUNC_STATE
-    decomposition	    CLUSTER_STATE
-    eml {
-      isEML		      1
-      script		      "function [psi, psi_dot, CoM]  = CoM_estimated(psi_1, q, qd, qdd, rob_str, Ts)\n\nCoM = zeros(3,1)"
-      ";\nCoM_v = zeros(3,1);\nsens_values = @sensor_measurements;\n\n\n% calculate the CoM (x,y,z)\nm_tot = sum(rob_st"
-      "r.m);\n\nfor j = 1:3\n    for i = 1:12\n        \n        S = sens_values(q,qd,qdd,rob_str,i);\n        CoM(j) ="
-      " CoM(j) + (rob_str.m(i+5)*S.P(j))/m_tot;\n        CoM_v(j) = CoM_v(j) + (rob_str.m(i+5)*S.V(j))/m_tot;\n    \n  "
-      "  end\nend\n\n% Ry = [cos(q(5)) 0 sin(q(5)); 0 1 0; -sin(q(5)) 0 cos(q(5))];\nx_ax = [1 0 0]';\nz_ax = [0 0 1]';"
-      "\n\n\n% % vedo se cado avanti o indietro \n% if(dot(x_ax, CoM./norm(CoM)) >= 0)\n%     psi = acos(dot(z_ax, CoM."
-      "/norm(CoM)));\n% else \n%     psi = -acos(dot(z_ax, CoM./norm(CoM)));\n% end\n\nSb = sens_values(q,qd,qdd,rob_st"
-      "r,1);\nRz = [cos(q(4)), -sin(q(4)), 0; sin(q(4)), cos(q(4)) 0; 0, 0, 1];\n\nCoM_rel = Rz'*(CoM - Sb.P);\n%CoM_v_"
-      "rel = Rz'*(CoM_v - Sb.V);\n% if(dot(x_ax, CoM_rel./norm(CoM_rel)) >= 0)\n%     psi = acos(dot(z_ax, CoM_rel./nor"
-      "m(CoM_rel)));\n%     % psi_dot = (psi-psi_1)/Ts;\n% \n% else \n%     psi = -acos(dot(z_ax, CoM_rel./norm(CoM_rel"
-      ")));\n%     % psi_dot = -(psi-psi_1)/Ts;\n% \n% end\n\npsi = atan2(CoM_rel(1),CoM_rel(3));\npsi_dot = (psi-psi_1"
-      ")/Ts;\n% psi_dot = atan2(CoM_v_rel(1),CoM_v_rel(3));\n\n\n\n\n\n\n\n\nfunction [sens] = sensor_measurements(sq,s"
-      "qd,sqdd,s,isens)\n\n sens.P = zeros(3,1);\n sens.R = zeros(3,3);\n sens.V = zeros(3,1);\n sens.OM = zeros(3,1);\n"
-      " sens.A = zeros(3,1);\n sens.OMP = zeros(3,1);\n sens.J = zeros(6,17);\n\nq = sq; \nqd = sqd; \nqdd = sqdd; \n% "
-      "frc = s.frc; \n% trq = s.trq; \n\n% === begin imp_aux === \n\n% === end imp_aux === \n\n% ===== BEGIN task 0 ==="
-      "== \n \n% Sensor Kinematics \n\n\n\n% = = Block_0_0_0_0_0_1 = = \n \n% Trigonometric Variables  \n\n  C4 = cos(q"
-      "(4));\n  S4 = sin(q(4));\n  C5 = cos(q(5));\n  S5 = sin(q(5));\n  C6 = cos(q(6));\n  S6 = sin(q(6));\n\n% = = Bl"
-      "ock_0_0_0_0_0_2 = = \n \n% Augmented Joint Position Vectors   \n\n  Dz73 = q(7)+s.dpt(3,2);\n\n% = = Block_0_0_0"
-      "_0_0_3 = = \n \n% Trigonometric Variables  \n\n  C8 = cos(q(8));\n  S8 = sin(q(8));\n  C9 = cos(q(9));\n  S9 = s"
-      "in(q(9));\n  C10 = cos(q(10));\n  S10 = sin(q(10));\n\n% = = Block_0_0_0_0_0_4 = = \n \n% Trigonometric Variable"
-      "s  \n\n  C11 = cos(q(11));\n  S11 = sin(q(11));\n  C12 = cos(q(12));\n  S12 = sin(q(12));\n  C13 = cos(q(13));\n"
-      "  S13 = sin(q(13));\n\n% = = Block_0_0_0_0_0_5 = = \n \n% Trigonometric Variables  \n\n  C14 = cos(q(14));\n  S1"
-      "4 = sin(q(14));\n\n% = = Block_0_0_0_0_0_6 = = \n \n% Trigonometric Variables  \n\n  C16 = cos(q(16));\n  S16 = "
-      "sin(q(16));\n\n% = = Block_0_0_0_0_0_7 = = \n \n% Trigonometric Variables  \n\n  C17 = cos(q(17));\n  S17 = sin("
-      "q(17));\n\n% ====== END Task 0 ====== \n\n% ===== BEGIN task 1 ===== \n \nswitch isens\n\n \n% \ncase 1, \n\n\n%"
-      " = = Block_1_0_0_1_0_1 = = \n \n% Sensor Kinematics \n\n\n    ROcp0_15 = C4*C5;\n    ROcp0_25 = S4*C5;\n    ROcp"
-      "0_75 = C4*S5;\n    ROcp0_85 = S4*S5;\n    ROcp0_46 = ROcp0_75*S6-S4*C6;\n    ROcp0_56 = ROcp0_85*S6+C4*C6;\n    "
-      "ROcp0_66 = C5*S6;\n    ROcp0_76 = ROcp0_75*C6+S4*S6;\n    ROcp0_86 = ROcp0_85*C6-C4*S6;\n    ROcp0_96 = C5*C6;\n"
-      "    OMcp0_15 = -qd(5)*S4;\n    OMcp0_25 = qd(5)*C4;\n    OMcp0_16 = OMcp0_15+ROcp0_15*qd(6);\n    OMcp0_26 = OMc"
-      "p0_25+ROcp0_25*qd(6);\n    OMcp0_36 = qd(4)-qd(6)*S5;\n    OPcp0_16 = ROcp0_15*qdd(6)-qdd(5)*S4-qd(4)*qd(5)*C4-q"
-      "d(6)*(OMcp0_25*S5+ROcp0_25*qd(4));\n    OPcp0_26 = ROcp0_25*qdd(6)+qdd(5)*C4-qd(4)*qd(5)*S4+qd(6)*(OMcp0_15*S5+R"
-      "Ocp0_15*qd(4));\n    OPcp0_36 = qdd(4)-qdd(6)*S5-qd(5)*qd(6)*C5;\n\n% = = Block_1_0_0_1_1_0 = = \n \n% Symbolic "
-      "Outputs  \n\n    sens.P(1) = q(1);\n    sens.P(2) = q(2);\n    sens.P(3) = q(3);\n    sens.R(1,1) = ROcp0_15;\n "
-      "   sens.R(1,2) = ROcp0_25;\n    sens.R(1,3) = -S5;\n    sens.R(2,1) = ROcp0_46;\n    sens.R(2,2) = ROcp0_56;\n  "
-      "  sens.R(2,3) = ROcp0_66;\n    sens.R(3,1) = ROcp0_76;\n    sens.R(3,2) = ROcp0_86;\n    sens.R(3,3) = ROcp0_96;"
-      "\n    sens.V(1) = qd(1);\n    sens.V(2) = qd(2);\n    sens.V(3) = qd(3);\n    sens.OM(1) = OMcp0_16;\n    sens.O"
-      "M(2) = OMcp0_26;\n    sens.OM(3) = OMcp0_36;\n    sens.J(1,1) = (1.0);\n    sens.J(2,2) = (1.0);\n    sens.J(3,3"
-      ") = (1.0);\n    sens.J(4,5) = -S4;\n    sens.J(4,6) = ROcp0_15;\n    sens.J(5,5) = C4;\n    sens.J(5,6) = ROcp0_"
-      "25;\n    sens.J(6,4) = (1.0);\n    sens.J(6,6) = -S5;\n    sens.A(1) = qdd(1);\n    sens.A(2) = qdd(2);\n    sen"
-      "s.A(3) = qdd(3);\n    sens.OMP(1) = OPcp0_16;\n    sens.OMP(2) = OPcp0_26;\n    sens.OMP(3) = OPcp0_36;\n \n% \n"
-      "case 2, \n\n\n% = = Block_1_0_0_2_0_1 = = \n \n% Sensor Kinematics \n\n\n    ROcp1_15 = C4*C5;\n    ROcp1_25 = S"
-      "4*C5;\n    ROcp1_75 = C4*S5;\n    ROcp1_85 = S4*S5;\n    ROcp1_46 = ROcp1_75*S6-S4*C6;\n    ROcp1_56 = ROcp1_85*"
-      "S6+C4*C6;\n    ROcp1_66 = C5*S6;\n    ROcp1_76 = ROcp1_75*C6+S4*S6;\n    ROcp1_86 = ROcp1_85*C6-C4*S6;\n    ROcp"
-      "1_96 = C5*C6;\n    OMcp1_15 = -qd(5)*S4;\n    OMcp1_25 = qd(5)*C4;\n    OMcp1_16 = OMcp1_15+ROcp1_15*qd(6);\n   "
-      " OMcp1_26 = OMcp1_25+ROcp1_25*qd(6);\n    OMcp1_36 = qd(4)-qd(6)*S5;\n    OPcp1_16 = ROcp1_15*qdd(6)-qdd(5)*S4-q"
-      "d(4)*qd(5)*C4-qd(6)*(OMcp1_25*S5+ROcp1_25*qd(4));\n    OPcp1_26 = ROcp1_25*qdd(6)+qdd(5)*C4-qd(4)*qd(5)*S4+qd(6)"
-      "*(OMcp1_15*S5+ROcp1_15*qd(4));\n    OPcp1_36 = qdd(4)-qdd(6)*S5-qd(5)*qd(6)*C5;\n\n% = = Block_1_0_0_2_0_2 = = \n"
-      " \n% Sensor Kinematics \n\n\n    RLcp1_17 = Dz73*ROcp1_76;\n    RLcp1_27 = Dz73*ROcp1_86;\n    RLcp1_37 = Dz73*R"
-      "Ocp1_96;\n    POcp1_17 = RLcp1_17+q(1);\n    POcp1_27 = RLcp1_27+q(2);\n    POcp1_37 = RLcp1_37+q(3);\n    JTcp1"
-      "_17_5 = RLcp1_37*C4;\n    JTcp1_27_5 = RLcp1_37*S4;\n    JTcp1_37_5 = -(RLcp1_17*C4+RLcp1_27*S4);\n    JTcp1_17_"
-      "6 = RLcp1_27*S5+RLcp1_37*ROcp1_25;\n    JTcp1_27_6 = -(RLcp1_17*S5+RLcp1_37*ROcp1_15);\n    JTcp1_37_6 = -(RLcp1"
-      "_17*ROcp1_25-RLcp1_27*ROcp1_15);\n    ORcp1_17 = OMcp1_26*RLcp1_37-OMcp1_36*RLcp1_27;\n    ORcp1_27 = -(OMcp1_16"
-      "*RLcp1_37-OMcp1_36*RLcp1_17);\n    ORcp1_37 = OMcp1_16*RLcp1_27-OMcp1_26*RLcp1_17;\n    VIcp1_17 = ORcp1_17+qd(1"
-      ")+ROcp1_76*qd(7);\n    VIcp1_27 = ORcp1_27+qd(2)+ROcp1_86*qd(7);\n    VIcp1_37 = ORcp1_37+qd(3)+ROcp1_96*qd(7);\n"
-      "    ACcp1_17 = qdd(1)+OMcp1_26*ORcp1_37-OMcp1_36*ORcp1_27+OPcp1_26*RLcp1_37-OPcp1_36*RLcp1_27+ROcp1_76*qdd(7)+(2"
-      ".0)*qd(7)*(OMcp1_26*ROcp1_96-OMcp1_36*...\n ROcp1_86);\n    ACcp1_27 = qdd(2)-OMcp1_16*ORcp1_37+OMcp1_36*ORcp1_1"
-      "7-OPcp1_16*RLcp1_37+OPcp1_36*RLcp1_17+ROcp1_86*qdd(7)-(2.0)*qd(7)*(OMcp1_16*ROcp1_96-OMcp1_36*...\n ROcp1_76);\n"
-      "    ACcp1_37 = qdd(3)+OMcp1_16*ORcp1_27-OMcp1_26*ORcp1_17+OPcp1_16*RLcp1_27-OPcp1_26*RLcp1_17+ROcp1_96*qdd(7)+(2"
-      ".0)*qd(7)*(OMcp1_16*ROcp1_86-OMcp1_26*...\n ROcp1_76);\n\n% = = Block_1_0_0_2_1_0 = = \n \n% Symbolic Outputs  \n"
-      "\n    sens.P(1) = POcp1_17;\n    sens.P(2) = POcp1_27;\n    sens.P(3) = POcp1_37;\n    sens.R(1,1) = ROcp1_15;\n"
-      "    sens.R(1,2) = ROcp1_25;\n    sens.R(1,3) = -S5;\n    sens.R(2,1) = ROcp1_46;\n    sens.R(2,2) = ROcp1_56;\n "
-      "   sens.R(2,3) = ROcp1_66;\n    sens.R(3,1) = ROcp1_76;\n    sens.R(3,2) = ROcp1_86;\n    sens.R(3,3) = ROcp1_96"
-      ";\n    sens.V(1) = VIcp1_17;\n    sens.V(2) = VIcp1_27;\n    sens.V(3) = VIcp1_37;\n    sens.OM(1) = OMcp1_16;\n"
-      "    sens.OM(2) = OMcp1_26;\n    sens.OM(3) = OMcp1_36;\n    sens.J(1,1) = (1.0);\n    sens.J(1,4) = -RLcp1_27;\n"
-      "    sens.J(1,5) = JTcp1_17_5;\n    sens.J(1,6) = JTcp1_17_6;\n    sens.J(1,7) = ROcp1_76;\n    sens.J(2,2) = (1."
-      "0);\n    sens.J(2,4) = RLcp1_17;\n    sens.J(2,5) = JTcp1_27_5;\n    sens.J(2,6) = JTcp1_27_6;\n    sens.J(2,7) "
-      "= ROcp1_86;\n    sens.J(3,3) = (1.0);\n    sens.J(3,5) = JTcp1_37_5;\n    sens.J(3,6) = JTcp1_37_6;\n    sens.J("
-      "3,7) = ROcp1_96;\n    sens.J(4,5) = -S4;\n    sens.J(4,6) = ROcp1_15;\n    sens.J(5,5) = C4;\n    sens.J(5,6) = "
-      "ROcp1_25;\n    sens.J(6,4) = (1.0);\n    sens.J(6,6) = -S5;\n    sens.A(1) = ACcp1_17;\n    sens.A(2) = ACcp1_27"
-      ";\n    sens.A(3) = ACcp1_37;\n    sens.OMP(1) = OPcp1_16;\n    sens.OMP(2) = OPcp1_26;\n    sens.OMP(3) = OPcp1_"
-      "36;\n \n% \ncase 3, \n\n\n% = = Block_1_0_0_3_0_1 = = \n \n% Sensor Kinematics \n\n\n    ROcp2_15 = C4*C5;\n    "
-      "ROcp2_25 = S4*C5;\n    ROcp2_75 = C4*S5;\n    ROcp2_85 = S4*S5;\n    ROcp2_46 = ROcp2_75*S6-S4*C6;\n    ROcp2_56"
-      " = ROcp2_85*S6+C4*C6;\n    ROcp2_66 = C5*S6;\n    ROcp2_76 = ROcp2_75*C6+S4*S6;\n    ROcp2_86 = ROcp2_85*C6-C4*S"
-      "6;\n    ROcp2_96 = C5*C6;\n    OMcp2_15 = -qd(5)*S4;\n    OMcp2_25 = qd(5)*C4;\n    OMcp2_16 = OMcp2_15+ROcp2_15"
-      "*qd(6);\n    OMcp2_26 = OMcp2_25+ROcp2_25*qd(6);\n    OMcp2_36 = qd(4)-qd(6)*S5;\n    OPcp2_16 = ROcp2_15*qdd(6)"
-      "-qdd(5)*S4-qd(4)*qd(5)*C4-qd(6)*(OMcp2_25*S5+ROcp2_25*qd(4));\n    OPcp2_26 = ROcp2_25*qdd(6)+qdd(5)*C4-qd(4)*qd"
-      "(5)*S4+qd(6)*(OMcp2_15*S5+ROcp2_15*qd(4));\n    OPcp2_36 = qdd(4)-qdd(6)*S5-qd(5)*qd(6)*C5;\n\n% = = Block_1_0_0"
-      "_3_0_2 = = \n \n% Sensor Kinematics \n\n\n    RLcp2_17 = Dz73*ROcp2_76;\n    RLcp2_27 = Dz73*ROcp2_86;\n    RLcp"
-      "2_37 = Dz73*ROcp2_96;\n    ORcp2_17 = OMcp2_26*RLcp2_37-OMcp2_36*RLcp2_27;\n    ORcp2_27 = -(OMcp2_16*RLcp2_37-O"
-      "Mcp2_36*RLcp2_17);\n    ORcp2_37 = OMcp2_16*RLcp2_27-OMcp2_26*RLcp2_17;\n\n% = = Block_1_0_0_3_0_3 = = \n \n% Se"
-      "nsor Kinematics \n\n\n    ROcp2_18 = ROcp2_15*C8-ROcp2_76*S8;\n    ROcp2_28 = ROcp2_25*C8-ROcp2_86*S8;\n    ROcp"
-      "2_38 = -(ROcp2_96*S8+S5*C8);\n    ROcp2_78 = ROcp2_15*S8+ROcp2_76*C8;\n    ROcp2_88 = ROcp2_25*S8+ROcp2_86*C8;\n"
-      "    ROcp2_98 = ROcp2_96*C8-S5*S8;\n    RLcp2_18 = ROcp2_46*s.dpt(2,6);\n    RLcp2_28 = ROcp2_56*s.dpt(2,6);\n   "
-      " RLcp2_38 = ROcp2_66*s.dpt(2,6);\n    POcp2_18 = RLcp2_17+RLcp2_18+q(1);\n    POcp2_28 = RLcp2_27+RLcp2_28+q(2);"
-      "\n    POcp2_38 = RLcp2_37+RLcp2_38+q(3);\n    JTcp2_18_4 = -(RLcp2_27+RLcp2_28);\n    JTcp2_28_4 = RLcp2_17+RLcp"
-      "2_18;\n    JTcp2_18_5 = C4*(RLcp2_37+RLcp2_38);\n    JTcp2_28_5 = S4*(RLcp2_37+RLcp2_38);\n    JTcp2_38_5 = -(C4"
-      "*(RLcp2_17+RLcp2_18)+S4*(RLcp2_27+RLcp2_28));\n    JTcp2_18_6 = ROcp2_25*(RLcp2_37+RLcp2_38)+S5*(RLcp2_27+RLcp2_"
-      "28);\n    JTcp2_28_6 = -(ROcp2_15*(RLcp2_37+RLcp2_38)+S5*(RLcp2_17+RLcp2_18));\n    JTcp2_38_6 = ROcp2_15*(RLcp2"
-      "_27+RLcp2_28)-ROcp2_25*(RLcp2_17+RLcp2_18);\n    OMcp2_18 = OMcp2_16+ROcp2_46*qd(8);\n    OMcp2_28 = OMcp2_26+RO"
-      "cp2_56*qd(8);\n    OMcp2_38 = OMcp2_36+ROcp2_66*qd(8);\n    ORcp2_18 = OMcp2_26*RLcp2_38-OMcp2_36*RLcp2_28;\n   "
-      " ORcp2_28 = -(OMcp2_16*RLcp2_38-OMcp2_36*RLcp2_18);\n    ORcp2_38 = OMcp2_16*RLcp2_28-OMcp2_26*RLcp2_18;\n    VI"
-      "cp2_18 = ORcp2_17+ORcp2_18+qd(1)+ROcp2_76*qd(7);\n    VIcp2_28 = ORcp2_27+ORcp2_28+qd(2)+ROcp2_86*qd(7);\n    VI"
-      "cp2_38 = ORcp2_37+ORcp2_38+qd(3)+ROcp2_96*qd(7);\n    OPcp2_18 = OPcp2_16+ROcp2_46*qdd(8)+qd(8)*(OMcp2_26*ROcp2_"
-      "66-OMcp2_36*ROcp2_56);\n    OPcp2_28 = OPcp2_26+ROcp2_56*qdd(8)-qd(8)*(OMcp2_16*ROcp2_66-OMcp2_36*ROcp2_46);\n  "
-      "  OPcp2_38 = OPcp2_36+ROcp2_66*qdd(8)+qd(8)*(OMcp2_16*ROcp2_56-OMcp2_26*ROcp2_46);\n    ACcp2_18 = qdd(1)+OMcp2_"
-      "26*ORcp2_37+OMcp2_26*ORcp2_38-OMcp2_36*ORcp2_27-OMcp2_36*ORcp2_28+OPcp2_26*RLcp2_37+OPcp2_26*RLcp2_38-OPcp2_36*R"
-      "Lcp2_27...\n -OPcp2_36*RLcp2_28+ROcp2_76*qdd(7)+(2.0)*qd(7)*(OMcp2_26*ROcp2_96-OMcp2_36*ROcp2_86);\n    ACcp2_28"
-      " = qdd(2)-OMcp2_16*ORcp2_37-OMcp2_16*ORcp2_38+OMcp2_36*ORcp2_17+OMcp2_36*ORcp2_18-OPcp2_16*RLcp2_37-OPcp2_16*RLc"
-      "p2_38+OPcp2_36*RLcp2_17...\n +OPcp2_36*RLcp2_18+ROcp2_86*qdd(7)-(2.0)*qd(7)*(OMcp2_16*ROcp2_96-OMcp2_36*ROcp2_76"
-      ");\n    ACcp2_38 = qdd(3)+OMcp2_16*ORcp2_27+OMcp2_16*ORcp2_28-OMcp2_26*ORcp2_17-OMcp2_26*ORcp2_18+OPcp2_16*RLcp2"
-      "_27+OPcp2_16*RLcp2_28-OPcp2_26*RLcp2_17...\n -OPcp2_26*RLcp2_18+ROcp2_96*qdd(7)+(2.0)*qd(7)*(OMcp2_16*ROcp2_86-O"
-      "Mcp2_26*ROcp2_76);\n\n% = = Block_1_0_0_3_1_0 = = \n \n% Symbolic Outputs  \n\n    sens.P(1) = POcp2_18;\n    se"
-      "ns.P(2) = POcp2_28;\n    sens.P(3) = POcp2_38;\n    sens.R(1,1) = ROcp2_18;\n    sens.R(1,2) = ROcp2_28;\n    se"
-      "ns.R(1,3) = ROcp2_38;\n    sens.R(2,1) = ROcp2_46;\n    sens.R(2,2) = ROcp2_56;\n    sens.R(2,3) = ROcp2_66;\n  "
-      "  sens.R(3,1) = ROcp2_78;\n    sens.R(3,2) = ROcp2_88;\n    sens.R(3,3) = ROcp2_98;\n    sens.V(1) = VIcp2_18;\n"
-      "    sens.V(2) = VIcp2_28;\n    sens.V(3) = VIcp2_38;\n    sens.OM(1) = OMcp2_18;\n    sens.OM(2) = OMcp2_28;\n  "
-      "  sens.OM(3) = OMcp2_38;\n    sens.J(1,1) = (1.0);\n    sens.J(1,4) = JTcp2_18_4;\n    sens.J(1,5) = JTcp2_18_5;"
-      "\n    sens.J(1,6) = JTcp2_18_6;\n    sens.J(1,7) = ROcp2_76;\n    sens.J(2,2) = (1.0);\n    sens.J(2,4) = JTcp2_"
-      "28_4;\n    sens.J(2,5) = JTcp2_28_5;\n    sens.J(2,6) = JTcp2_28_6;\n    sens.J(2,7) = ROcp2_86;\n    sens.J(3,3"
-      ") = (1.0);\n    sens.J(3,5) = JTcp2_38_5;\n    sens.J(3,6) = JTcp2_38_6;\n    sens.J(3,7) = ROcp2_96;\n    sens."
-      "J(4,5) = -S4;\n    sens.J(4,6) = ROcp2_15;\n    sens.J(4,8) = ROcp2_46;\n    sens.J(5,5) = C4;\n    sens.J(5,6) "
-      "= ROcp2_25;\n    sens.J(5,8) = ROcp2_56;\n    sens.J(6,4) = (1.0);\n    sens.J(6,6) = -S5;\n    sens.J(6,8) = RO"
-      "cp2_66;\n    sens.A(1) = ACcp2_18;\n    sens.A(2) = ACcp2_28;\n    sens.A(3) = ACcp2_38;\n    sens.OMP(1) = OPcp"
-      "2_18;\n    sens.OMP(2) = OPcp2_28;\n    sens.OMP(3) = OPcp2_38;\n \n% \ncase 4, \n\n\n% = = Block_1_0_0_4_0_1 = "
-      "= \n \n% Sensor Kinematics \n\n\n    ROcp3_15 = C4*C5;\n    ROcp3_25 = S4*C5;\n    ROcp3_75 = C4*S5;\n    ROcp3_"
-      "85 = S4*S5;\n    ROcp3_46 = ROcp3_75*S6-S4*C6;\n    ROcp3_56 = ROcp3_85*S6+C4*C6;\n    ROcp3_66 = C5*S6;\n    RO"
-      "cp3_76 = ROcp3_75*C6+S4*S6;\n    ROcp3_86 = ROcp3_85*C6-C4*S6;\n    ROcp3_96 = C5*C6;\n    OMcp3_15 = -qd(5)*S4;"
-      "\n    OMcp3_25 = qd(5)*C4;\n    OMcp3_16 = OMcp3_15+ROcp3_15*qd(6);\n    OMcp3_26 = OMcp3_25+ROcp3_25*qd(6);\n  "
-      "  OMcp3_36 = qd(4)-qd(6)*S5;\n    OPcp3_16 = ROcp3_15*qdd(6)-qdd(5)*S4-qd(4)*qd(5)*C4-qd(6)*(OMcp3_25*S5+ROcp3_2"
-      "5*qd(4));\n    OPcp3_26 = ROcp3_25*qdd(6)+qdd(5)*C4-qd(4)*qd(5)*S4+qd(6)*(OMcp3_15*S5+ROcp3_15*qd(4));\n    OPcp"
-      "3_36 = qdd(4)-qdd(6)*S5-qd(5)*qd(6)*C5;\n\n% = = Block_1_0_0_4_0_2 = = \n \n% Sensor Kinematics \n\n\n    RLcp3_"
-      "17 = Dz73*ROcp3_76;\n    RLcp3_27 = Dz73*ROcp3_86;\n    RLcp3_37 = Dz73*ROcp3_96;\n    ORcp3_17 = OMcp3_26*RLcp3"
-      "_37-OMcp3_36*RLcp3_27;\n    ORcp3_27 = -(OMcp3_16*RLcp3_37-OMcp3_36*RLcp3_17);\n    ORcp3_37 = OMcp3_16*RLcp3_27"
-      "-OMcp3_26*RLcp3_17;\n\n% = = Block_1_0_0_4_0_3 = = \n \n% Sensor Kinematics \n\n\n    ROcp3_18 = ROcp3_15*C8-ROc"
-      "p3_76*S8;\n    ROcp3_28 = ROcp3_25*C8-ROcp3_86*S8;\n    ROcp3_38 = -(ROcp3_96*S8+S5*C8);\n    ROcp3_78 = ROcp3_1"
-      "5*S8+ROcp3_76*C8;\n    ROcp3_88 = ROcp3_25*S8+ROcp3_86*C8;\n    ROcp3_98 = ROcp3_96*C8-S5*S8;\n    ROcp3_49 = RO"
-      "cp3_46*C9+ROcp3_78*S9;\n    ROcp3_59 = ROcp3_56*C9+ROcp3_88*S9;\n    ROcp3_69 = ROcp3_66*C9+ROcp3_98*S9;\n    RO"
-      "cp3_79 = -(ROcp3_46*S9-ROcp3_78*C9);\n    ROcp3_89 = -(ROcp3_56*S9-ROcp3_88*C9);\n    ROcp3_99 = -(ROcp3_66*S9-R"
-      "Ocp3_98*C9);\n    RLcp3_18 = ROcp3_46*s.dpt(2,6);\n    RLcp3_28 = ROcp3_56*s.dpt(2,6);\n    RLcp3_38 = ROcp3_66*"
-      "s.dpt(2,6);\n    POcp3_18 = RLcp3_17+RLcp3_18+q(1);\n    POcp3_28 = RLcp3_27+RLcp3_28+q(2);\n    POcp3_38 = RLcp"
-      "3_37+RLcp3_38+q(3);\n    JTcp3_18_4 = -(RLcp3_27+RLcp3_28);\n    JTcp3_28_4 = RLcp3_17+RLcp3_18;\n    JTcp3_18_5"
-      " = C4*(RLcp3_37+RLcp3_38);\n    JTcp3_28_5 = S4*(RLcp3_37+RLcp3_38);\n    JTcp3_38_5 = -(C4*(RLcp3_17+RLcp3_18)+"
-      "S4*(RLcp3_27+RLcp3_28));\n    JTcp3_18_6 = ROcp3_25*(RLcp3_37+RLcp3_38)+S5*(RLcp3_27+RLcp3_28);\n    JTcp3_28_6 "
-      "= -(ROcp3_15*(RLcp3_37+RLcp3_38)+S5*(RLcp3_17+RLcp3_18));\n    JTcp3_38_6 = ROcp3_15*(RLcp3_27+RLcp3_28)-ROcp3_2"
-      "5*(RLcp3_17+RLcp3_18);\n    OMcp3_18 = OMcp3_16+ROcp3_46*qd(8);\n    OMcp3_28 = OMcp3_26+ROcp3_56*qd(8);\n    OM"
-      "cp3_38 = OMcp3_36+ROcp3_66*qd(8);\n    ORcp3_18 = OMcp3_26*RLcp3_38-OMcp3_36*RLcp3_28;\n    ORcp3_28 = -(OMcp3_1"
-      "6*RLcp3_38-OMcp3_36*RLcp3_18);\n    ORcp3_38 = OMcp3_16*RLcp3_28-OMcp3_26*RLcp3_18;\n    VIcp3_18 = ORcp3_17+ORc"
-      "p3_18+qd(1)+ROcp3_76*qd(7);\n    VIcp3_28 = ORcp3_27+ORcp3_28+qd(2)+ROcp3_86*qd(7);\n    VIcp3_38 = ORcp3_37+ORc"
-      "p3_38+qd(3)+ROcp3_96*qd(7);\n    ACcp3_18 = qdd(1)+OMcp3_26*ORcp3_37+OMcp3_26*ORcp3_38-OMcp3_36*ORcp3_27-OMcp3_3"
-      "6*ORcp3_28+OPcp3_26*RLcp3_37+OPcp3_26*RLcp3_38-OPcp3_36*RLcp3_27...\n -OPcp3_36*RLcp3_28+ROcp3_76*qdd(7)+(2.0)*q"
-      "d(7)*(OMcp3_26*ROcp3_96-OMcp3_36*ROcp3_86);\n    ACcp3_28 = qdd(2)-OMcp3_16*ORcp3_37-OMcp3_16*ORcp3_38+OMcp3_36*"
-      "ORcp3_17+OMcp3_36*ORcp3_18-OPcp3_16*RLcp3_37-OPcp3_16*RLcp3_38+OPcp3_36*RLcp3_17...\n +OPcp3_36*RLcp3_18+ROcp3_8"
-      "6*qdd(7)-(2.0)*qd(7)*(OMcp3_16*ROcp3_96-OMcp3_36*ROcp3_76);\n    ACcp3_38 = qdd(3)+OMcp3_16*ORcp3_27+OMcp3_16*OR"
-      "cp3_28-OMcp3_26*ORcp3_17-OMcp3_26*ORcp3_18+OPcp3_16*RLcp3_27+OPcp3_16*RLcp3_28-OPcp3_26*RLcp3_17...\n -OPcp3_26*"
-      "RLcp3_18+ROcp3_96*qdd(7)+(2.0)*qd(7)*(OMcp3_16*ROcp3_86-OMcp3_26*ROcp3_76);\n    OMcp3_19 = OMcp3_18+ROcp3_18*qd"
-      "(9);\n    OMcp3_29 = OMcp3_28+ROcp3_28*qd(9);\n    OMcp3_39 = OMcp3_38+ROcp3_38*qd(9);\n    OPcp3_19 = OPcp3_16+"
-      "ROcp3_18*qdd(9)+ROcp3_46*qdd(8)+qd(8)*(OMcp3_26*ROcp3_66-OMcp3_36*ROcp3_56)+qd(9)*(OMcp3_28*ROcp3_38-OMcp3_38*RO"
-      "cp3_28);\n    OPcp3_29 = OPcp3_26+ROcp3_28*qdd(9)+ROcp3_56*qdd(8)-qd(8)*(OMcp3_16*ROcp3_66-OMcp3_36*ROcp3_46)-qd"
-      "(9)*(OMcp3_18*ROcp3_38-OMcp3_38*ROcp3_18);\n    OPcp3_39 = OPcp3_36+ROcp3_38*qdd(9)+ROcp3_66*qdd(8)+qd(8)*(OMcp3"
-      "_16*ROcp3_56-OMcp3_26*ROcp3_46)+qd(9)*(OMcp3_18*ROcp3_28-OMcp3_28*ROcp3_18);\n\n% = = Block_1_0_0_4_1_0 = = \n \n"
-      "% Symbolic Outputs  \n\n    sens.P(1) = POcp3_18;\n    sens.P(2) = POcp3_28;\n    sens.P(3) = POcp3_38;\n    sen"
-      "s.R(1,1) = ROcp3_18;\n    sens.R(1,2) = ROcp3_28;\n    sens.R(1,3) = ROcp3_38;\n    sens.R(2,1) = ROcp3_49;\n   "
-      " sens.R(2,2) = ROcp3_59;\n    sens.R(2,3) = ROcp3_69;\n    sens.R(3,1) = ROcp3_79;\n    sens.R(3,2) = ROcp3_89;\n"
-      "    sens.R(3,3) = ROcp3_99;\n    sens.V(1) = VIcp3_18;\n    sens.V(2) = VIcp3_28;\n    sens.V(3) = VIcp3_38;\n  "
-      "  sens.OM(1) = OMcp3_19;\n    sens.OM(2) = OMcp3_29;\n    sens.OM(3) = OMcp3_39;\n    sens.J(1,1) = (1.0);\n    "
-      "sens.J(1,4) = JTcp3_18_4;\n    sens.J(1,5) = JTcp3_18_5;\n    sens.J(1,6) = JTcp3_18_6;\n    sens.J(1,7) = ROcp3"
-      "_76;\n    sens.J(2,2) = (1.0);\n    sens.J(2,4) = JTcp3_28_4;\n    sens.J(2,5) = JTcp3_28_5;\n    sens.J(2,6) = "
-      "JTcp3_28_6;\n    sens.J(2,7) = ROcp3_86;\n    sens.J(3,3) = (1.0);\n    sens.J(3,5) = JTcp3_38_5;\n    sens.J(3,"
-      "6) = JTcp3_38_6;\n    sens.J(3,7) = ROcp3_96;\n    sens.J(4,5) = -S4;\n    sens.J(4,6) = ROcp3_15;\n    sens.J(4"
-      ",8) = ROcp3_46;\n    sens.J(4,9) = ROcp3_18;\n    sens.J(5,5) = C4;\n    sens.J(5,6) = ROcp3_25;\n    sens.J(5,8"
-      ") = ROcp3_56;\n    sens.J(5,9) = ROcp3_28;\n    sens.J(6,4) = (1.0);\n    sens.J(6,6) = -S5;\n    sens.J(6,8) = "
-      "ROcp3_66;\n    sens.J(6,9) = ROcp3_38;\n    sens.A(1) = ACcp3_18;\n    sens.A(2) = ACcp3_28;\n    sens.A(3) = AC"
-      "cp3_38;\n    sens.OMP(1) = OPcp3_19;\n    sens.OMP(2) = OPcp3_29;\n    sens.OMP(3) = OPcp3_39;\n \n% \ncase 5, \n"
-      "\n\n% = = Block_1_0_0_5_0_1 = = \n \n% Sensor Kinematics \n\n\n    ROcp4_15 = C4*C5;\n    ROcp4_25 = S4*C5;\n   "
-      " ROcp4_75 = C4*S5;\n    ROcp4_85 = S4*S5;\n    ROcp4_46 = ROcp4_75*S6-S4*C6;\n    ROcp4_56 = ROcp4_85*S6+C4*C6;\n"
-      "    ROcp4_66 = C5*S6;\n    ROcp4_76 = ROcp4_75*C6+S4*S6;\n    ROcp4_86 = ROcp4_85*C6-C4*S6;\n    ROcp4_96 = C5*C"
-      "6;\n    OMcp4_15 = -qd(5)*S4;\n    OMcp4_25 = qd(5)*C4;\n    OMcp4_16 = OMcp4_15+ROcp4_15*qd(6);\n    OMcp4_26 ="
-      " OMcp4_25+ROcp4_25*qd(6);\n    OMcp4_36 = qd(4)-qd(6)*S5;\n    OPcp4_16 = ROcp4_15*qdd(6)-qdd(5)*S4-qd(4)*qd(5)*"
-      "C4-qd(6)*(OMcp4_25*S5+ROcp4_25*qd(4));\n    OPcp4_26 = ROcp4_25*qdd(6)+qdd(5)*C4-qd(4)*qd(5)*S4+qd(6)*(OMcp4_15*"
-      "S5+ROcp4_15*qd(4));\n    OPcp4_36 = qdd(4)-qdd(6)*S5-qd(5)*qd(6)*C5;\n\n% = = Block_1_0_0_5_0_2 = = \n \n% Senso"
-      "r Kinematics \n\n\n    RLcp4_17 = Dz73*ROcp4_76;\n    RLcp4_27 = Dz73*ROcp4_86;\n    RLcp4_37 = Dz73*ROcp4_96;\n"
-      "    ORcp4_17 = OMcp4_26*RLcp4_37-OMcp4_36*RLcp4_27;\n    ORcp4_27 = -(OMcp4_16*RLcp4_37-OMcp4_36*RLcp4_17);\n   "
-      " ORcp4_37 = OMcp4_16*RLcp4_27-OMcp4_26*RLcp4_17;\n\n% = = Block_1_0_0_5_0_3 = = \n \n% Sensor Kinematics \n\n\n "
-      "   ROcp4_18 = ROcp4_15*C8-ROcp4_76*S8;\n    ROcp4_28 = ROcp4_25*C8-ROcp4_86*S8;\n    ROcp4_38 = -(ROcp4_96*S8+S5"
-      "*C8);\n    ROcp4_78 = ROcp4_15*S8+ROcp4_76*C8;\n    ROcp4_88 = ROcp4_25*S8+ROcp4_86*C8;\n    ROcp4_98 = ROcp4_96"
-      "*C8-S5*S8;\n    ROcp4_49 = ROcp4_46*C9+ROcp4_78*S9;\n    ROcp4_59 = ROcp4_56*C9+ROcp4_88*S9;\n    ROcp4_69 = ROc"
-      "p4_66*C9+ROcp4_98*S9;\n    ROcp4_79 = -(ROcp4_46*S9-ROcp4_78*C9);\n    ROcp4_89 = -(ROcp4_56*S9-ROcp4_88*C9);\n "
-      "   ROcp4_99 = -(ROcp4_66*S9-ROcp4_98*C9);\n    ROcp4_110 = ROcp4_18*C10+ROcp4_49*S10;\n    ROcp4_210 = ROcp4_28*"
-      "C10+ROcp4_59*S10;\n    ROcp4_310 = ROcp4_38*C10+ROcp4_69*S10;\n    ROcp4_410 = -(ROcp4_18*S10-ROcp4_49*C10);\n  "
-      "  ROcp4_510 = -(ROcp4_28*S10-ROcp4_59*C10);\n    ROcp4_610 = -(ROcp4_38*S10-ROcp4_69*C10);\n    RLcp4_18 = ROcp4"
-      "_46*s.dpt(2,6);\n    RLcp4_28 = ROcp4_56*s.dpt(2,6);\n    RLcp4_38 = ROcp4_66*s.dpt(2,6);\n    OMcp4_18 = OMcp4_"
-      "16+ROcp4_46*qd(8);\n    OMcp4_28 = OMcp4_26+ROcp4_56*qd(8);\n    OMcp4_38 = OMcp4_36+ROcp4_66*qd(8);\n    ORcp4_"
-      "18 = OMcp4_26*RLcp4_38-OMcp4_36*RLcp4_28;\n    ORcp4_28 = -(OMcp4_16*RLcp4_38-OMcp4_36*RLcp4_18);\n    ORcp4_38 "
-      "= OMcp4_16*RLcp4_28-OMcp4_26*RLcp4_18;\n    OMcp4_19 = OMcp4_18+ROcp4_18*qd(9);\n    OMcp4_29 = OMcp4_28+ROcp4_2"
-      "8*qd(9);\n    OMcp4_39 = OMcp4_38+ROcp4_38*qd(9);\n    OPcp4_19 = OPcp4_16+ROcp4_18*qdd(9)+ROcp4_46*qdd(8)+qd(8)"
-      "*(OMcp4_26*ROcp4_66-OMcp4_36*ROcp4_56)+qd(9)*(OMcp4_28*ROcp4_38-OMcp4_38*ROcp4_28);\n    OPcp4_29 = OPcp4_26+ROc"
-      "p4_28*qdd(9)+ROcp4_56*qdd(8)-qd(8)*(OMcp4_16*ROcp4_66-OMcp4_36*ROcp4_46)-qd(9)*(OMcp4_18*ROcp4_38-OMcp4_38*ROcp4"
-      "_18);\n    OPcp4_39 = OPcp4_36+ROcp4_38*qdd(9)+ROcp4_66*qdd(8)+qd(8)*(OMcp4_16*ROcp4_56-OMcp4_26*ROcp4_46)+qd(9)"
-      "*(OMcp4_18*ROcp4_28-OMcp4_28*ROcp4_18);\n    RLcp4_110 = ROcp4_79*s.dpt(3,11);\n    RLcp4_210 = ROcp4_89*s.dpt(3"
-      ",11);\n    RLcp4_310 = ROcp4_99*s.dpt(3,11);\n    POcp4_110 = RLcp4_110+RLcp4_17+RLcp4_18+q(1);\n    POcp4_210 ="
-      " RLcp4_210+RLcp4_27+RLcp4_28+q(2);\n    POcp4_310 = RLcp4_310+RLcp4_37+RLcp4_38+q(3);\n    JTcp4_110_4 = -(RLcp4"
-      "_210+RLcp4_27+RLcp4_28);\n    JTcp4_210_4 = RLcp4_110+RLcp4_17+RLcp4_18;\n    JTcp4_110_5 = C4*(RLcp4_310+RLcp4_"
-      "37+RLcp4_38);\n    JTcp4_210_5 = S4*(RLcp4_310+RLcp4_37+RLcp4_38);\n    JTcp4_310_5 = -(RLcp4_210*S4+C4*(RLcp4_1"
-      "10+RLcp4_17+RLcp4_18)+S4*(RLcp4_27+RLcp4_28));\n    JTcp4_110_6 = RLcp4_210*S5+RLcp4_310*ROcp4_25+ROcp4_25*(RLcp"
-      "4_37+RLcp4_38)+S5*(RLcp4_27+RLcp4_28);\n    JTcp4_210_6 = -(RLcp4_110*S5+RLcp4_310*ROcp4_15+ROcp4_15*(RLcp4_37+R"
-      "Lcp4_38)+S5*(RLcp4_17+RLcp4_18));\n    JTcp4_310_6 = ROcp4_15*(RLcp4_27+RLcp4_28)-ROcp4_25*(RLcp4_17+RLcp4_18)-R"
-      "Lcp4_110*ROcp4_25+RLcp4_210*ROcp4_15;\n    JTcp4_110_8 = -(RLcp4_210*ROcp4_66-RLcp4_310*ROcp4_56);\n    JTcp4_21"
-      "0_8 = RLcp4_110*ROcp4_66-RLcp4_310*ROcp4_46;\n    JTcp4_310_8 = -(RLcp4_110*ROcp4_56-RLcp4_210*ROcp4_46);\n    J"
-      "Tcp4_110_9 = -(RLcp4_210*ROcp4_38-RLcp4_310*ROcp4_28);\n    JTcp4_210_9 = RLcp4_110*ROcp4_38-RLcp4_310*ROcp4_18;"
-      "\n    JTcp4_310_9 = -(RLcp4_110*ROcp4_28-RLcp4_210*ROcp4_18);\n    OMcp4_110 = OMcp4_19+ROcp4_79*qd(10);\n    OM"
-      "cp4_210 = OMcp4_29+ROcp4_89*qd(10);\n    OMcp4_310 = OMcp4_39+ROcp4_99*qd(10);\n    ORcp4_110 = OMcp4_29*RLcp4_3"
-      "10-OMcp4_39*RLcp4_210;\n    ORcp4_210 = -(OMcp4_19*RLcp4_310-OMcp4_39*RLcp4_110);\n    ORcp4_310 = OMcp4_19*RLcp"
-      "4_210-OMcp4_29*RLcp4_110;\n    VIcp4_110 = ORcp4_110+ORcp4_17+ORcp4_18+qd(1)+ROcp4_76*qd(7);\n    VIcp4_210 = OR"
-      "cp4_210+ORcp4_27+ORcp4_28+qd(2)+ROcp4_86*qd(7);\n    VIcp4_310 = ORcp4_310+ORcp4_37+ORcp4_38+qd(3)+ROcp4_96*qd(7"
-      ");\n    OPcp4_110 = OPcp4_19+ROcp4_79*qdd(10)+qd(10)*(OMcp4_29*ROcp4_99-OMcp4_39*ROcp4_89);\n    OPcp4_210 = OPc"
-      "p4_29+ROcp4_89*qdd(10)-qd(10)*(OMcp4_19*ROcp4_99-OMcp4_39*ROcp4_79);\n    OPcp4_310 = OPcp4_39+ROcp4_99*qdd(10)+"
-      "qd(10)*(OMcp4_19*ROcp4_89-OMcp4_29*ROcp4_79);\n    ACcp4_110 = qdd(1)+OMcp4_26*ORcp4_37+OMcp4_26*ORcp4_38+OMcp4_"
-      "29*ORcp4_310-OMcp4_36*ORcp4_27-OMcp4_36*ORcp4_28-OMcp4_39*ORcp4_210+OPcp4_26*...\n RLcp4_37+OPcp4_26*RLcp4_38+OP"
-      "cp4_29*RLcp4_310-OPcp4_36*RLcp4_27-OPcp4_36*RLcp4_28-OPcp4_39*RLcp4_210+ROcp4_76*qdd(7)+(2.0)*qd(7)*(OMcp4_26*RO"
-      "cp4_96-...\n OMcp4_36*ROcp4_86);\n    ACcp4_210 = qdd(2)-OMcp4_16*ORcp4_37-OMcp4_16*ORcp4_38-OMcp4_19*ORcp4_310+"
-      "OMcp4_36*ORcp4_17+OMcp4_36*ORcp4_18+OMcp4_39*ORcp4_110-OPcp4_16*...\n RLcp4_37-OPcp4_16*RLcp4_38-OPcp4_19*RLcp4_"
-      "310+OPcp4_36*RLcp4_17+OPcp4_36*RLcp4_18+OPcp4_39*RLcp4_110+ROcp4_86*qdd(7)-(2.0)*qd(7)*(OMcp4_16*ROcp4_96-...\n "
-      "OMcp4_36*ROcp4_76);\n    ACcp4_310 = qdd(3)+OMcp4_16*ORcp4_27+OMcp4_16*ORcp4_28+OMcp4_19*ORcp4_210-OMcp4_26*ORcp"
-      "4_17-OMcp4_26*ORcp4_18-OMcp4_29*ORcp4_110+OPcp4_16*...\n RLcp4_27+OPcp4_16*RLcp4_28+OPcp4_19*RLcp4_210-OPcp4_26*"
-      "RLcp4_17-OPcp4_26*RLcp4_18-OPcp4_29*RLcp4_110+ROcp4_96*qdd(7)+(2.0)*qd(7)*(OMcp4_16*ROcp4_86-...\n OMcp4_26*ROcp"
-      "4_76);\n\n% = = Block_1_0_0_5_1_0 = = \n \n% Symbolic Outputs  \n\n    sens.P(1) = POcp4_110;\n    sens.P(2) = P"
-      "Ocp4_210;\n    sens.P(3) = POcp4_310;\n    sens.R(1,1) = ROcp4_110;\n    sens.R(1,2) = ROcp4_210;\n    sens.R(1,"
-      "3) = ROcp4_310;\n    sens.R(2,1) = ROcp4_410;\n    sens.R(2,2) = ROcp4_510;\n    sens.R(2,3) = ROcp4_610;\n    s"
-      "ens.R(3,1) = ROcp4_79;\n    sens.R(3,2) = ROcp4_89;\n    sens.R(3,3) = ROcp4_99;\n    sens.V(1) = VIcp4_110;\n  "
-      "  sens.V(2) = VIcp4_210;\n    sens.V(3) = VIcp4_310;\n    sens.OM(1) = OMcp4_110;\n    sens.OM(2) = OMcp4_210;\n"
-      "    sens.OM(3) = OMcp4_310;\n    sens.J(1,1) = (1.0);\n    sens.J(1,4) = JTcp4_110_4;\n    sens.J(1,5) = JTcp4_1"
-      "10_5;\n    sens.J(1,6) = JTcp4_110_6;\n    sens.J(1,7) = ROcp4_76;\n    sens.J(1,8) = JTcp4_110_8;\n    sens.J(1"
-      ",9) = JTcp4_110_9;\n    sens.J(2,2) = (1.0);\n    sens.J(2,4) = JTcp4_210_4;\n    sens.J(2,5) = JTcp4_210_5;\n  "
-      "  sens.J(2,6) = JTcp4_210_6;\n    sens.J(2,7) = ROcp4_86;\n    sens.J(2,8) = JTcp4_210_8;\n    sens.J(2,9) = JTc"
-      "p4_210_9;\n    sens.J(3,3) = (1.0);\n    sens.J(3,5) = JTcp4_310_5;\n    sens.J(3,6) = JTcp4_310_6;\n    sens.J("
-      "3,7) = ROcp4_96;\n    sens.J(3,8) = JTcp4_310_8;\n    sens.J(3,9) = JTcp4_310_9;\n    sens.J(4,5) = -S4;\n    se"
-      "ns.J(4,6) = ROcp4_15;\n    sens.J(4,8) = ROcp4_46;\n    sens.J(4,9) = ROcp4_18;\n    sens.J(4,10) = ROcp4_79;\n "
-      "   sens.J(5,5) = C4;\n    sens.J(5,6) = ROcp4_25;\n    sens.J(5,8) = ROcp4_56;\n    sens.J(5,9) = ROcp4_28;\n   "
-      " sens.J(5,10) = ROcp4_89;\n    sens.J(6,4) = (1.0);\n    sens.J(6,6) = -S5;\n    sens.J(6,8) = ROcp4_66;\n    se"
-      "ns.J(6,9) = ROcp4_38;\n    sens.J(6,10) = ROcp4_99;\n    sens.A(1) = ACcp4_110;\n    sens.A(2) = ACcp4_210;\n   "
-      " sens.A(3) = ACcp4_310;\n    sens.OMP(1) = OPcp4_110;\n    sens.OMP(2) = OPcp4_210;\n    sens.OMP(3) = OPcp4_310"
-      ";\n \n% \ncase 6, \n\n\n% = = Block_1_0_0_6_0_1 = = \n \n% Sensor Kinematics \n\n\n    ROcp5_15 = C4*C5;\n    RO"
-      "cp5_25 = S4*C5;\n    ROcp5_75 = C4*S5;\n    ROcp5_85 = S4*S5;\n    ROcp5_46 = ROcp5_75*S6-S4*C6;\n    ROcp5_56 ="
-      " ROcp5_85*S6+C4*C6;\n    ROcp5_66 = C5*S6;\n    ROcp5_76 = ROcp5_75*C6+S4*S6;\n    ROcp5_86 = ROcp5_85*C6-C4*S6;"
-      "\n    ROcp5_96 = C5*C6;\n    OMcp5_15 = -qd(5)*S4;\n    OMcp5_25 = qd(5)*C4;\n    OMcp5_16 = OMcp5_15+ROcp5_15*q"
-      "d(6);\n    OMcp5_26 = OMcp5_25+ROcp5_25*qd(6);\n    OMcp5_36 = qd(4)-qd(6)*S5;\n    OPcp5_16 = ROcp5_15*qdd(6)-q"
-      "dd(5)*S4-qd(4)*qd(5)*C4-qd(6)*(OMcp5_25*S5+ROcp5_25*qd(4));\n    OPcp5_26 = ROcp5_25*qdd(6)+qdd(5)*C4-qd(4)*qd(5"
-      ")*S4+qd(6)*(OMcp5_15*S5+ROcp5_15*qd(4));\n    OPcp5_36 = qdd(4)-qdd(6)*S5-qd(5)*qd(6)*C5;\n\n% = = Block_1_0_0_6"
-      "_0_2 = = \n \n% Sensor Kinematics \n\n\n    RLcp5_17 = Dz73*ROcp5_76;\n    RLcp5_27 = Dz73*ROcp5_86;\n    RLcp5_"
-      "37 = Dz73*ROcp5_96;\n    ORcp5_17 = OMcp5_26*RLcp5_37-OMcp5_36*RLcp5_27;\n    ORcp5_27 = -(OMcp5_16*RLcp5_37-OMc"
-      "p5_36*RLcp5_17);\n    ORcp5_37 = OMcp5_16*RLcp5_27-OMcp5_26*RLcp5_17;\n\n% = = Block_1_0_0_6_0_4 = = \n \n% Sens"
-      "or Kinematics \n\n\n    ROcp5_111 = ROcp5_15*C11-ROcp5_76*S11;\n    ROcp5_211 = ROcp5_25*C11-ROcp5_86*S11;\n    "
-      "ROcp5_311 = -(ROcp5_96*S11+C11*S5);\n    ROcp5_711 = ROcp5_15*S11+ROcp5_76*C11;\n    ROcp5_811 = ROcp5_25*S11+RO"
-      "cp5_86*C11;\n    ROcp5_911 = ROcp5_96*C11-S11*S5;\n    RLcp5_111 = ROcp5_46*s.dpt(2,7);\n    RLcp5_211 = ROcp5_5"
-      "6*s.dpt(2,7);\n    RLcp5_311 = ROcp5_66*s.dpt(2,7);\n    POcp5_111 = RLcp5_111+RLcp5_17+q(1);\n    POcp5_211 = R"
-      "Lcp5_211+RLcp5_27+q(2);\n    POcp5_311 = RLcp5_311+RLcp5_37+q(3);\n    JTcp5_111_4 = -(RLcp5_211+RLcp5_27);\n   "
-      " JTcp5_211_4 = RLcp5_111+RLcp5_17;\n    JTcp5_111_5 = C4*(RLcp5_311+RLcp5_37);\n    JTcp5_211_5 = S4*(RLcp5_311+"
-      "RLcp5_37);\n    JTcp5_311_5 = -(C4*(RLcp5_111+RLcp5_17)+S4*(RLcp5_211+RLcp5_27));\n    JTcp5_111_6 = ROcp5_25*(R"
-      "Lcp5_311+RLcp5_37)+S5*(RLcp5_211+RLcp5_27);\n    JTcp5_211_6 = -(ROcp5_15*(RLcp5_311+RLcp5_37)+S5*(RLcp5_111+RLc"
-      "p5_17));\n    JTcp5_311_6 = ROcp5_15*(RLcp5_211+RLcp5_27)-ROcp5_25*(RLcp5_111+RLcp5_17);\n    OMcp5_111 = OMcp5_"
-      "16+ROcp5_46*qd(11);\n    OMcp5_211 = OMcp5_26+ROcp5_56*qd(11);\n    OMcp5_311 = OMcp5_36+ROcp5_66*qd(11);\n    O"
-      "Rcp5_111 = OMcp5_26*RLcp5_311-OMcp5_36*RLcp5_211;\n    ORcp5_211 = -(OMcp5_16*RLcp5_311-OMcp5_36*RLcp5_111);\n  "
-      "  ORcp5_311 = OMcp5_16*RLcp5_211-OMcp5_26*RLcp5_111;\n    VIcp5_111 = ORcp5_111+ORcp5_17+qd(1)+ROcp5_76*qd(7);\n"
-      "    VIcp5_211 = ORcp5_211+ORcp5_27+qd(2)+ROcp5_86*qd(7);\n    VIcp5_311 = ORcp5_311+ORcp5_37+qd(3)+ROcp5_96*qd(7"
-      ");\n    OPcp5_111 = OPcp5_16+ROcp5_46*qdd(11)+qd(11)*(OMcp5_26*ROcp5_66-OMcp5_36*ROcp5_56);\n    OPcp5_211 = OPc"
-      "p5_26+ROcp5_56*qdd(11)-qd(11)*(OMcp5_16*ROcp5_66-OMcp5_36*ROcp5_46);\n    OPcp5_311 = OPcp5_36+ROcp5_66*qdd(11)+"
-      "qd(11)*(OMcp5_16*ROcp5_56-OMcp5_26*ROcp5_46);\n    ACcp5_111 = qdd(1)+OMcp5_26*ORcp5_311+OMcp5_26*ORcp5_37-OMcp5"
-      "_36*ORcp5_211-OMcp5_36*ORcp5_27+OPcp5_26*RLcp5_311+OPcp5_26*RLcp5_37-OPcp5_36*...\n RLcp5_211-OPcp5_36*RLcp5_27+"
-      "ROcp5_76*qdd(7)+(2.0)*qd(7)*(OMcp5_26*ROcp5_96-OMcp5_36*ROcp5_86);\n    ACcp5_211 = qdd(2)-OMcp5_16*ORcp5_311-OM"
-      "cp5_16*ORcp5_37+OMcp5_36*ORcp5_111+OMcp5_36*ORcp5_17-OPcp5_16*RLcp5_311-OPcp5_16*RLcp5_37+OPcp5_36*...\n RLcp5_1"
-      "11+OPcp5_36*RLcp5_17+ROcp5_86*qdd(7)-(2.0)*qd(7)*(OMcp5_16*ROcp5_96-OMcp5_36*ROcp5_76);\n    ACcp5_311 = qdd(3)+"
-      "OMcp5_16*ORcp5_211+OMcp5_16*ORcp5_27-OMcp5_26*ORcp5_111-OMcp5_26*ORcp5_17+OPcp5_16*RLcp5_211+OPcp5_16*RLcp5_27-O"
-      "Pcp5_26*...\n RLcp5_111-OPcp5_26*RLcp5_17+ROcp5_96*qdd(7)+(2.0)*qd(7)*(OMcp5_16*ROcp5_86-OMcp5_26*ROcp5_76);\n\n"
-      "% = = Block_1_0_0_6_1_0 = = \n \n% Symbolic Outputs  \n\n    sens.P(1) = POcp5_111;\n    sens.P(2) = POcp5_211;\n"
-      "    sens.P(3) = POcp5_311;\n    sens.R(1,1) = ROcp5_111;\n    sens.R(1,2) = ROcp5_211;\n    sens.R(1,3) = ROcp5_"
-      "311;\n    sens.R(2,1) = ROcp5_46;\n    sens.R(2,2) = ROcp5_56;\n    sens.R(2,3) = ROcp5_66;\n    sens.R(3,1) = R"
-      "Ocp5_711;\n    sens.R(3,2) = ROcp5_811;\n    sens.R(3,3) = ROcp5_911;\n    sens.V(1) = VIcp5_111;\n    sens.V(2)"
-      " = VIcp5_211;\n    sens.V(3) = VIcp5_311;\n    sens.OM(1) = OMcp5_111;\n    sens.OM(2) = OMcp5_211;\n    sens.OM"
-      "(3) = OMcp5_311;\n    sens.J(1,1) = (1.0);\n    sens.J(1,4) = JTcp5_111_4;\n    sens.J(1,5) = JTcp5_111_5;\n    "
-      "sens.J(1,6) = JTcp5_111_6;\n    sens.J(1,7) = ROcp5_76;\n    sens.J(2,2) = (1.0);\n    sens.J(2,4) = JTcp5_211_4"
-      ";\n    sens.J(2,5) = JTcp5_211_5;\n    sens.J(2,6) = JTcp5_211_6;\n    sens.J(2,7) = ROcp5_86;\n    sens.J(3,3) "
-      "= (1.0);\n    sens.J(3,5) = JTcp5_311_5;\n    sens.J(3,6) = JTcp5_311_6;\n    sens.J(3,7) = ROcp5_96;\n    sens."
-      "J(4,5) = -S4;\n    sens.J(4,6) = ROcp5_15;\n    sens.J(4,11) = ROcp5_46;\n    sens.J(5,5) = C4;\n    sens.J(5,6)"
-      " = ROcp5_25;\n    sens.J(5,11) = ROcp5_56;\n    sens.J(6,4) = (1.0);\n    sens.J(6,6) = -S5;\n    sens.J(6,11) ="
-      " ROcp5_66;\n    sens.A(1) = ACcp5_111;\n    sens.A(2) = ACcp5_211;\n    sens.A(3) = ACcp5_311;\n    sens.OMP(1) "
-      "= OPcp5_111;\n    sens.OMP(2) = OPcp5_211;\n    sens.OMP(3) = OPcp5_311;\n \n% \ncase 7, \n\n\n% = = Block_1_0_0"
-      "_7_0_1 = = \n \n% Sensor Kinematics \n\n\n    ROcp6_15 = C4*C5;\n    ROcp6_25 = S4*C5;\n    ROcp6_75 = C4*S5;\n "
-      "   ROcp6_85 = S4*S5;\n    ROcp6_46 = ROcp6_75*S6-S4*C6;\n    ROcp6_56 = ROcp6_85*S6+C4*C6;\n    ROcp6_66 = C5*S6"
-      ";\n    ROcp6_76 = ROcp6_75*C6+S4*S6;\n    ROcp6_86 = ROcp6_85*C6-C4*S6;\n    ROcp6_96 = C5*C6;\n    OMcp6_15 = -"
-      "qd(5)*S4;\n    OMcp6_25 = qd(5)*C4;\n    OMcp6_16 = OMcp6_15+ROcp6_15*qd(6);\n    OMcp6_26 = OMcp6_25+ROcp6_25*q"
-      "d(6);\n    OMcp6_36 = qd(4)-qd(6)*S5;\n    OPcp6_16 = ROcp6_15*qdd(6)-qdd(5)*S4-qd(4)*qd(5)*C4-qd(6)*(OMcp6_25*S"
-      "5+ROcp6_25*qd(4));\n    OPcp6_26 = ROcp6_25*qdd(6)+qdd(5)*C4-qd(4)*qd(5)*S4+qd(6)*(OMcp6_15*S5+ROcp6_15*qd(4));\n"
-      "    OPcp6_36 = qdd(4)-qdd(6)*S5-qd(5)*qd(6)*C5;\n\n% = = Block_1_0_0_7_0_2 = = \n \n% Sensor Kinematics \n\n\n  "
-      "  RLcp6_17 = Dz73*ROcp6_76;\n    RLcp6_27 = Dz73*ROcp6_86;\n    RLcp6_37 = Dz73*ROcp6_96;\n    ORcp6_17 = OMcp6_"
-      "26*RLcp6_37-OMcp6_36*RLcp6_27;\n    ORcp6_27 = -(OMcp6_16*RLcp6_37-OMcp6_36*RLcp6_17);\n    ORcp6_37 = OMcp6_16*"
-      "RLcp6_27-OMcp6_26*RLcp6_17;\n\n% = = Block_1_0_0_7_0_4 = = \n \n% Sensor Kinematics \n\n\n    ROcp6_111 = ROcp6_"
-      "15*C11-ROcp6_76*S11;\n    ROcp6_211 = ROcp6_25*C11-ROcp6_86*S11;\n    ROcp6_311 = -(ROcp6_96*S11+C11*S5);\n    R"
-      "Ocp6_711 = ROcp6_15*S11+ROcp6_76*C11;\n    ROcp6_811 = ROcp6_25*S11+ROcp6_86*C11;\n    ROcp6_911 = ROcp6_96*C11-"
-      "S11*S5;\n    ROcp6_412 = ROcp6_46*C12+ROcp6_711*S12;\n    ROcp6_512 = ROcp6_56*C12+ROcp6_811*S12;\n    ROcp6_612"
-      " = ROcp6_66*C12+ROcp6_911*S12;\n    ROcp6_712 = -(ROcp6_46*S12-ROcp6_711*C12);\n    ROcp6_812 = -(ROcp6_56*S12-R"
-      "Ocp6_811*C12);\n    ROcp6_912 = -(ROcp6_66*S12-ROcp6_911*C12);\n    RLcp6_111 = ROcp6_46*s.dpt(2,7);\n    RLcp6_"
-      "211 = ROcp6_56*s.dpt(2,7);\n    RLcp6_311 = ROcp6_66*s.dpt(2,7);\n    POcp6_111 = RLcp6_111+RLcp6_17+q(1);\n    "
-      "POcp6_211 = RLcp6_211+RLcp6_27+q(2);\n    POcp6_311 = RLcp6_311+RLcp6_37+q(3);\n    JTcp6_111_4 = -(RLcp6_211+RL"
-      "cp6_27);\n    JTcp6_211_4 = RLcp6_111+RLcp6_17;\n    JTcp6_111_5 = C4*(RLcp6_311+RLcp6_37);\n    JTcp6_211_5 = S"
-      "4*(RLcp6_311+RLcp6_37);\n    JTcp6_311_5 = -(C4*(RLcp6_111+RLcp6_17)+S4*(RLcp6_211+RLcp6_27));\n    JTcp6_111_6 "
-      "= ROcp6_25*(RLcp6_311+RLcp6_37)+S5*(RLcp6_211+RLcp6_27);\n    JTcp6_211_6 = -(ROcp6_15*(RLcp6_311+RLcp6_37)+S5*("
-      "RLcp6_111+RLcp6_17));\n    JTcp6_311_6 = ROcp6_15*(RLcp6_211+RLcp6_27)-ROcp6_25*(RLcp6_111+RLcp6_17);\n    OMcp6"
-      "_111 = OMcp6_16+ROcp6_46*qd(11);\n    OMcp6_211 = OMcp6_26+ROcp6_56*qd(11);\n    OMcp6_311 = OMcp6_36+ROcp6_66*q"
-      "d(11);\n    ORcp6_111 = OMcp6_26*RLcp6_311-OMcp6_36*RLcp6_211;\n    ORcp6_211 = -(OMcp6_16*RLcp6_311-OMcp6_36*RL"
-      "cp6_111);\n    ORcp6_311 = OMcp6_16*RLcp6_211-OMcp6_26*RLcp6_111;\n    VIcp6_111 = ORcp6_111+ORcp6_17+qd(1)+ROcp"
-      "6_76*qd(7);\n    VIcp6_211 = ORcp6_211+ORcp6_27+qd(2)+ROcp6_86*qd(7);\n    VIcp6_311 = ORcp6_311+ORcp6_37+qd(3)+"
-      "ROcp6_96*qd(7);\n    ACcp6_111 = qdd(1)+OMcp6_26*ORcp6_311+OMcp6_26*ORcp6_37-OMcp6_36*ORcp6_211-OMcp6_36*ORcp6_2"
-      "7+OPcp6_26*RLcp6_311+OPcp6_26*RLcp6_37-OPcp6_36*...\n RLcp6_211-OPcp6_36*RLcp6_27+ROcp6_76*qdd(7)+(2.0)*qd(7)*(O"
-      "Mcp6_26*ROcp6_96-OMcp6_36*ROcp6_86);\n    ACcp6_211 = qdd(2)-OMcp6_16*ORcp6_311-OMcp6_16*ORcp6_37+OMcp6_36*ORcp6"
-      "_111+OMcp6_36*ORcp6_17-OPcp6_16*RLcp6_311-OPcp6_16*RLcp6_37+OPcp6_36*...\n RLcp6_111+OPcp6_36*RLcp6_17+ROcp6_86*"
-      "qdd(7)-(2.0)*qd(7)*(OMcp6_16*ROcp6_96-OMcp6_36*ROcp6_76);\n    ACcp6_311 = qdd(3)+OMcp6_16*ORcp6_211+OMcp6_16*OR"
-      "cp6_27-OMcp6_26*ORcp6_111-OMcp6_26*ORcp6_17+OPcp6_16*RLcp6_211+OPcp6_16*RLcp6_27-OPcp6_26*...\n RLcp6_111-OPcp6_"
-      "26*RLcp6_17+ROcp6_96*qdd(7)+(2.0)*qd(7)*(OMcp6_16*ROcp6_86-OMcp6_26*ROcp6_76);\n    OMcp6_112 = OMcp6_111+ROcp6_"
-      "111*qd(12);\n    OMcp6_212 = OMcp6_211+ROcp6_211*qd(12);\n    OMcp6_312 = OMcp6_311+ROcp6_311*qd(12);\n    OPcp6"
-      "_112 = OPcp6_16+ROcp6_111*qdd(12)+ROcp6_46*qdd(11)+qd(11)*(OMcp6_26*ROcp6_66-OMcp6_36*ROcp6_56)+qd(12)*(OMcp6_21"
-      "1*ROcp6_311-OMcp6_311*...\n ROcp6_211);\n    OPcp6_212 = OPcp6_26+ROcp6_211*qdd(12)+ROcp6_56*qdd(11)-qd(11)*(OMc"
-      "p6_16*ROcp6_66-OMcp6_36*ROcp6_46)-qd(12)*(OMcp6_111*ROcp6_311-OMcp6_311*...\n ROcp6_111);\n    OPcp6_312 = OPcp6"
-      "_36+ROcp6_311*qdd(12)+ROcp6_66*qdd(11)+qd(11)*(OMcp6_16*ROcp6_56-OMcp6_26*ROcp6_46)+qd(12)*(OMcp6_111*ROcp6_211-"
-      "OMcp6_211*...\n ROcp6_111);\n\n% = = Block_1_0_0_7_1_0 = = \n \n% Symbolic Outputs  \n\n    sens.P(1) = POcp6_11"
-      "1;\n    sens.P(2) = POcp6_211;\n    sens.P(3) = POcp6_311;\n    sens.R(1,1) = ROcp6_111;\n    sens.R(1,2) = ROcp"
-      "6_211;\n    sens.R(1,3) = ROcp6_311;\n    sens.R(2,1) = ROcp6_412;\n    sens.R(2,2) = ROcp6_512;\n    sens.R(2,3"
-      ") = ROcp6_612;\n    sens.R(3,1) = ROcp6_712;\n    sens.R(3,2) = ROcp6_812;\n    sens.R(3,3) = ROcp6_912;\n    se"
-      "ns.V(1) = VIcp6_111;\n    sens.V(2) = VIcp6_211;\n    sens.V(3) = VIcp6_311;\n    sens.OM(1) = OMcp6_112;\n    s"
-      "ens.OM(2) = OMcp6_212;\n    sens.OM(3) = OMcp6_312;\n    sens.J(1,1) = (1.0);\n    sens.J(1,4) = JTcp6_111_4;\n "
-      "   sens.J(1,5) = JTcp6_111_5;\n    sens.J(1,6) = JTcp6_111_6;\n    sens.J(1,7) = ROcp6_76;\n    sens.J(2,2) = (1"
-      ".0);\n    sens.J(2,4) = JTcp6_211_4;\n    sens.J(2,5) = JTcp6_211_5;\n    sens.J(2,6) = JTcp6_211_6;\n    sens.J"
-      "(2,7) = ROcp6_86;\n    sens.J(3,3) = (1.0);\n    sens.J(3,5) = JTcp6_311_5;\n    sens.J(3,6) = JTcp6_311_6;\n   "
-      " sens.J(3,7) = ROcp6_96;\n    sens.J(4,5) = -S4;\n    sens.J(4,6) = ROcp6_15;\n    sens.J(4,11) = ROcp6_46;\n   "
-      " sens.J(4,12) = ROcp6_111;\n    sens.J(5,5) = C4;\n    sens.J(5,6) = ROcp6_25;\n    sens.J(5,11) = ROcp6_56;\n  "
-      "  sens.J(5,12) = ROcp6_211;\n    sens.J(6,4) = (1.0);\n    sens.J(6,6) = -S5;\n    sens.J(6,11) = ROcp6_66;\n   "
-      " sens.J(6,12) = ROcp6_311;\n    sens.A(1) = ACcp6_111;\n    sens.A(2) = ACcp6_211;\n    sens.A(3) = ACcp6_311;\n"
-      "    sens.OMP(1) = OPcp6_112;\n    sens.OMP(2) = OPcp6_212;\n    sens.OMP(3) = OPcp6_312;\n \n% \ncase 8, \n\n\n%"
-      " = = Block_1_0_0_8_0_1 = = \n \n% Sensor Kinematics \n\n\n    ROcp7_15 = C4*C5;\n    ROcp7_25 = S4*C5;\n    ROcp"
-      "7_75 = C4*S5;\n    ROcp7_85 = S4*S5;\n    ROcp7_46 = ROcp7_75*S6-S4*C6;\n    ROcp7_56 = ROcp7_85*S6+C4*C6;\n    "
-      "ROcp7_66 = C5*S6;\n    ROcp7_76 = ROcp7_75*C6+S4*S6;\n    ROcp7_86 = ROcp7_85*C6-C4*S6;\n    ROcp7_96 = C5*C6;\n"
-      "    OMcp7_15 = -qd(5)*S4;\n    OMcp7_25 = qd(5)*C4;\n    OMcp7_16 = OMcp7_15+ROcp7_15*qd(6);\n    OMcp7_26 = OMc"
-      "p7_25+ROcp7_25*qd(6);\n    OMcp7_36 = qd(4)-qd(6)*S5;\n    OPcp7_16 = ROcp7_15*qdd(6)-qdd(5)*S4-qd(4)*qd(5)*C4-q"
-      "d(6)*(OMcp7_25*S5+ROcp7_25*qd(4));\n    OPcp7_26 = ROcp7_25*qdd(6)+qdd(5)*C4-qd(4)*qd(5)*S4+qd(6)*(OMcp7_15*S5+R"
-      "Ocp7_15*qd(4));\n    OPcp7_36 = qdd(4)-qdd(6)*S5-qd(5)*qd(6)*C5;\n\n% = = Block_1_0_0_8_0_2 = = \n \n% Sensor Ki"
-      "nematics \n\n\n    RLcp7_17 = Dz73*ROcp7_76;\n    RLcp7_27 = Dz73*ROcp7_86;\n    RLcp7_37 = Dz73*ROcp7_96;\n    "
-      "ORcp7_17 = OMcp7_26*RLcp7_37-OMcp7_36*RLcp7_27;\n    ORcp7_27 = -(OMcp7_16*RLcp7_37-OMcp7_36*RLcp7_17);\n    ORc"
-      "p7_37 = OMcp7_16*RLcp7_27-OMcp7_26*RLcp7_17;\n\n% = = Block_1_0_0_8_0_4 = = \n \n% Sensor Kinematics \n\n\n    R"
-      "Ocp7_111 = ROcp7_15*C11-ROcp7_76*S11;\n    ROcp7_211 = ROcp7_25*C11-ROcp7_86*S11;\n    ROcp7_311 = -(ROcp7_96*S1"
-      "1+C11*S5);\n    ROcp7_711 = ROcp7_15*S11+ROcp7_76*C11;\n    ROcp7_811 = ROcp7_25*S11+ROcp7_86*C11;\n    ROcp7_91"
-      "1 = ROcp7_96*C11-S11*S5;\n    ROcp7_412 = ROcp7_46*C12+ROcp7_711*S12;\n    ROcp7_512 = ROcp7_56*C12+ROcp7_811*S1"
-      "2;\n    ROcp7_612 = ROcp7_66*C12+ROcp7_911*S12;\n    ROcp7_712 = -(ROcp7_46*S12-ROcp7_711*C12);\n    ROcp7_812 ="
-      " -(ROcp7_56*S12-ROcp7_811*C12);\n    ROcp7_912 = -(ROcp7_66*S12-ROcp7_911*C12);\n    ROcp7_113 = ROcp7_111*C13+R"
-      "Ocp7_412*S13;\n    ROcp7_213 = ROcp7_211*C13+ROcp7_512*S13;\n    ROcp7_313 = ROcp7_311*C13+ROcp7_612*S13;\n    R"
-      "Ocp7_413 = -(ROcp7_111*S13-ROcp7_412*C13);\n    ROcp7_513 = -(ROcp7_211*S13-ROcp7_512*C13);\n    ROcp7_613 = -(R"
-      "Ocp7_311*S13-ROcp7_612*C13);\n    RLcp7_111 = ROcp7_46*s.dpt(2,7);\n    RLcp7_211 = ROcp7_56*s.dpt(2,7);\n    RL"
-      "cp7_311 = ROcp7_66*s.dpt(2,7);\n    OMcp7_111 = OMcp7_16+ROcp7_46*qd(11);\n    OMcp7_211 = OMcp7_26+ROcp7_56*qd("
-      "11);\n    OMcp7_311 = OMcp7_36+ROcp7_66*qd(11);\n    ORcp7_111 = OMcp7_26*RLcp7_311-OMcp7_36*RLcp7_211;\n    ORc"
-      "p7_211 = -(OMcp7_16*RLcp7_311-OMcp7_36*RLcp7_111);\n    ORcp7_311 = OMcp7_16*RLcp7_211-OMcp7_26*RLcp7_111;\n    "
-      "OMcp7_112 = OMcp7_111+ROcp7_111*qd(12);\n    OMcp7_212 = OMcp7_211+ROcp7_211*qd(12);\n    OMcp7_312 = OMcp7_311+"
-      "ROcp7_311*qd(12);\n    OPcp7_112 = OPcp7_16+ROcp7_111*qdd(12)+ROcp7_46*qdd(11)+qd(11)*(OMcp7_26*ROcp7_66-OMcp7_3"
-      "6*ROcp7_56)+qd(12)*(OMcp7_211*ROcp7_311-OMcp7_311*...\n ROcp7_211);\n    OPcp7_212 = OPcp7_26+ROcp7_211*qdd(12)+"
-      "ROcp7_56*qdd(11)-qd(11)*(OMcp7_16*ROcp7_66-OMcp7_36*ROcp7_46)-qd(12)*(OMcp7_111*ROcp7_311-OMcp7_311*...\n ROcp7_"
-      "111);\n    OPcp7_312 = OPcp7_36+ROcp7_311*qdd(12)+ROcp7_66*qdd(11)+qd(11)*(OMcp7_16*ROcp7_56-OMcp7_26*ROcp7_46)+"
-      "qd(12)*(OMcp7_111*ROcp7_211-OMcp7_211*...\n ROcp7_111);\n    RLcp7_113 = ROcp7_712*s.dpt(3,15);\n    RLcp7_213 ="
-      " ROcp7_812*s.dpt(3,15);\n    RLcp7_313 = ROcp7_912*s.dpt(3,15);\n    POcp7_113 = RLcp7_111+RLcp7_113+RLcp7_17+q("
-      "1);\n    POcp7_213 = RLcp7_211+RLcp7_213+RLcp7_27+q(2);\n    POcp7_313 = RLcp7_311+RLcp7_313+RLcp7_37+q(3);\n   "
-      " JTcp7_113_4 = -(RLcp7_211+RLcp7_213+RLcp7_27);\n    JTcp7_213_4 = RLcp7_111+RLcp7_113+RLcp7_17;\n    JTcp7_113_"
-      "5 = C4*(RLcp7_311+RLcp7_313+RLcp7_37);\n    JTcp7_213_5 = S4*(RLcp7_311+RLcp7_313+RLcp7_37);\n    JTcp7_313_5 = "
-      "-(RLcp7_213*S4+C4*(RLcp7_111+RLcp7_113+RLcp7_17)+S4*(RLcp7_211+RLcp7_27));\n    JTcp7_113_6 = RLcp7_213*S5+RLcp7"
-      "_313*ROcp7_25+ROcp7_25*(RLcp7_311+RLcp7_37)+S5*(RLcp7_211+RLcp7_27);\n    JTcp7_213_6 = -(RLcp7_113*S5+RLcp7_313"
-      "*ROcp7_15+ROcp7_15*(RLcp7_311+RLcp7_37)+S5*(RLcp7_111+RLcp7_17));\n    JTcp7_313_6 = ROcp7_15*(RLcp7_211+RLcp7_2"
-      "7)-ROcp7_25*(RLcp7_111+RLcp7_17)-RLcp7_113*ROcp7_25+RLcp7_213*ROcp7_15;\n    JTcp7_113_8 = -(RLcp7_213*ROcp7_66-"
-      "RLcp7_313*ROcp7_56);\n    JTcp7_213_8 = RLcp7_113*ROcp7_66-RLcp7_313*ROcp7_46;\n    JTcp7_313_8 = -(RLcp7_113*RO"
-      "cp7_56-RLcp7_213*ROcp7_46);\n    JTcp7_113_9 = -(RLcp7_213*ROcp7_311-RLcp7_313*ROcp7_211);\n    JTcp7_213_9 = RL"
-      "cp7_113*ROcp7_311-RLcp7_313*ROcp7_111;\n    JTcp7_313_9 = -(RLcp7_113*ROcp7_211-RLcp7_213*ROcp7_111);\n    OMcp7"
-      "_113 = OMcp7_112+ROcp7_712*qd(13);\n    OMcp7_213 = OMcp7_212+ROcp7_812*qd(13);\n    OMcp7_313 = OMcp7_312+ROcp7"
-      "_912*qd(13);\n    ORcp7_113 = OMcp7_212*RLcp7_313-OMcp7_312*RLcp7_213;\n    ORcp7_213 = -(OMcp7_112*RLcp7_313-OM"
-      "cp7_312*RLcp7_113);\n    ORcp7_313 = OMcp7_112*RLcp7_213-OMcp7_212*RLcp7_113;\n    VIcp7_113 = ORcp7_111+ORcp7_1"
-      "13+ORcp7_17+qd(1)+ROcp7_76*qd(7);\n    VIcp7_213 = ORcp7_211+ORcp7_213+ORcp7_27+qd(2)+ROcp7_86*qd(7);\n    VIcp7"
-      "_313 = ORcp7_311+ORcp7_313+ORcp7_37+qd(3)+ROcp7_96*qd(7);\n    OPcp7_113 = OPcp7_112+ROcp7_712*qdd(13)+qd(13)*(O"
-      "Mcp7_212*ROcp7_912-OMcp7_312*ROcp7_812);\n    OPcp7_213 = OPcp7_212+ROcp7_812*qdd(13)-qd(13)*(OMcp7_112*ROcp7_91"
-      "2-OMcp7_312*ROcp7_712);\n    OPcp7_313 = OPcp7_312+ROcp7_912*qdd(13)+qd(13)*(OMcp7_112*ROcp7_812-OMcp7_212*ROcp7"
-      "_712);\n    ACcp7_113 = qdd(1)+OMcp7_212*ORcp7_313+OMcp7_26*ORcp7_311+OMcp7_26*ORcp7_37-OMcp7_312*ORcp7_213-OMcp"
-      "7_36*ORcp7_211-OMcp7_36*ORcp7_27+OPcp7_212*...\n RLcp7_313+OPcp7_26*RLcp7_311+OPcp7_26*RLcp7_37-OPcp7_312*RLcp7_"
-      "213-OPcp7_36*RLcp7_211-OPcp7_36*RLcp7_27+ROcp7_76*qdd(7)+(2.0)*qd(7)*(OMcp7_26*ROcp7_96-...\n OMcp7_36*ROcp7_86)"
-      ";\n    ACcp7_213 = qdd(2)-OMcp7_112*ORcp7_313-OMcp7_16*ORcp7_311-OMcp7_16*ORcp7_37+OMcp7_312*ORcp7_113+OMcp7_36*"
-      "ORcp7_111+OMcp7_36*ORcp7_17-OPcp7_112*...\n RLcp7_313-OPcp7_16*RLcp7_311-OPcp7_16*RLcp7_37+OPcp7_312*RLcp7_113+O"
-      "Pcp7_36*RLcp7_111+OPcp7_36*RLcp7_17+ROcp7_86*qdd(7)-(2.0)*qd(7)*(OMcp7_16*ROcp7_96-...\n OMcp7_36*ROcp7_76);\n  "
-      "  ACcp7_313 = qdd(3)+OMcp7_112*ORcp7_213+OMcp7_16*ORcp7_211+OMcp7_16*ORcp7_27-OMcp7_212*ORcp7_113-OMcp7_26*ORcp7"
-      "_111-OMcp7_26*ORcp7_17+OPcp7_112*...\n RLcp7_213+OPcp7_16*RLcp7_211+OPcp7_16*RLcp7_27-OPcp7_212*RLcp7_113-OPcp7_"
-      "26*RLcp7_111-OPcp7_26*RLcp7_17+ROcp7_96*qdd(7)+(2.0)*qd(7)*(OMcp7_16*ROcp7_86-...\n OMcp7_26*ROcp7_76);\n\n% = ="
-      " Block_1_0_0_8_1_0 = = \n \n% Symbolic Outputs  \n\n    sens.P(1) = POcp7_113;\n    sens.P(2) = POcp7_213;\n    "
-      "sens.P(3) = POcp7_313;\n    sens.R(1,1) = ROcp7_113;\n    sens.R(1,2) = ROcp7_213;\n    sens.R(1,3) = ROcp7_313;"
-      "\n    sens.R(2,1) = ROcp7_413;\n    sens.R(2,2) = ROcp7_513;\n    sens.R(2,3) = ROcp7_613;\n    sens.R(3,1) = RO"
-      "cp7_712;\n    sens.R(3,2) = ROcp7_812;\n    sens.R(3,3) = ROcp7_912;\n    sens.V(1) = VIcp7_113;\n    sens.V(2) "
-      "= VIcp7_213;\n    sens.V(3) = VIcp7_313;\n    sens.OM(1) = OMcp7_113;\n    sens.OM(2) = OMcp7_213;\n    sens.OM("
-      "3) = OMcp7_313;\n    sens.J(1,1) = (1.0);\n    sens.J(1,4) = JTcp7_113_4;\n    sens.J(1,5) = JTcp7_113_5;\n    s"
-      "ens.J(1,6) = JTcp7_113_6;\n    sens.J(1,7) = ROcp7_76;\n    sens.J(1,11) = JTcp7_113_8;\n    sens.J(1,12) = JTcp"
-      "7_113_9;\n    sens.J(2,2) = (1.0);\n    sens.J(2,4) = JTcp7_213_4;\n    sens.J(2,5) = JTcp7_213_5;\n    sens.J(2"
-      ",6) = JTcp7_213_6;\n    sens.J(2,7) = ROcp7_86;\n    sens.J(2,11) = JTcp7_213_8;\n    sens.J(2,12) = JTcp7_213_9"
-      ";\n    sens.J(3,3) = (1.0);\n    sens.J(3,5) = JTcp7_313_5;\n    sens.J(3,6) = JTcp7_313_6;\n    sens.J(3,7) = R"
-      "Ocp7_96;\n    sens.J(3,11) = JTcp7_313_8;\n    sens.J(3,12) = JTcp7_313_9;\n    sens.J(4,5) = -S4;\n    sens.J(4"
-      ",6) = ROcp7_15;\n    sens.J(4,11) = ROcp7_46;\n    sens.J(4,12) = ROcp7_111;\n    sens.J(4,13) = ROcp7_712;\n   "
-      " sens.J(5,5) = C4;\n    sens.J(5,6) = ROcp7_25;\n    sens.J(5,11) = ROcp7_56;\n    sens.J(5,12) = ROcp7_211;\n  "
-      "  sens.J(5,13) = ROcp7_812;\n    sens.J(6,4) = (1.0);\n    sens.J(6,6) = -S5;\n    sens.J(6,11) = ROcp7_66;\n   "
-      " sens.J(6,12) = ROcp7_311;\n    sens.J(6,13) = ROcp7_912;\n    sens.A(1) = ACcp7_113;\n    sens.A(2) = ACcp7_213"
-      ";\n    sens.A(3) = ACcp7_313;\n    sens.OMP(1) = OPcp7_113;\n    sens.OMP(2) = OPcp7_213;\n    sens.OMP(3) = OPc"
-      "p7_313;\n \n% \ncase 9, \n\n\n% = = Block_1_0_0_9_0_1 = = \n \n% Sensor Kinematics \n\n\n    ROcp8_15 = C4*C5;\n"
-      "    ROcp8_25 = S4*C5;\n    ROcp8_75 = C4*S5;\n    ROcp8_85 = S4*S5;\n    ROcp8_46 = ROcp8_75*S6-S4*C6;\n    ROcp"
-      "8_56 = ROcp8_85*S6+C4*C6;\n    ROcp8_66 = C5*S6;\n    ROcp8_76 = ROcp8_75*C6+S4*S6;\n    ROcp8_86 = ROcp8_85*C6-"
-      "C4*S6;\n    ROcp8_96 = C5*C6;\n    OMcp8_15 = -qd(5)*S4;\n    OMcp8_25 = qd(5)*C4;\n    OMcp8_16 = OMcp8_15+ROcp"
-      "8_15*qd(6);\n    OMcp8_26 = OMcp8_25+ROcp8_25*qd(6);\n    OMcp8_36 = qd(4)-qd(6)*S5;\n    OPcp8_16 = ROcp8_15*qd"
-      "d(6)-qdd(5)*S4-qd(4)*qd(5)*C4-qd(6)*(OMcp8_25*S5+ROcp8_25*qd(4));\n    OPcp8_26 = ROcp8_25*qdd(6)+qdd(5)*C4-qd(4"
-      ")*qd(5)*S4+qd(6)*(OMcp8_15*S5+ROcp8_15*qd(4));\n    OPcp8_36 = qdd(4)-qdd(6)*S5-qd(5)*qd(6)*C5;\n\n% = = Block_1"
-      "_0_0_9_0_2 = = \n \n% Sensor Kinematics \n\n\n    RLcp8_17 = Dz73*ROcp8_76;\n    RLcp8_27 = Dz73*ROcp8_86;\n    "
-      "RLcp8_37 = Dz73*ROcp8_96;\n    ORcp8_17 = OMcp8_26*RLcp8_37-OMcp8_36*RLcp8_27;\n    ORcp8_27 = -(OMcp8_16*RLcp8_"
-      "37-OMcp8_36*RLcp8_17);\n    ORcp8_37 = OMcp8_16*RLcp8_27-OMcp8_26*RLcp8_17;\n\n% = = Block_1_0_0_9_0_5 = = \n \n"
-      "% Sensor Kinematics \n\n\n    ROcp8_114 = ROcp8_15*C14+ROcp8_46*S14;\n    ROcp8_214 = ROcp8_25*C14+ROcp8_56*S14;"
-      "\n    ROcp8_314 = ROcp8_66*S14-C14*S5;\n    ROcp8_414 = -(ROcp8_15*S14-ROcp8_46*C14);\n    ROcp8_514 = -(ROcp8_2"
-      "5*S14-ROcp8_56*C14);\n    ROcp8_614 = ROcp8_66*C14+S14*S5;\n    RLcp8_114 = ROcp8_76*s.dpt(3,8);\n    RLcp8_214 "
-      "= ROcp8_86*s.dpt(3,8);\n    RLcp8_314 = ROcp8_96*s.dpt(3,8);\n    POcp8_114 = RLcp8_114+RLcp8_17+q(1);\n    POcp"
-      "8_214 = RLcp8_214+RLcp8_27+q(2);\n    POcp8_314 = RLcp8_314+RLcp8_37+q(3);\n    JTcp8_114_4 = -(RLcp8_214+RLcp8_"
-      "27);\n    JTcp8_214_4 = RLcp8_114+RLcp8_17;\n    JTcp8_114_5 = C4*(RLcp8_314+RLcp8_37);\n    JTcp8_214_5 = S4*(R"
-      "Lcp8_314+RLcp8_37);\n    JTcp8_314_5 = -(C4*(RLcp8_114+RLcp8_17)+S4*(RLcp8_214+RLcp8_27));\n    JTcp8_114_6 = RO"
-      "cp8_25*(RLcp8_314+RLcp8_37)+S5*(RLcp8_214+RLcp8_27);\n    JTcp8_214_6 = -(ROcp8_15*(RLcp8_314+RLcp8_37)+S5*(RLcp"
-      "8_114+RLcp8_17));\n    JTcp8_314_6 = ROcp8_15*(RLcp8_214+RLcp8_27)-ROcp8_25*(RLcp8_114+RLcp8_17);\n    OMcp8_114"
-      " = OMcp8_16+ROcp8_76*qd(14);\n    OMcp8_214 = OMcp8_26+ROcp8_86*qd(14);\n    OMcp8_314 = OMcp8_36+ROcp8_96*qd(14"
-      ");\n    ORcp8_114 = OMcp8_26*RLcp8_314-OMcp8_36*RLcp8_214;\n    ORcp8_214 = -(OMcp8_16*RLcp8_314-OMcp8_36*RLcp8_"
-      "114);\n    ORcp8_314 = OMcp8_16*RLcp8_214-OMcp8_26*RLcp8_114;\n    VIcp8_114 = ORcp8_114+ORcp8_17+qd(1)+ROcp8_76"
-      "*qd(7);\n    VIcp8_214 = ORcp8_214+ORcp8_27+qd(2)+ROcp8_86*qd(7);\n    VIcp8_314 = ORcp8_314+ORcp8_37+qd(3)+ROcp"
-      "8_96*qd(7);\n    OPcp8_114 = OPcp8_16+ROcp8_76*qdd(14)+qd(14)*(OMcp8_26*ROcp8_96-OMcp8_36*ROcp8_86);\n    OPcp8_"
-      "214 = OPcp8_26+ROcp8_86*qdd(14)-qd(14)*(OMcp8_16*ROcp8_96-OMcp8_36*ROcp8_76);\n    OPcp8_314 = OPcp8_36+ROcp8_96"
-      "*qdd(14)+qd(14)*(OMcp8_16*ROcp8_86-OMcp8_26*ROcp8_76);\n    ACcp8_114 = qdd(1)+OMcp8_26*ORcp8_314+OMcp8_26*ORcp8"
-      "_37-OMcp8_36*ORcp8_214-OMcp8_36*ORcp8_27+OPcp8_26*RLcp8_314+OPcp8_26*RLcp8_37-OPcp8_36*...\n RLcp8_214-OPcp8_36*"
-      "RLcp8_27+ROcp8_76*qdd(7)+(2.0)*qd(7)*(OMcp8_26*ROcp8_96-OMcp8_36*ROcp8_86);\n    ACcp8_214 = qdd(2)-OMcp8_16*ORc"
-      "p8_314-OMcp8_16*ORcp8_37+OMcp8_36*ORcp8_114+OMcp8_36*ORcp8_17-OPcp8_16*RLcp8_314-OPcp8_16*RLcp8_37+OPcp8_36*...\n"
-      " RLcp8_114+OPcp8_36*RLcp8_17+ROcp8_86*qdd(7)-(2.0)*qd(7)*(OMcp8_16*ROcp8_96-OMcp8_36*ROcp8_76);\n    ACcp8_314 ="
-      " qdd(3)+OMcp8_16*ORcp8_214+OMcp8_16*ORcp8_27-OMcp8_26*ORcp8_114-OMcp8_26*ORcp8_17+OPcp8_16*RLcp8_214+OPcp8_16*RL"
-      "cp8_27-OPcp8_26*...\n RLcp8_114-OPcp8_26*RLcp8_17+ROcp8_96*qdd(7)+(2.0)*qd(7)*(OMcp8_16*ROcp8_86-OMcp8_26*ROcp8_"
-      "76);\n\n% = = Block_1_0_0_9_1_0 = = \n \n% Symbolic Outputs  \n\n    sens.P(1) = POcp8_114;\n    sens.P(2) = POc"
-      "p8_214;\n    sens.P(3) = POcp8_314;\n    sens.R(1,1) = ROcp8_114;\n    sens.R(1,2) = ROcp8_214;\n    sens.R(1,3)"
-      " = ROcp8_314;\n    sens.R(2,1) = ROcp8_414;\n    sens.R(2,2) = ROcp8_514;\n    sens.R(2,3) = ROcp8_614;\n    sen"
-      "s.R(3,1) = ROcp8_76;\n    sens.R(3,2) = ROcp8_86;\n    sens.R(3,3) = ROcp8_96;\n    sens.V(1) = VIcp8_114;\n    "
-      "sens.V(2) = VIcp8_214;\n    sens.V(3) = VIcp8_314;\n    sens.OM(1) = OMcp8_114;\n    sens.OM(2) = OMcp8_214;\n  "
-      "  sens.OM(3) = OMcp8_314;\n    sens.J(1,1) = (1.0);\n    sens.J(1,4) = JTcp8_114_4;\n    sens.J(1,5) = JTcp8_114"
-      "_5;\n    sens.J(1,6) = JTcp8_114_6;\n    sens.J(1,7) = ROcp8_76;\n    sens.J(2,2) = (1.0);\n    sens.J(2,4) = JT"
-      "cp8_214_4;\n    sens.J(2,5) = JTcp8_214_5;\n    sens.J(2,6) = JTcp8_214_6;\n    sens.J(2,7) = ROcp8_86;\n    sen"
-      "s.J(3,3) = (1.0);\n    sens.J(3,5) = JTcp8_314_5;\n    sens.J(3,6) = JTcp8_314_6;\n    sens.J(3,7) = ROcp8_96;\n"
-      "    sens.J(4,5) = -S4;\n    sens.J(4,6) = ROcp8_15;\n    sens.J(4,14) = ROcp8_76;\n    sens.J(5,5) = C4;\n    se"
-      "ns.J(5,6) = ROcp8_25;\n    sens.J(5,14) = ROcp8_86;\n    sens.J(6,4) = (1.0);\n    sens.J(6,6) = -S5;\n    sens."
-      "J(6,14) = ROcp8_96;\n    sens.A(1) = ACcp8_114;\n    sens.A(2) = ACcp8_214;\n    sens.A(3) = ACcp8_314;\n    sen"
-      "s.OMP(1) = OPcp8_114;\n    sens.OMP(2) = OPcp8_214;\n    sens.OMP(3) = OPcp8_314;\n \n% \ncase 10, \n\n\n% = = B"
-      "lock_1_0_0_10_0_1 = = \n \n% Sensor Kinematics \n\n\n    ROcp9_15 = C4*C5;\n    ROcp9_25 = S4*C5;\n    ROcp9_75 "
-      "= C4*S5;\n    ROcp9_85 = S4*S5;\n    ROcp9_46 = ROcp9_75*S6-S4*C6;\n    ROcp9_56 = ROcp9_85*S6+C4*C6;\n    ROcp9"
-      "_66 = C5*S6;\n    ROcp9_76 = ROcp9_75*C6+S4*S6;\n    ROcp9_86 = ROcp9_85*C6-C4*S6;\n    ROcp9_96 = C5*C6;\n    O"
-      "Mcp9_15 = -qd(5)*S4;\n    OMcp9_25 = qd(5)*C4;\n    OMcp9_16 = OMcp9_15+ROcp9_15*qd(6);\n    OMcp9_26 = OMcp9_25"
-      "+ROcp9_25*qd(6);\n    OMcp9_36 = qd(4)-qd(6)*S5;\n    OPcp9_16 = ROcp9_15*qdd(6)-qdd(5)*S4-qd(4)*qd(5)*C4-qd(6)*"
-      "(OMcp9_25*S5+ROcp9_25*qd(4));\n    OPcp9_26 = ROcp9_25*qdd(6)+qdd(5)*C4-qd(4)*qd(5)*S4+qd(6)*(OMcp9_15*S5+ROcp9_"
-      "15*qd(4));\n    OPcp9_36 = qdd(4)-qdd(6)*S5-qd(5)*qd(6)*C5;\n\n% = = Block_1_0_0_10_0_6 = = \n \n% Sensor Kinema"
-      "tics \n\n\n    ROcp9_116 = ROcp9_15*C16-ROcp9_76*S16;\n    ROcp9_216 = ROcp9_25*C16-ROcp9_86*S16;\n    ROcp9_316"
-      " = -(ROcp9_96*S16+C16*S5);\n    ROcp9_716 = ROcp9_15*S16+ROcp9_76*C16;\n    ROcp9_816 = ROcp9_25*S16+ROcp9_86*C1"
-      "6;\n    ROcp9_916 = ROcp9_96*C16-S16*S5;\n    RLcp9_116 = ROcp9_46*s.dpt(2,3);\n    RLcp9_216 = ROcp9_56*s.dpt(2"
-      ",3);\n    RLcp9_316 = ROcp9_66*s.dpt(2,3);\n    POcp9_116 = RLcp9_116+q(1);\n    POcp9_216 = RLcp9_216+q(2);\n  "
-      "  POcp9_316 = RLcp9_316+q(3);\n    JTcp9_116_5 = RLcp9_316*C4;\n    JTcp9_216_5 = RLcp9_316*S4;\n    JTcp9_316_5"
-      " = -(RLcp9_116*C4+RLcp9_216*S4);\n    JTcp9_116_6 = RLcp9_216*S5+RLcp9_316*ROcp9_25;\n    JTcp9_216_6 = -(RLcp9_"
-      "116*S5+RLcp9_316*ROcp9_15);\n    JTcp9_316_6 = -(RLcp9_116*ROcp9_25-RLcp9_216*ROcp9_15);\n    OMcp9_116 = OMcp9_"
-      "16+ROcp9_46*qd(16);\n    OMcp9_216 = OMcp9_26+ROcp9_56*qd(16);\n    OMcp9_316 = OMcp9_36+ROcp9_66*qd(16);\n    O"
-      "Rcp9_116 = OMcp9_26*RLcp9_316-OMcp9_36*RLcp9_216;\n    ORcp9_216 = -(OMcp9_16*RLcp9_316-OMcp9_36*RLcp9_116);\n  "
-      "  ORcp9_316 = OMcp9_16*RLcp9_216-OMcp9_26*RLcp9_116;\n    VIcp9_116 = ORcp9_116+qd(1);\n    VIcp9_216 = ORcp9_21"
-      "6+qd(2);\n    VIcp9_316 = ORcp9_316+qd(3);\n    OPcp9_116 = OPcp9_16+ROcp9_46*qdd(16)+qd(16)*(OMcp9_26*ROcp9_66-"
-      "OMcp9_36*ROcp9_56);\n    OPcp9_216 = OPcp9_26+ROcp9_56*qdd(16)-qd(16)*(OMcp9_16*ROcp9_66-OMcp9_36*ROcp9_46);\n  "
-      "  OPcp9_316 = OPcp9_36+ROcp9_66*qdd(16)+qd(16)*(OMcp9_16*ROcp9_56-OMcp9_26*ROcp9_46);\n    ACcp9_116 = qdd(1)+OM"
-      "cp9_26*ORcp9_316-OMcp9_36*ORcp9_216+OPcp9_26*RLcp9_316-OPcp9_36*RLcp9_216;\n    ACcp9_216 = qdd(2)-OMcp9_16*ORcp"
-      "9_316+OMcp9_36*ORcp9_116-OPcp9_16*RLcp9_316+OPcp9_36*RLcp9_116;\n    ACcp9_316 = qdd(3)+OMcp9_16*ORcp9_216-OMcp9"
-      "_26*ORcp9_116+OPcp9_16*RLcp9_216-OPcp9_26*RLcp9_116;\n\n% = = Block_1_0_0_10_1_0 = = \n \n% Symbolic Outputs  \n"
-      "\n    sens.P(1) = POcp9_116;\n    sens.P(2) = POcp9_216;\n    sens.P(3) = POcp9_316;\n    sens.R(1,1) = ROcp9_11"
-      "6;\n    sens.R(1,2) = ROcp9_216;\n    sens.R(1,3) = ROcp9_316;\n    sens.R(2,1) = ROcp9_46;\n    sens.R(2,2) = R"
-      "Ocp9_56;\n    sens.R(2,3) = ROcp9_66;\n    sens.R(3,1) = ROcp9_716;\n    sens.R(3,2) = ROcp9_816;\n    sens.R(3,"
-      "3) = ROcp9_916;\n    sens.V(1) = VIcp9_116;\n    sens.V(2) = VIcp9_216;\n    sens.V(3) = VIcp9_316;\n    sens.OM"
-      "(1) = OMcp9_116;\n    sens.OM(2) = OMcp9_216;\n    sens.OM(3) = OMcp9_316;\n    sens.J(1,1) = (1.0);\n    sens.J"
-      "(1,4) = -RLcp9_216;\n    sens.J(1,5) = JTcp9_116_5;\n    sens.J(1,6) = JTcp9_116_6;\n    sens.J(2,2) = (1.0);\n "
-      "   sens.J(2,4) = RLcp9_116;\n    sens.J(2,5) = JTcp9_216_5;\n    sens.J(2,6) = JTcp9_216_6;\n    sens.J(3,3) = ("
-      "1.0);\n    sens.J(3,5) = JTcp9_316_5;\n    sens.J(3,6) = JTcp9_316_6;\n    sens.J(4,5) = -S4;\n    sens.J(4,6) ="
-      " ROcp9_15;\n    sens.J(4,16) = ROcp9_46;\n    sens.J(5,5) = C4;\n    sens.J(5,6) = ROcp9_25;\n    sens.J(5,16) ="
-      " ROcp9_56;\n    sens.J(6,4) = (1.0);\n    sens.J(6,6) = -S5;\n    sens.J(6,16) = ROcp9_66;\n    sens.A(1) = ACcp"
-      "9_116;\n    sens.A(2) = ACcp9_216;\n    sens.A(3) = ACcp9_316;\n    sens.OMP(1) = OPcp9_116;\n    sens.OMP(2) = "
-      "OPcp9_216;\n    sens.OMP(3) = OPcp9_316;\n \n% \ncase 11, \n\n\n% = = Block_1_0_0_11_0_1 = = \n \n% Sensor Kinem"
-      "atics \n\n\n    ROcp10_15 = C4*C5;\n    ROcp10_25 = S4*C5;\n    ROcp10_75 = C4*S5;\n    ROcp10_85 = S4*S5;\n    "
-      "ROcp10_46 = ROcp10_75*S6-S4*C6;\n    ROcp10_56 = ROcp10_85*S6+C4*C6;\n    ROcp10_66 = C5*S6;\n    ROcp10_76 = RO"
-      "cp10_75*C6+S4*S6;\n    ROcp10_86 = ROcp10_85*C6-C4*S6;\n    ROcp10_96 = C5*C6;\n    OMcp10_15 = -qd(5)*S4;\n    "
-      "OMcp10_25 = qd(5)*C4;\n    OMcp10_16 = OMcp10_15+ROcp10_15*qd(6);\n    OMcp10_26 = OMcp10_25+ROcp10_25*qd(6);\n "
-      "   OMcp10_36 = qd(4)-qd(6)*S5;\n    OPcp10_16 = ROcp10_15*qdd(6)-qdd(5)*S4-qd(4)*qd(5)*C4-qd(6)*(OMcp10_25*S5+RO"
-      "cp10_25*qd(4));\n    OPcp10_26 = ROcp10_25*qdd(6)+qdd(5)*C4-qd(4)*qd(5)*S4+qd(6)*(OMcp10_15*S5+ROcp10_15*qd(4));"
-      "\n    OPcp10_36 = qdd(4)-qdd(6)*S5-qd(5)*qd(6)*C5;\n\n% = = Block_1_0_0_11_0_7 = = \n \n% Sensor Kinematics \n\n"
-      "\n    ROcp10_117 = ROcp10_15*C17-ROcp10_76*S17;\n    ROcp10_217 = ROcp10_25*C17-ROcp10_86*S17;\n    ROcp10_317 ="
-      " -(ROcp10_96*S17+C17*S5);\n    ROcp10_717 = ROcp10_15*S17+ROcp10_76*C17;\n    ROcp10_817 = ROcp10_25*S17+ROcp10_"
-      "86*C17;\n    ROcp10_917 = ROcp10_96*C17-S17*S5;\n    RLcp10_117 = ROcp10_46*s.dpt(2,4);\n    RLcp10_217 = ROcp10"
-      "_56*s.dpt(2,4);\n    RLcp10_317 = ROcp10_66*s.dpt(2,4);\n    POcp10_117 = RLcp10_117+q(1);\n    POcp10_217 = RLc"
-      "p10_217+q(2);\n    POcp10_317 = RLcp10_317+q(3);\n    JTcp10_117_5 = RLcp10_317*C4;\n    JTcp10_217_5 = RLcp10_3"
-      "17*S4;\n    JTcp10_317_5 = -(RLcp10_117*C4+RLcp10_217*S4);\n    JTcp10_117_6 = RLcp10_217*S5+RLcp10_317*ROcp10_2"
-      "5;\n    JTcp10_217_6 = -(RLcp10_117*S5+RLcp10_317*ROcp10_15);\n    JTcp10_317_6 = -(RLcp10_117*ROcp10_25-RLcp10_"
-      "217*ROcp10_15);\n    OMcp10_117 = OMcp10_16+ROcp10_46*qd(17);\n    OMcp10_217 = OMcp10_26+ROcp10_56*qd(17);\n   "
-      " OMcp10_317 = OMcp10_36+ROcp10_66*qd(17);\n    ORcp10_117 = OMcp10_26*RLcp10_317-OMcp10_36*RLcp10_217;\n    ORcp"
-      "10_217 = -(OMcp10_16*RLcp10_317-OMcp10_36*RLcp10_117);\n    ORcp10_317 = OMcp10_16*RLcp10_217-OMcp10_26*RLcp10_1"
-      "17;\n    VIcp10_117 = ORcp10_117+qd(1);\n    VIcp10_217 = ORcp10_217+qd(2);\n    VIcp10_317 = ORcp10_317+qd(3);\n"
-      "    OPcp10_117 = OPcp10_16+ROcp10_46*qdd(17)+qd(17)*(OMcp10_26*ROcp10_66-OMcp10_36*ROcp10_56);\n    OPcp10_217 ="
-      " OPcp10_26+ROcp10_56*qdd(17)-qd(17)*(OMcp10_16*ROcp10_66-OMcp10_36*ROcp10_46);\n    OPcp10_317 = OPcp10_36+ROcp1"
-      "0_66*qdd(17)+qd(17)*(OMcp10_16*ROcp10_56-OMcp10_26*ROcp10_46);\n    ACcp10_117 = qdd(1)+OMcp10_26*ORcp10_317-OMc"
-      "p10_36*ORcp10_217+OPcp10_26*RLcp10_317-OPcp10_36*RLcp10_217;\n    ACcp10_217 = qdd(2)-OMcp10_16*ORcp10_317+OMcp1"
-      "0_36*ORcp10_117-OPcp10_16*RLcp10_317+OPcp10_36*RLcp10_117;\n    ACcp10_317 = qdd(3)+OMcp10_16*ORcp10_217-OMcp10_"
-      "26*ORcp10_117+OPcp10_16*RLcp10_217-OPcp10_26*RLcp10_117;\n\n% = = Block_1_0_0_11_1_0 = = \n \n% Symbolic Outputs"
-      "  \n\n    sens.P(1) = POcp10_117;\n    sens.P(2) = POcp10_217;\n    sens.P(3) = POcp10_317;\n    sens.R(1,1) = R"
-      "Ocp10_117;\n    sens.R(1,2) = ROcp10_217;\n    sens.R(1,3) = ROcp10_317;\n    sens.R(2,1) = ROcp10_46;\n    sens"
-      ".R(2,2) = ROcp10_56;\n    sens.R(2,3) = ROcp10_66;\n    sens.R(3,1) = ROcp10_717;\n    sens.R(3,2) = ROcp10_817;"
-      "\n    sens.R(3,3) = ROcp10_917;\n    sens.V(1) = VIcp10_117;\n    sens.V(2) = VIcp10_217;\n    sens.V(3) = VIcp1"
-      "0_317;\n    sens.OM(1) = OMcp10_117;\n    sens.OM(2) = OMcp10_217;\n    sens.OM(3) = OMcp10_317;\n    sens.J(1,1"
-      ") = (1.0);\n    sens.J(1,4) = -RLcp10_217;\n    sens.J(1,5) = JTcp10_117_5;\n    sens.J(1,6) = JTcp10_117_6;\n  "
-      "  sens.J(2,2) = (1.0);\n    sens.J(2,4) = RLcp10_117;\n    sens.J(2,5) = JTcp10_217_5;\n    sens.J(2,6) = JTcp10"
-      "_217_6;\n    sens.J(3,3) = (1.0);\n    sens.J(3,5) = JTcp10_317_5;\n    sens.J(3,6) = JTcp10_317_6;\n    sens.J("
-      "4,5) = -S4;\n    sens.J(4,6) = ROcp10_15;\n    sens.J(4,17) = ROcp10_46;\n    sens.J(5,5) = C4;\n    sens.J(5,6)"
-      " = ROcp10_25;\n    sens.J(5,17) = ROcp10_56;\n    sens.J(6,4) = (1.0);\n    sens.J(6,6) = -S5;\n    sens.J(6,17)"
-      " = ROcp10_66;\n    sens.A(1) = ACcp10_117;\n    sens.A(2) = ACcp10_217;\n    sens.A(3) = ACcp10_317;\n    sens.O"
-      "MP(1) = OPcp10_117;\n    sens.OMP(2) = OPcp10_217;\n    sens.OMP(3) = OPcp10_317;\n \n% \ncase 12, \n\n\n% = = B"
-      "lock_1_0_0_12_0_1 = = \n \n% Sensor Kinematics \n\n\n    ROcp11_15 = C4*C5;\n    ROcp11_25 = S4*C5;\n    ROcp11_"
-      "75 = C4*S5;\n    ROcp11_85 = S4*S5;\n    ROcp11_46 = ROcp11_75*S6-S4*C6;\n    ROcp11_56 = ROcp11_85*S6+C4*C6;\n "
-      "   ROcp11_66 = C5*S6;\n    ROcp11_76 = ROcp11_75*C6+S4*S6;\n    ROcp11_86 = ROcp11_85*C6-C4*S6;\n    ROcp11_96 ="
-      " C5*C6;\n    OMcp11_15 = -qd(5)*S4;\n    OMcp11_25 = qd(5)*C4;\n    OMcp11_16 = OMcp11_15+ROcp11_15*qd(6);\n    "
-      "OMcp11_26 = OMcp11_25+ROcp11_25*qd(6);\n    OMcp11_36 = qd(4)-qd(6)*S5;\n    OPcp11_16 = ROcp11_15*qdd(6)-qdd(5)"
-      "*S4-qd(4)*qd(5)*C4-qd(6)*(OMcp11_25*S5+ROcp11_25*qd(4));\n    OPcp11_26 = ROcp11_25*qdd(6)+qdd(5)*C4-qd(4)*qd(5)"
-      "*S4+qd(6)*(OMcp11_15*S5+ROcp11_15*qd(4));\n    OPcp11_36 = qdd(4)-qdd(6)*S5-qd(5)*qd(6)*C5;\n\n% = = Block_1_0_0"
-      "_12_0_6 = = \n \n% Sensor Kinematics \n\n\n    ROcp11_116 = ROcp11_15*C16-ROcp11_76*S16;\n    ROcp11_216 = ROcp1"
-      "1_25*C16-ROcp11_86*S16;\n    ROcp11_316 = -(ROcp11_96*S16+C16*S5);\n    ROcp11_716 = ROcp11_15*S16+ROcp11_76*C16"
-      ";\n    ROcp11_816 = ROcp11_25*S16+ROcp11_86*C16;\n    ROcp11_916 = ROcp11_96*C16-S16*S5;\n    RLcp11_116 = ROcp1"
-      "1_46*s.dpt(2,3);\n    RLcp11_216 = ROcp11_56*s.dpt(2,3);\n    RLcp11_316 = ROcp11_66*s.dpt(2,3);\n    POcp11_116"
-      " = RLcp11_116+q(1);\n    POcp11_216 = RLcp11_216+q(2);\n    POcp11_316 = RLcp11_316+q(3);\n    OMcp11_116 = OMcp"
-      "11_16+ROcp11_46*qd(16);\n    OMcp11_216 = OMcp11_26+ROcp11_56*qd(16);\n    OMcp11_316 = OMcp11_36+ROcp11_66*qd(1"
-      "6);\n    ORcp11_116 = OMcp11_26*RLcp11_316-OMcp11_36*RLcp11_216;\n    ORcp11_216 = -(OMcp11_16*RLcp11_316-OMcp11"
-      "_36*RLcp11_116);\n    ORcp11_316 = OMcp11_16*RLcp11_216-OMcp11_26*RLcp11_116;\n    VIcp11_116 = ORcp11_116+qd(1)"
-      ";\n    VIcp11_216 = ORcp11_216+qd(2);\n    VIcp11_316 = ORcp11_316+qd(3);\n    OPcp11_116 = OPcp11_16+ROcp11_46*"
-      "qdd(16)+qd(16)*(OMcp11_26*ROcp11_66-OMcp11_36*ROcp11_56);\n    OPcp11_216 = OPcp11_26+ROcp11_56*qdd(16)-qd(16)*("
-      "OMcp11_16*ROcp11_66-OMcp11_36*ROcp11_46);\n    OPcp11_316 = OPcp11_36+ROcp11_66*qdd(16)+qd(16)*(OMcp11_16*ROcp11"
-      "_56-OMcp11_26*ROcp11_46);\n    ACcp11_116 = qdd(1)+OMcp11_26*ORcp11_316-OMcp11_36*ORcp11_216+OPcp11_26*RLcp11_31"
-      "6-OPcp11_36*RLcp11_216;\n    ACcp11_216 = qdd(2)-OMcp11_16*ORcp11_316+OMcp11_36*ORcp11_116-OPcp11_16*RLcp11_316+"
-      "OPcp11_36*RLcp11_116;\n    ACcp11_316 = qdd(3)+OMcp11_16*ORcp11_216-OMcp11_26*ORcp11_116+OPcp11_16*RLcp11_216-OP"
-      "cp11_26*RLcp11_116;\n\n% = = Block_1_0_0_12_1_0 = = \n \n% Symbolic Outputs  \n\n    sens.P(1) = POcp11_116;\n  "
-      "  sens.P(2) = POcp11_216;\n    sens.P(3) = POcp11_316;\n    sens.R(1,1) = ROcp11_116;\n    sens.R(1,2) = ROcp11_"
-      "216;\n    sens.R(1,3) = ROcp11_316;\n    sens.R(2,1) = ROcp11_46;\n    sens.R(2,2) = ROcp11_56;\n    sens.R(2,3)"
-      " = ROcp11_66;\n    sens.R(3,1) = ROcp11_716;\n    sens.R(3,2) = ROcp11_816;\n    sens.R(3,3) = ROcp11_916;\n    "
-      "sens.V(1) = VIcp11_116;\n    sens.V(2) = VIcp11_216;\n    sens.V(3) = VIcp11_316;\n    sens.OM(1) = OMcp11_116;\n"
-      "    sens.OM(2) = OMcp11_216;\n    sens.OM(3) = OMcp11_316;\n    sens.A(1) = ACcp11_116;\n    sens.A(2) = ACcp11_"
-      "216;\n    sens.A(3) = ACcp11_316;\n    sens.OMP(1) = OPcp11_116;\n    sens.OMP(2) = OPcp11_216;\n    sens.OMP(3)"
-      " = OPcp11_316;\n \n% \ncase 13, \n\n\n% = = Block_1_0_0_13_0_1 = = \n \n% Sensor Kinematics \n\n\n    ROcp12_15 "
-      "= C4*C5;\n    ROcp12_25 = S4*C5;\n    ROcp12_75 = C4*S5;\n    ROcp12_85 = S4*S5;\n    ROcp12_46 = ROcp12_75*S6-S"
-      "4*C6;\n    ROcp12_56 = ROcp12_85*S6+C4*C6;\n    ROcp12_66 = C5*S6;\n    ROcp12_76 = ROcp12_75*C6+S4*S6;\n    ROc"
-      "p12_86 = ROcp12_85*C6-C4*S6;\n    ROcp12_96 = C5*C6;\n    OMcp12_15 = -qd(5)*S4;\n    OMcp12_25 = qd(5)*C4;\n   "
-      " OMcp12_16 = OMcp12_15+ROcp12_15*qd(6);\n    OMcp12_26 = OMcp12_25+ROcp12_25*qd(6);\n    OMcp12_36 = qd(4)-qd(6)"
-      "*S5;\n    OPcp12_16 = ROcp12_15*qdd(6)-qdd(5)*S4-qd(4)*qd(5)*C4-qd(6)*(OMcp12_25*S5+ROcp12_25*qd(4));\n    OPcp1"
-      "2_26 = ROcp12_25*qdd(6)+qdd(5)*C4-qd(4)*qd(5)*S4+qd(6)*(OMcp12_15*S5+ROcp12_15*qd(4));\n    OPcp12_36 = qdd(4)-q"
-      "dd(6)*S5-qd(5)*qd(6)*C5;\n\n% = = Block_1_0_0_13_0_7 = = \n \n% Sensor Kinematics \n\n\n    ROcp12_117 = ROcp12_"
-      "15*C17-ROcp12_76*S17;\n    ROcp12_217 = ROcp12_25*C17-ROcp12_86*S17;\n    ROcp12_317 = -(ROcp12_96*S17+C17*S5);\n"
-      "    ROcp12_717 = ROcp12_15*S17+ROcp12_76*C17;\n    ROcp12_817 = ROcp12_25*S17+ROcp12_86*C17;\n    ROcp12_917 = R"
-      "Ocp12_96*C17-S17*S5;\n    RLcp12_117 = ROcp12_46*s.dpt(2,4);\n    RLcp12_217 = ROcp12_56*s.dpt(2,4);\n    RLcp12"
-      "_317 = ROcp12_66*s.dpt(2,4);\n    POcp12_117 = RLcp12_117+q(1);\n    POcp12_217 = RLcp12_217+q(2);\n    POcp12_3"
-      "17 = RLcp12_317+q(3);\n    OMcp12_117 = OMcp12_16+ROcp12_46*qd(17);\n    OMcp12_217 = OMcp12_26+ROcp12_56*qd(17)"
-      ";\n    OMcp12_317 = OMcp12_36+ROcp12_66*qd(17);\n    ORcp12_117 = OMcp12_26*RLcp12_317-OMcp12_36*RLcp12_217;\n  "
-      "  ORcp12_217 = -(OMcp12_16*RLcp12_317-OMcp12_36*RLcp12_117);\n    ORcp12_317 = OMcp12_16*RLcp12_217-OMcp12_26*RL"
-      "cp12_117;\n    VIcp12_117 = ORcp12_117+qd(1);\n    VIcp12_217 = ORcp12_217+qd(2);\n    VIcp12_317 = ORcp12_317+q"
-      "d(3);\n    OPcp12_117 = OPcp12_16+ROcp12_46*qdd(17)+qd(17)*(OMcp12_26*ROcp12_66-OMcp12_36*ROcp12_56);\n    OPcp1"
-      "2_217 = OPcp12_26+ROcp12_56*qdd(17)-qd(17)*(OMcp12_16*ROcp12_66-OMcp12_36*ROcp12_46);\n    OPcp12_317 = OPcp12_3"
-      "6+ROcp12_66*qdd(17)+qd(17)*(OMcp12_16*ROcp12_56-OMcp12_26*ROcp12_46);\n    ACcp12_117 = qdd(1)+OMcp12_26*ORcp12_"
-      "317-OMcp12_36*ORcp12_217+OPcp12_26*RLcp12_317-OPcp12_36*RLcp12_217;\n    ACcp12_217 = qdd(2)-OMcp12_16*ORcp12_31"
-      "7+OMcp12_36*ORcp12_117-OPcp12_16*RLcp12_317+OPcp12_36*RLcp12_117;\n    ACcp12_317 = qdd(3)+OMcp12_16*ORcp12_217-"
-      "OMcp12_26*ORcp12_117+OPcp12_16*RLcp12_217-OPcp12_26*RLcp12_117;\n\n% = = Block_1_0_0_13_1_0 = = \n \n% Symbolic "
-      "Outputs  \n\n    sens.P(1) = POcp12_117;\n    sens.P(2) = POcp12_217;\n    sens.P(3) = POcp12_317;\n    sens.R(1"
-      ",1) = ROcp12_117;\n    sens.R(1,2) = ROcp12_217;\n    sens.R(1,3) = ROcp12_317;\n    sens.R(2,1) = ROcp12_46;\n "
-      "   sens.R(2,2) = ROcp12_56;\n    sens.R(2,3) = ROcp12_66;\n    sens.R(3,1) = ROcp12_717;\n    sens.R(3,2) = ROcp"
-      "12_817;\n    sens.R(3,3) = ROcp12_917;\n    sens.V(1) = VIcp12_117;\n    sens.V(2) = VIcp12_217;\n    sens.V(3) "
-      "= VIcp12_317;\n    sens.OM(1) = OMcp12_117;\n    sens.OM(2) = OMcp12_217;\n    sens.OM(3) = OMcp12_317;\n    sen"
-      "s.A(1) = ACcp12_117;\n    sens.A(2) = ACcp12_217;\n    sens.A(3) = ACcp12_317;\n    sens.OMP(1) = OPcp12_117;\n "
-      "   sens.OMP(2) = OPcp12_217;\n    sens.OMP(3) = OPcp12_317;\n\nend\n"
-      editorLayout	      "100 M4x1[10 5 700 500]"
-    }
-  }
-  data {
-    id			    4
-    ssIdNumber		    4
-    name		    "psi_1"
-    linkNode		    [2 0 5]
-    scope		    INPUT_DATA
-    machine		    1
-    props {
-      array {
-	size			"-1"
-      }
-      type {
-	method			SF_INHERITED_TYPE
-	primitive		SF_DOUBLE_TYPE
-      }
-      complexity	      SF_COMPLEX_INHERITED
-    }
-    dataType		    "Inherit: Same as Simulink"
-  }
-  data {
-    id			    5
-    ssIdNumber		    5
-    name		    "psi"
-    linkNode		    [2 4 6]
-    scope		    OUTPUT_DATA
-    machine		    1
-    props {
-      array {
-	size			"-1"
-      }
-      type {
-	method			SF_INHERITED_TYPE
-	primitive		SF_DOUBLE_TYPE
-      }
-      complexity	      SF_COMPLEX_INHERITED
-      frame		      SF_FRAME_NO
-    }
-    dataType		    "Inherit: Same as Simulink"
-  }
-  data {
-    id			    6
-    ssIdNumber		    6
-    name		    "q"
-    linkNode		    [2 5 7]
-    scope		    INPUT_DATA
-    machine		    1
-    props {
-      array {
-	size			"-1"
-      }
-      type {
-	method			SF_INHERITED_TYPE
-	primitive		SF_DOUBLE_TYPE
-	isSigned		1
-	wordLength		"16"
-      }
-      complexity	      SF_COMPLEX_INHERITED
-      frame		      SF_FRAME_INHERITED
-    }
-    dataType		    "Inherit: Same as Simulink"
-  }
-  data {
-    id			    7
-    ssIdNumber		    7
-    name		    "qd"
-    linkNode		    [2 6 8]
-    scope		    INPUT_DATA
-    machine		    1
-    props {
-      array {
-	size			"-1"
-      }
-      type {
-	method			SF_INHERITED_TYPE
-	primitive		SF_DOUBLE_TYPE
-	isSigned		1
-	wordLength		"16"
-      }
-      complexity	      SF_COMPLEX_INHERITED
-      frame		      SF_FRAME_INHERITED
-    }
-    dataType		    "Inherit: Same as Simulink"
-  }
-  data {
-    id			    8
-    ssIdNumber		    8
-    name		    "qdd"
-    linkNode		    [2 7 9]
-    scope		    INPUT_DATA
-    machine		    1
-    props {
-      array {
-	size			"-1"
-      }
-      type {
-	method			SF_INHERITED_TYPE
-	primitive		SF_DOUBLE_TYPE
-	isSigned		1
-	wordLength		"16"
-      }
-      complexity	      SF_COMPLEX_INHERITED
-      frame		      SF_FRAME_INHERITED
-    }
-    dataType		    "Inherit: Same as Simulink"
-  }
-  data {
-    id			    9
-    ssIdNumber		    9
-    name		    "rob_str"
-    linkNode		    [2 8 10]
-    scope		    PARAMETER_DATA
-    paramIndexForInitFromWorkspace 1
-    machine		    1
-    props {
-      array {
-	size			"-1"
-      }
-      type {
-	method			SF_INHERITED_TYPE
-	primitive		SF_DOUBLE_TYPE
-	isSigned		1
-	wordLength		"16"
-      }
-      complexity	      SF_COMPLEX_INHERITED
-      frame		      SF_FRAME_INHERITED
-    }
-    dataType		    "Inherit: Same as Simulink"
-  }
-  data {
-    id			    10
-    ssIdNumber		    10
-    name		    "Ts"
-    linkNode		    [2 9 11]
-    scope		    PARAMETER_DATA
-    machine		    1
-    props {
-      array {
-	size			"-1"
-      }
-      type {
-	method			SF_INHERITED_TYPE
-	primitive		SF_DOUBLE_TYPE
-	isSigned		1
-	wordLength		"16"
-      }
-      complexity	      SF_COMPLEX_INHERITED
-      frame		      SF_FRAME_INHERITED
-    }
-    dataType		    "Inherit: Same as Simulink"
-  }
-  data {
-    id			    11
-    ssIdNumber		    11
-    name		    "psi_dot"
-    linkNode		    [2 10 12]
-    scope		    OUTPUT_DATA
-    machine		    1
-    props {
-      array {
-	size			"-1"
-      }
-      type {
-	method			SF_INHERITED_TYPE
-	primitive		SF_DOUBLE_TYPE
-	isSigned		1
-	wordLength		"16"
-      }
-      complexity	      SF_COMPLEX_INHERITED
-      frame		      SF_FRAME_NO
-    }
-    dataType		    "Inherit: Same as Simulink"
-  }
-  data {
-    id			    12
-    ssIdNumber		    12
-    name		    "CoM"
-    linkNode		    [2 11 0]
-    scope		    OUTPUT_DATA
-    machine		    1
-    props {
-      array {
-	size			"-1"
-      }
-      type {
-	method			SF_INHERITED_TYPE
-	primitive		SF_DOUBLE_TYPE
-	isSigned		1
-	wordLength		"16"
-      }
-      complexity	      SF_COMPLEX_INHERITED
-      frame		      SF_FRAME_NO
-    }
-    dataType		    "Inherit: Same as Simulink"
-  }
-  junction {
-    id			    13
-    position		    [23.5747 49.5747 7]
-    chart		    2
-    linkNode		    [2 0 0]
-    subviewer		    2
-    ssIdNumber		    3
-    type		    CONNECTIVE_JUNCTION
-  }
-  transition {
-    id			    14
-    labelString		    "{eML_blk_kernel();}"
-    labelPosition	    [36.125 25.875 102.544 14.964]
-    fontSize		    12
-    src {
-      intersection	      [0 0 1 0 23.5747 14.625 0 0]
-    }
-    dst {
-      id		      13
-      intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
-    }
-    midPoint		    [23.5747 24.9468]
-    chart		    2
-    linkNode		    [2 0 0]
-    dataLimits		    [21.175 25.975 14.625 42.575]
-    subviewer		    2
-    drawStyle		    SMART
-    slide {
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    1
-    ssIdNumber		    2
-  }
-  instance {
-    id			    15
-    name		    "Subsystem/Subsystem2/MATLAB Function"
-    machine		    1
-    chart		    2
+    sfVersion		    80000010
+    firstTarget		    2
   }
   target {
-    id			    16
+    id			    2
+    machine		    1
     name		    "sfun"
     description		    "Default Simulink S-Function Target."
-    machine		    1
     linkNode		    [1 0 0]
   }
 }
